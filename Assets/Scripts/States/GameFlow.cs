@@ -9,6 +9,10 @@ public class GameFlow : MonoBehaviour
 
     public static event Action<GameState> StateEnded;
 
+    public List<BluePrints> Inventories;
+
+    public BluePrints currentInventory;
+
     public Hero Hero;
 
     public Player Player;
@@ -61,6 +65,13 @@ public class GameFlow : MonoBehaviour
 
         switch (CurrentState)
         {
+            case InitializationState _:
+                {
+                    nextState = AllStates.Find(state => state is TestimonyState);
+                    Assert.IsNotNull(nextState);
+
+                    break;
+                }
             case FightState _:
                 {
                     if (Hero.CurrentHealth <= 0)
@@ -157,12 +168,23 @@ public class GameFlow : MonoBehaviour
             //Level up as soon as you get a villager complaint/testimony
             if (CurrentState is TestimonyState)
             {
-                ++CurrentLevel;
+                LevelUp();
             }
 
             //Raise event
             StateEnded?.Invoke(CurrentState);
         }
+    }
+
+    public void LevelUp()
+    {
+        ++CurrentLevel;
+        selectBlueprintByLevel();
+    }
+
+    public void selectBlueprintByLevel()
+    {
+        currentInventory = Inventories[CurrentLevel];
     }
 
     public void Reset()
