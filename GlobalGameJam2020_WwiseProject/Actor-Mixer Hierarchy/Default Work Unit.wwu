@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Test_Sounds" ID="{A6A702E7-39B7-4FD9-92ED-45281F7D45A5}" ShortID="101814939">
+					<ChildrenList>
+						<Sound Name="GameJam_Plants_New_Heart_" ID="{BCDA8135-8ABE-49AA-B8C7-355B26148151}" ShortID="775798497">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameJam_Plants_New_Heart_" ID="{FA3DDF94-D352-4242-8A93-5B85B7B26E06}" ShortID="51070242">
+									<Language>SFX</Language>
+									<AudioFile>GameJam_Plants_New_Heart_.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameJam_Plants_New_Heart_" ID="{FA3DDF94-D352-4242-8A93-5B85B7B26E06}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" ShortID="929771826">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Empty_PlaceHolder" ID="{F6A5A271-8AF9-4301-A1CE-1D3C6020C81F}" ShortID="61936185">
+									<Language>SFX</Language>
+									<AudioFile>Empty_PlaceHolder.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Empty_PlaceHolder" ID="{F6A5A271-8AF9-4301-A1CE-1D3C6020C81F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

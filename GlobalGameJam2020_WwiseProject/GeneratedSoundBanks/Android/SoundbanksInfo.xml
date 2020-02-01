@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>/Users/saulohs/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ/GlobalGameJam2020/GlobalGameJam2020_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/saulohs/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ/GlobalGameJam2020/GlobalGameJam2020_WwiseProject/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/saulohs/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ/GlobalGameJam2020/GlobalGameJam2020_WwiseProject/GeneratedSoundBanks/Android/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/saulohs/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ/GlobalGameJam2020/GlobalGameJam2020_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2410569202" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_SB</ObjectPath>
+			<ShortName>Main_SB</ShortName>
+			<Path>Main_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="173327921" Name="Play_placeholder" ObjectPath="\Events\Default Work Unit\Play_placeholder"/>
+				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="51070242" Language="SFX">
+					<ShortName>GameJam_Plants_New_Heart_.wav</ShortName>
+					<Path>SFX/GameJam_Plants_New_Heart__56D34C19.wem</Path>
+				</File>
+				<File Id="61936185" Language="SFX">
+					<ShortName>Empty_PlaceHolder.wav</ShortName>
+					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

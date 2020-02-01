@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_test" ID="{463EF44C-52B5-4F97-ACD0-A96BAC01F321}">
+					<ChildrenList>
+						<Action Name="" ID="{19DFE862-4153-4540-8127-C1B763834141}" ShortID="90826915">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameJam_Plants_New_Heart_" ID="{BCDA8135-8ABE-49AA-B8C7-355B26148151}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_placeholder" ID="{F81F1252-4FE5-4086-B92D-B4BC9E614935}">
+					<ChildrenList>
+						<Action Name="" ID="{C5DA176C-854B-4DFA-84F0-F790ED6FED57}" ShortID="217138785">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
