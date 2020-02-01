@@ -15,4 +15,14 @@ public class PotPart : ScriptableObject
 
     [BitMask]
     public Slots Slot;
+
+    public void Copy(PotPart potPart)
+    {
+        Element = potPart.Element;
+        Cost = potPart.Cost;
+        Model = potPart.Model;
+        DamageState = potPart.DamageState;
+        Quality = potPart.Quality;
+        Slot = potPart.Slot;
+    }
 }

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: FireCore
   m_EditorClassIdentifier: 
   Element: 0
-  Value: 0
+  Cost: 0
+  Model: {fileID: 0}
   DamageState: 0
-  Quality: 0
+  Quality: {fileID: 11400000, guid: 869983f40cc22654ca8eef9f005d9b8e, type: 2}
+  Slot: 1

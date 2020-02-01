@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c44626fb4fcfba439de4cb541ebed1e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
+  - Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  - Flow: {instanceID: 0}
+  - heroInit: {fileID: 11400000, guid: c678fb3f93ba9aa418c0be8495c138c7, type: 2}
+  - PlayerInit: {fileID: 11400000, guid: 4fb0d9706f409c4498a79a738cdc0be2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

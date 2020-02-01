@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Porcelain
   m_EditorClassIdentifier: 
   material: {fileID: 0}
+  Strength: 0

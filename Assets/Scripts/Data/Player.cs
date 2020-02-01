@@ -23,4 +23,17 @@ public class Player : ScriptableObject
             return null;
         }
     }
+
+    public void Copy(Player playerToCopy)
+    {
+        for (int i = 0; i < playerToCopy.Resources.Count; i++)
+        {
+            Resources[i].Copy(playerToCopy.Resources[i]);
+        }
+
+        for (int i = 0; i < playerToCopy.SelectedParts.Count; i++)
+        {
+            SelectedParts[i].Copy(playerToCopy.SelectedParts[i]);
+        }
+    }
 }

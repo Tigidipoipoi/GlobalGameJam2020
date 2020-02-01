@@ -57,59 +57,67 @@ public class GameFlow : MonoBehaviour
         switch (CurrentState)
         {
             case FightState _:
-            {
-                if (Hero.CurrentHealth <= 0)
                 {
-                    nextState = AllStates.Find(state => state is VictoryState);
-                }
-                else
-                {
-                    nextState = AllStates.Find(state => state is RecoveryState);
-                }
+                    if (Hero.CurrentHealth <= 0)
+                    {
+                        nextState = AllStates.Find(state => state is VictoryState);
+                    }
+                    else
+                    {
+                        nextState = AllStates.Find(state => state is RecoveryState);
+                    }
 
-                Assert.IsNotNull(nextState);
+                    Assert.IsNotNull(nextState);
 
-                break;
-            }
+                    break;
+                }
 
             case RecoveryState _:
-            {
-                nextState = AllStates.Find(state => state is TestimonyState);
-                Assert.IsNotNull(nextState);
+                {
+                    nextState = AllStates.Find(state => state is TestimonyState);
+                    Assert.IsNotNull(nextState);
 
-                break;
-            }
+                    break;
+                }
 
             case TestimonyState _:
-            {
-                nextState = AllStates.Find(state => state is LootState);
-                Assert.IsNotNull(nextState);
+                {
+                    nextState = AllStates.Find(state => state is LootState);
+                    Assert.IsNotNull(nextState);
 
-                break;
-            }
+                    break;
+                }
 
             case LootState _:
-            {
-                nextState = AllStates.Find(state => state is PotCreationState);
-                Assert.IsNotNull(nextState);
-
-                break;
-            }
+                {
+                    UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
+                    if (unlockState.NeedsUnlock())
+                    {
+                        nextState = unlockState;
+                        Assert.IsNotNull(nextState);
+                    }
+                    else
+                    {
+                        nextState = AllStates.Find(state => state is PotCreationState);
+                        Assert.IsNotNull(nextState);
+                    }
+                    break;
+                }
 
             case PotCreationState _:
-            {
-                nextState = AllStates.Find(state => state is PotCreationState);
-                Assert.IsNotNull(nextState);
+                {
+                    nextState = AllStates.Find(state => state is PotCreationState);
+                    Assert.IsNotNull(nextState);
 
-                break;
-            }
+                    break;
+                }
 
             case VictoryState _:
-            {
-                //TBD
+                {
+                    //TBD
 
-                break;
-            }
+                    break;
+                }
         }
 
         SwitchTo(nextState);
