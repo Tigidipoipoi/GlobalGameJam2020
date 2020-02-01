@@ -4,7 +4,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameState/Fight")]
 public class FightState : GameState
 {
-
+    public override void Enter()
+    {
+        //Reset Hero's life
+        Hero.CurrentHealth = Hero.MaxHealth;
+    }
 
     /// <inheritdoc />
     public override void Apply()
