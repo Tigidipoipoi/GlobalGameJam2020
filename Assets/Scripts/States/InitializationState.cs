@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[CreateAssetMenu(menuName = "GameState/Initialization")]
 public class InitializationState : GameState
 {
     public Hero HeroInit;
@@ -26,5 +25,7 @@ public class InitializationState : GameState
     public void InitializeHero()
     {
         Hero.Copy(HeroInit);
+
+        Hero.Element = (Elements)Random.Range(0, GameFlow.NB_ELEMENTS);
     }
 }
