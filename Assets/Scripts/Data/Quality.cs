@@ -6,4 +6,5 @@ using UnityEngine;
 public class Quality : ScriptableObject
 {
     public Material material;
+    public int value;
 }
