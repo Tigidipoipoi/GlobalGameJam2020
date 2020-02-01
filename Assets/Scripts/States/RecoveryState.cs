@@ -11,6 +11,7 @@ public class RecoveryState : GameState
 
     public float DestroyedRecoveryRatio = 0.0f;
 
+    /// <inheritdoc />
     public override void Apply()
     {
         foreach (var playerPart in Player.SelectedParts)

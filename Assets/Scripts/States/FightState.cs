@@ -8,6 +8,7 @@ public class FightState : GameState
 
     public float Buff = 2.0f;
 
+    /// <inheritdoc />
     public override void Apply()
     {
         RunFight(ref Hero.CurrentHealth, ref Player.SelectedParts);

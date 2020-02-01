@@ -14,11 +14,16 @@ public class TestimonyState : GameState
 
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
-    public override void Apply()
+    /// <inheritdoc />
+    public override void Enter()
     {
         //Reset testimony.
         m_TestimonyBuilder.Clear();
+    }
 
+    /// <inheritdoc />
+    public override void Apply()
+    {
         HeroTestify();
 
         PotPartsTestify();
