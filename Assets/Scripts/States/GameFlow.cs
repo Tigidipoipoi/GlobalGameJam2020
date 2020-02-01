@@ -117,7 +117,7 @@ public class GameFlow : MonoBehaviour
             case LootState _:
             {
                 UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
-                if (unlockState.NeedsUnlock())
+                if (unlockState.NeedsUnlock(this))
                 {
                     nextState = unlockState;
                     Assert.IsNotNull(nextState);
@@ -171,9 +171,6 @@ public class GameFlow : MonoBehaviour
 
         if (CurrentState != null)
         {
-            //Setup state
-            CurrentState.Enter();
-
             CurrentState.Flow = this;
 
             //Level up as soon as you get a villager complaint/testimony
@@ -181,6 +178,9 @@ public class GameFlow : MonoBehaviour
             {
                 LevelUp();
             }
+
+            //Setup state
+            CurrentState.Enter();
 
             //Raise event
             StateEnded?.Invoke(CurrentState);

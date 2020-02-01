@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[CreateAssetMenu(menuName = "GameState/Unlock")]
 public class UnlockState : GameState
 {
     /// <inheritdoc />
@@ -15,8 +14,8 @@ public class UnlockState : GameState
         Player.SelectedParts.Add(null);
     }
 
-    public bool NeedsUnlock()
+    public bool NeedsUnlock(GameFlow flow)
     {
-        return (Flow.CurrentLevel > 0 && Flow.CurrentLevel < 6);
+        return flow.CurrentLevel > 0 && flow.CurrentLevel < 6;
     }
 }

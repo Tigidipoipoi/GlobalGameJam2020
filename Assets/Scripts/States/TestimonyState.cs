@@ -12,7 +12,7 @@ public class TestimonyState : GameState
 
     public List<TestimonyBonusLine> BonusLines;
 
-    public TestimonyBonusLine IntroductionLine;
+    public TestimonyLine IntroductionLine;
 
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
