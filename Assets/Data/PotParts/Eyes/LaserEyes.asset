@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: LaserEyes
   m_EditorClassIdentifier: 
   Element: 3
-  Value: 10
+  Cost: 0
+  Model: {fileID: 0}
+  DamageState: 0
+  Quality: {fileID: 0}
+  Slot: 32

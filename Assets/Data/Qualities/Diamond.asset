@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Diamond
   m_EditorClassIdentifier: 
   material: {fileID: 0}
+  Strength: 0

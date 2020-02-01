@@ -21,6 +21,9 @@
 			<ShortName>Main_SB</ShortName>
 			<Path>Main_SB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1285414837" Name="Play_MK_Combat_A" ObjectPath="\Events\Default Work Unit\Play_MK_Combat_A"/>
+				<Event Id="1379997717" Name="Play_MK_Extra" ObjectPath="\Events\Default Work Unit\Play_MK_Extra"/>
+				<Event Id="2023163491" Name="Play_MK_Static" ObjectPath="\Events\Default Work Unit\Play_MK_Static"/>
 				<Event Id="173327921" Name="Play_placeholder" ObjectPath="\Events\Default Work Unit\Play_placeholder"/>
 				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
 			</IncludedEvents>
@@ -32,6 +35,18 @@
 				<File Id="61936185" Language="SFX">
 					<ShortName>Empty_PlaceHolder.wav</ShortName>
 					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
+				</File>
+				<File Id="374826309" Language="SFX">
+					<ShortName>GGJ20_Music_2_Medieval_Fight_91bpm_v2.wav</ShortName>
+					<Path>SFX/GGJ20_Music_2_Medieval_Fight_91bpm_v2_8956FC97.wem</Path>
+				</File>
+				<File Id="375018684" Language="SFX">
+					<ShortName>GGJ20_Music_3_Medieval_May_Work_Idea_91bpm.wav</ShortName>
+					<Path>SFX/GGJ20_Music_3_Medieval_May_Work_Idea_91bpm_8956FC97.wem</Path>
+				</File>
+				<File Id="504576153" Language="SFX">
+					<ShortName>GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2.wav</ShortName>
+					<Path>SFX/GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

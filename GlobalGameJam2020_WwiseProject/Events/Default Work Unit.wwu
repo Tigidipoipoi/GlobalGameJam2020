@@ -31,6 +31,106 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MK_Combat_A" ID="{89C71C52-7AF9-427E-9B03-86FD15DB937F}">
+					<ChildrenList>
+						<Action Name="" ID="{4D6C69A3-67E2-46E0-9B97-1AC38F0F2291}" ShortID="812033485">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Combat_music" ID="{5F769CC4-8FA0-4D47-93FD-1F37D108FD41}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}">
+					<ChildrenList>
+						<Action Name="" ID="{89223FC3-A45D-4ABC-A05A-86039B483F08}" ShortID="265973509">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Static_music" ID="{AF8C166C-EBC4-4412-AF0D-19434EBE4EA5}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MK_Extra" ID="{3B6F2BFD-B06E-42FF-A8C0-1CDFB0772CD8}">
+					<ChildrenList>
+						<Action Name="" ID="{9CA0900D-6B1A-4695-9BFE-81890B32325C}" ShortID="874406646">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Extra_music" ID="{F66994A6-B6A4-4884-8250-33B735C427ED}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Music_Bus_Vol_to_0" ID="{3A0C9522-1C03-443B-B4CB-78D1A4EF3622}">
+					<ChildrenList>
+						<Action Name="" ID="{720409A7-2799-4566-84A6-68FE3C6B553C}" ShortID="139099507">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{4C90A0ED-694B-4F9F-ADDA-E668C5E5ABA7}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Reset_Music_Bus_Vol" ID="{2D7584AB-69C2-4546-B557-25CBE0B858E8}">
+					<ChildrenList>
+						<Action Name="" ID="{7E35DEAD-F72F-4A1D-8EA3-24043B56E2C5}" ShortID="760243310">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="14"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{4C90A0ED-694B-4F9F-ADDA-E668C5E5ABA7}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_SFX_Bus_Vol_to_0" ID="{17792EB8-CFF1-4B8F-9C70-C3290D1FA8E1}">
+					<ChildrenList>
+						<Action Name="" ID="{43CE1E85-9183-4D85-AA83-5BA67F88EBD5}" ShortID="938722396">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Reset_SFX_Bus_Vol" ID="{5CFC588D-8ED7-45AE-8958-8C61A8617238}">
+					<ChildrenList>
+						<Action Name="" ID="{825F1C3A-094F-4A42-AA85-DBC9A2F36F8D}" ShortID="478606746">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="14"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

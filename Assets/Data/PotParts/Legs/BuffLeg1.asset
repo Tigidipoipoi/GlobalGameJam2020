@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: BuffLegs
+  m_Name: BuffLeg1
   m_EditorClassIdentifier: 
   Element: 1
-  Value: 3
+  Cost: 0
+  Model: {fileID: 0}
+  DamageState: 0
+  Quality: {fileID: 0}
+  Slot: 8

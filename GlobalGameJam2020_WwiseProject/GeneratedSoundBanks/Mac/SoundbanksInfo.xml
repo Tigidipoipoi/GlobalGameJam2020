@@ -21,8 +21,15 @@
 			<ShortName>Main_SB</ShortName>
 			<Path>Main_SB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1285414837" Name="Play_MK_Combat_A" ObjectPath="\Events\Default Work Unit\Play_MK_Combat_A"/>
+				<Event Id="1379997717" Name="Play_MK_Extra" ObjectPath="\Events\Default Work Unit\Play_MK_Extra"/>
+				<Event Id="2023163491" Name="Play_MK_Static" ObjectPath="\Events\Default Work Unit\Play_MK_Static"/>
 				<Event Id="173327921" Name="Play_placeholder" ObjectPath="\Events\Default Work Unit\Play_placeholder"/>
 				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
+				<Event Id="3064570407" Name="Reset_Music_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_Music_Bus_Vol" MaxAttenuation="0.000000"/>
+				<Event Id="3176211351" Name="Reset_SFX_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_SFX_Bus_Vol" MaxAttenuation="0.000000"/>
+				<Event Id="1257580087" Name="Set_Music_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_Music_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
+				<Event Id="510795939" Name="Set_SFX_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_SFX_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="51070242" Language="SFX">
@@ -32,6 +39,18 @@
 				<File Id="61936185" Language="SFX">
 					<ShortName>Empty_PlaceHolder.wav</ShortName>
 					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
+				</File>
+				<File Id="374826309" Language="SFX">
+					<ShortName>GGJ20_Music_2_Medieval_Fight_91bpm_v2.wav</ShortName>
+					<Path>SFX/GGJ20_Music_2_Medieval_Fight_91bpm_v2_8956FC97.wem</Path>
+				</File>
+				<File Id="375018684" Language="SFX">
+					<ShortName>GGJ20_Music_3_Medieval_May_Work_Idea_91bpm.wav</ShortName>
+					<Path>SFX/GGJ20_Music_3_Medieval_May_Work_Idea_91bpm_8956FC97.wem</Path>
+				</File>
+				<File Id="504576153" Language="SFX">
+					<ShortName>GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2.wav</ShortName>
+					<Path>SFX/GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

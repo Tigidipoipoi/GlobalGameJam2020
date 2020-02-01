@@ -8,4 +8,11 @@ public class Hero : ScriptableObject
     public int CurrentHealth;
 
     public Elements Element;
+
+    public void Copy(Hero hero)
+    {
+        MaxHealth = hero.MaxHealth;
+        CurrentHealth = hero.CurrentHealth;
+        Element = hero.Element;
+    }
 }
