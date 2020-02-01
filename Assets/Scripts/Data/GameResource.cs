@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu]
-public class GameMaterial : ScriptableObject
+public class GameResource : ScriptableObject
 {
     public Elements Type;
 
-    public int Value;
+    public int Amount;
 }

@@ -20,17 +20,17 @@ public class FightState : GameState
         {
             if (((int)part.Element + 1) % NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= Mathf.RoundToInt(part.Quality.value * Buff);
+                remainingLife -= Mathf.RoundToInt(part.Quality.Strength * Buff);
                 part.DamageState = Damages.INTACT;
             }
             else if (((int)part.Element - 1) % NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= Mathf.RoundToInt(part.Quality.value * 1 / Buff);
+                remainingLife -= Mathf.RoundToInt(part.Quality.Strength * 1 / Buff);
                 part.DamageState = Damages.DESTROYED;
             }
             else
             {
-                remainingLife -= part.Quality.value;
+                remainingLife -= part.Quality.Strength;
                 part.DamageState = Damages.DAMAGED;
             }
         }
