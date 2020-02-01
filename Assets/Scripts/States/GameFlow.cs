@@ -18,6 +18,10 @@ public class GameFlow : MonoBehaviour
 
     bool m_WasCurrentStateApplied;
 
+    public const int NB_ELEMENTS = 5;
+
+    public const float ELEMENT_BUFF = 2.0f;
+
     public void Update()
     {
         if (CurrentState == null)

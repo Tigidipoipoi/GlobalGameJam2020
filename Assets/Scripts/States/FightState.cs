@@ -4,9 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameState/Fight")]
 public class FightState : GameState
 {
-    public const int NB_ELEMENTS = 5;
 
-    public float Buff = 2.0f;
 
     /// <inheritdoc />
     public override void Apply()
@@ -18,14 +16,14 @@ public class FightState : GameState
     {
         foreach (PotPart part in potParts)
         {
-            if (((int)part.Element + 1) % NB_ELEMENTS == (int)Hero.Element)
+            if (((int)part.Element + 1) % GameFlow.NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= Mathf.RoundToInt(part.Quality.value * Buff);
+                remainingLife -= Mathf.RoundToInt(part.Quality.value * GameFlow.ELEMENT_BUFF);
                 part.DamageState = Damages.INTACT;
             }
-            else if (((int)part.Element - 1) % NB_ELEMENTS == (int)Hero.Element)
+            else if (((int)part.Element - 1) % GameFlow.NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= Mathf.RoundToInt(part.Quality.value * 1 / Buff);
+                remainingLife -= Mathf.RoundToInt(part.Quality.value * 1 / GameFlow.ELEMENT_BUFF);
                 part.DamageState = Damages.DESTROYED;
             }
             else
