@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Fight : MonoBehaviour
 {
-    public static int NB_ELEMENTS = 5;
-    public static float BUFF = 2.0f;
+    public const int NB_ELEMENTS = 5;
+    public float Buff = 2.0f;
 
     public Hero Hero;
     public Player Player;
@@ -17,12 +17,12 @@ public class Fight : MonoBehaviour
         {
             if (((int)part.Element + 1) % NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= part.Quality * BUFF;
+                remainingLife -= part.Quality * Buff;
                 part.DamageState = Damages.INTACT;
             }
             else if (((int)part.Element - 1) % NB_ELEMENTS == (int)Hero.Element)
             {
-                remainingLife -= part.Quality * 1 / BUFF;
+                remainingLife -= part.Quality * 1 / Buff;
                 part.DamageState = Damages.DESTROYED;
             }
             else
