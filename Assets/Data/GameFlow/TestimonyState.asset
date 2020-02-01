@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59d4d5bb8565454b81a28d90150cbe4, type: 3}
+  m_Name: TestimonyState
+  m_EditorClassIdentifier: 
+  Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
+  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Flow: {fileID: 0}
+  PotPartLines:
+  - {fileID: 11400000, guid: c9f21f567c502054ca2e7214874d169f, type: 2}
+  - {fileID: 11400000, guid: 04ff13100985d354d8e20f8d178c9015, type: 2}
+  - {fileID: 11400000, guid: 1398ac082df023b41be157df8232532a, type: 2}
+  HeroLines:
+  - {fileID: 11400000, guid: b3daebe42eab8aa47bc93436dcf2147e, type: 2}
+  - {fileID: 11400000, guid: 7862e467653d7274ab565dc7ff5dc8d9, type: 2}
+  - {fileID: 11400000, guid: 980518ef674c61a47b1be82a7b986f64, type: 2}
+  BonusLines:
+  - {fileID: 11400000, guid: 4ae242d652b6b2247adb2c8d35f4109b, type: 2}

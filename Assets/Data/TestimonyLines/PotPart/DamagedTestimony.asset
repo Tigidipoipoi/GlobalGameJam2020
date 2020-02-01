@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DamagedTestimony
   m_EditorClassIdentifier: 
   Damage: 1
-  HandledSlots: 000000000100000002000000030000000400000005000000
+  HandledSlots: -1
   Text: The {0} part sufferred some damage.

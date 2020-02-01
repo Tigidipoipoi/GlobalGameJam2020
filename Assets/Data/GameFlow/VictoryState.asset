@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61965eec8c38d774c935558ab52115b8, type: 3}
-  m_Name: IntactTestimony
+  m_Script: {fileID: 11500000, guid: 85e04ddf61806c844b83b03f958b2890, type: 3}
+  m_Name: VictoryState
   m_EditorClassIdentifier: 
-  Damage: 0
-  HandledSlots: -1
-  Text: The {0} part ended up with only a few scratches.
+  Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
+  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Flow: {fileID: 0}

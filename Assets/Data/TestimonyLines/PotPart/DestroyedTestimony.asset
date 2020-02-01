@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DestroyedTestimony
   m_EditorClassIdentifier: 
   Damage: 2
-  HandledSlots: 000000000100000002000000030000000400000005000000
+  HandledSlots: -1
   Text: The {0} part was mercilessly crushed, it was horrible.

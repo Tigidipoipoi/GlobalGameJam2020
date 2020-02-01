@@ -8,6 +8,8 @@ public abstract class GameState : ScriptableObject
 
     public Player Player;
 
+    public GameFlow Flow;
+
     /// <summary>
     /// Called when the game enters this state.
     /// </summary>
