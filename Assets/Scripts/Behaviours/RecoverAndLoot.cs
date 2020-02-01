@@ -22,19 +22,19 @@ public class RecoverAndLoot : MonoBehaviour
             float recoveryRatio;
             switch (playerPart.DamageState)
             {
-                case Damage.INTACT:
+                case Damages.INTACT:
                 {
                     recoveryRatio = IntactRecoveryRatio;
                     break;
                 }
 
-                case Damage.DAMAGED:
+                case Damages.DAMAGED:
                 {
                     recoveryRatio = DamagedRecoveryRatio;
                     break;
                 }
 
-                case Damage.DESTROYED:
+                case Damages.DESTROYED:
                 {
                     recoveryRatio = DestroyedRecoveryRatio;
                     break;

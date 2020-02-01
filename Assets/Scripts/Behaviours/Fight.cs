@@ -18,17 +18,17 @@ public class Fight : MonoBehaviour
             if (((int)part.Element + 1) % NB_ELEMENTS == (int)Hero.Element)
             {
                 remainingLife -= part.Quality * BUFF;
-                part.DamageState = Damage.INTACT;
+                part.DamageState = Damages.INTACT;
             }
             else if (((int)part.Element - 1) % NB_ELEMENTS == (int)Hero.Element)
             {
                 remainingLife -= part.Quality * 1 / BUFF;
-                part.DamageState = Damage.DESTROYED;
+                part.DamageState = Damages.DESTROYED;
             }
             else
             {
                 remainingLife -= part.Quality;
-                part.DamageState = Damage.DAMAGED;
+                part.DamageState = Damages.DAMAGED;
             }
         }
     }

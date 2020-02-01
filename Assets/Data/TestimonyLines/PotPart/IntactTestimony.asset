@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61965eec8c38d774c935558ab52115b8, type: 3}
+  m_Name: IntactTestimony
+  m_EditorClassIdentifier: 
+  Damage: 0
+  HandledSlots: 000000000100000002000000030000000400000005000000
+  Text: The {0} part ended up with only a few scratches.

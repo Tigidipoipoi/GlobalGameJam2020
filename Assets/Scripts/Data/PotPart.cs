@@ -5,6 +5,9 @@ public class PotPart : ScriptableObject
 {
     public Elements Element;
     public int Value;
-    public Damage DamageState;
+    public Damages DamageState;
     public int Quality;
+
+    [BitMask]
+    public Slots Slot;
 }
