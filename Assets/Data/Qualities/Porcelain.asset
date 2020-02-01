@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Porcelain
   m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  Strength: 0
+  material: {fileID: 5265512219702400684, guid: 18c3cdf0d05459e418d6f50d78f01cbc,
+    type: 3}
+  Strength: 2

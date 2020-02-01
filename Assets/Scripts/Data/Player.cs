@@ -26,14 +26,17 @@ public class Player : ScriptableObject
 
     public void Copy(Player playerToCopy)
     {
+        //Deep copy resources
         for (int i = 0; i < playerToCopy.Resources.Count; i++)
         {
             Resources[i].Copy(playerToCopy.Resources[i]);
         }
 
-        for (int i = 0; i < playerToCopy.SelectedParts.Count; i++)
+        //Shallow copy parts
+        SelectedParts.Clear();
+        foreach (var selectedPart in playerToCopy.SelectedParts)
         {
-            SelectedParts[i].Copy(playerToCopy.SelectedParts[i]);
+            SelectedParts.Add(selectedPart);
         }
     }
 }

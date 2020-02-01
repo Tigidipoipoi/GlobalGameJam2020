@@ -31,7 +31,17 @@ public class GameFlow : MonoBehaviour
 
     public const float ELEMENT_BUFF = 2.0f;
 
-    public void Update()
+    public void Start()
+    {
+        Reset();
+
+        var nextState = AllStates.Find(state => state is InitializationState);
+        Assert.IsNotNull(nextState);
+
+        SwitchTo(nextState);
+    }
+
+    void Update()
     {
         if (CurrentState == null)
         {
@@ -66,74 +76,75 @@ public class GameFlow : MonoBehaviour
         switch (CurrentState)
         {
             case InitializationState _:
-                {
-                    nextState = AllStates.Find(state => state is TestimonyState);
-                    Assert.IsNotNull(nextState);
+            {
+                nextState = AllStates.Find(state => state is TestimonyState);
+                Assert.IsNotNull(nextState);
 
-                    break;
-                }
+                break;
+            }
             case FightState _:
+            {
+                if (Hero.CurrentHealth <= 0)
                 {
-                    if (Hero.CurrentHealth <= 0)
-                    {
-                        nextState = AllStates.Find(state => state is VictoryState);
-                    }
-                    else
-                    {
-                        nextState = AllStates.Find(state => state is RecoveryState);
-                    }
-
-                    Assert.IsNotNull(nextState);
-
-                    break;
+                    nextState = AllStates.Find(state => state is VictoryState);
                 }
+                else
+                {
+                    nextState = AllStates.Find(state => state is RecoveryState);
+                }
+
+                Assert.IsNotNull(nextState);
+
+                break;
+            }
 
             case RecoveryState _:
-                {
-                    nextState = AllStates.Find(state => state is TestimonyState);
-                    Assert.IsNotNull(nextState);
+            {
+                nextState = AllStates.Find(state => state is TestimonyState);
+                Assert.IsNotNull(nextState);
 
-                    break;
-                }
+                break;
+            }
 
             case TestimonyState _:
-                {
-                    nextState = AllStates.Find(state => state is LootState);
-                    Assert.IsNotNull(nextState);
+            {
+                nextState = AllStates.Find(state => state is LootState);
+                Assert.IsNotNull(nextState);
 
-                    break;
-                }
+                break;
+            }
 
             case LootState _:
+            {
+                UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
+                if (unlockState.NeedsUnlock())
                 {
-                    UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
-                    if (unlockState.NeedsUnlock())
-                    {
-                        nextState = unlockState;
-                        Assert.IsNotNull(nextState);
-                    }
-                    else
-                    {
-                        nextState = AllStates.Find(state => state is PotCreationState);
-                        Assert.IsNotNull(nextState);
-                    }
-                    break;
+                    nextState = unlockState;
+                    Assert.IsNotNull(nextState);
                 }
-
-            case PotCreationState _:
+                else
                 {
                     nextState = AllStates.Find(state => state is PotCreationState);
                     Assert.IsNotNull(nextState);
-
-                    break;
                 }
+
+                break;
+            }
+
+            case PotCreationState _:
+            {
+                nextState = AllStates.Find(state => state is PotCreationState);
+                Assert.IsNotNull(nextState);
+
+                break;
+            }
 
             case VictoryState _:
-                {
-                    //TBD
+            {
+                //TBD
 
-                    break;
-                }
+                break;
+            }
         }
 
         SwitchTo(nextState);
@@ -196,5 +207,7 @@ public class GameFlow : MonoBehaviour
         CurrentState = null;
 
         m_WasCurrentStateApplied = false;
+
+        currentInventory = Inventories[0];
     }
 }

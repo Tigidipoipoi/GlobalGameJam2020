@@ -261,6 +261,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6a8f8e44394c749b0b75dd46333ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Inventories:
+  - {fileID: 11400000, guid: 5ca88052ea270e143a4a00c43315f30f, type: 2}
+  - {fileID: 11400000, guid: d006d5b9670efeb459a56db751bdffe4, type: 2}
+  - {fileID: 11400000, guid: 805e4b8a45de0e544b54049980fc1342, type: 2}
+  - {fileID: 11400000, guid: 1592f936f3bfe5e4488e5d751aec49ab, type: 2}
+  - {fileID: 11400000, guid: 3ec02f9290dc50944ba78506056d1f9d, type: 2}
+  - {fileID: 11400000, guid: 6efd37569d073e1489d60f36fd1083f3, type: 2}
+  - {fileID: 11400000, guid: d772f3abb9a8f1744a0f7e941b09dce5, type: 2}
+  currentInventory: {fileID: 0}
   Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
   Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
   History: []
@@ -272,6 +281,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a79733c3d6d44d149822eddfc00d843a, type: 2}
   - {fileID: 11400000, guid: ab18c12fc95f3f04a86a14a3fe93b9a6, type: 2}
   - {fileID: 11400000, guid: 98e252afd84f50b46a041ecadea676ac, type: 2}
+  - {fileID: 11400000, guid: 65ef36d36c75c7a46ab7a688c6ffb8b3, type: 2}
   CurrentLevel: 0
 --- !u!4 &1295662762
 Transform:

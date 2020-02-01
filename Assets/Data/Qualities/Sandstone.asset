@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Sandstone
   m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  Strength: 0
+  material: {fileID: 7041915217012071409, guid: 617aeabc89de2434fa5cc34250a4627c,
+    type: 3}
+  Strength: 4
