@@ -2,10 +2,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Testimony/Bonus")]
-public class TestimonyBonusLine : ScriptableObject
+public class TestimonyBonusLine : TestimonyLine
 {
     public BoolReference Condition;
-
-    [Multiline]
-    public string Text;
 }

@@ -12,6 +12,8 @@ public class TestimonyState : GameState
 
     public List<TestimonyBonusLine> BonusLines;
 
+    public TestimonyBonusLine IntroductionLine;
+
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
     /// <inheritdoc />
@@ -19,20 +21,25 @@ public class TestimonyState : GameState
     {
         //Reset testimony.
         m_TestimonyBuilder.Clear();
-    }
 
-    /// <inheritdoc />
-    public override void Apply()
-    {
+        if (Flow.CurrentLevel == 1)
+        {
+            m_TestimonyBuilder.Append(IntroductionLine.Text);
+
+            return;
+        }
+
         HeroTestify();
 
         PotPartsTestify();
 
         BonusTestify();
-
-        //TODO: Prompt this
-        m_TestimonyBuilder.ToString();
     }
+
+    /// <inheritdoc />
+    public override void Apply() { }
+
+    public string GetTestimony() => m_TestimonyBuilder.ToString();
 
     void HeroTestify()
     {

@@ -1,15 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "GameState/PotCreation")]
 public class PotCreationState : GameState
 {
     /// <inheritdoc />
-    public override void Apply()
-    {
-
-    }
+    public override void Apply() { }
 
     public override bool CanApply()
     {
@@ -28,6 +23,7 @@ public class PotCreationState : GameState
             addClay(currentPart.Element, currentPart.Cost);
             unselectPart(currentPart);
         }
+
         Player.SelectedParts.Add(part);
         removeClay(part.Element, part.Cost);
     }
@@ -43,13 +39,7 @@ public class PotCreationState : GameState
 
     public void removeClay(Elements element, int number)
     {
-        foreach (GameResource gameMaterial in Player.Resources)
-        {
-            if (gameMaterial.Type == element)
-            {
-                gameMaterial.Amount -= number;
-            }
-        }
+        Player[element].Amount -= number;
     }
 
     /// <summary>
@@ -59,13 +49,7 @@ public class PotCreationState : GameState
     /// <param name="number"></param>
     public void addClay(Elements element, int number)
     {
-        foreach (GameResource gameMaterial in Player.Resources)
-        {
-            if (gameMaterial.Type == element)
-            {
-                gameMaterial.Amount += number;
-            }
-        }
+        Player[element].Amount += number;
     }
 
     /// <summary>
@@ -82,6 +66,7 @@ public class PotCreationState : GameState
                 return selectedPart;
             }
         }
+
         return null;
     }
 
@@ -91,7 +76,6 @@ public class PotCreationState : GameState
     /// <returns></returns>
     public bool playerHaveEnoughClay()
     {
-        int totalClay = 0;
         foreach (GameResource gameMaterial in Player.Resources)
         {
             if (gameMaterial.Amount < 0)
@@ -99,6 +83,7 @@ public class PotCreationState : GameState
                 return false;
             }
         }
+
         return true;
     }
 }

@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: AirArm1
+  m_Script: {fileID: 11500000, guid: 2d11dd9a09880cc4b905699d6b5301b2, type: 3}
+  m_Name: Introduction
   m_EditorClassIdentifier: 
-  Element: 0
-  Cost: 0
-  Model: {fileID: -927199367670048503, guid: 6c9a8b0f6d012a649be2d87a1c53d957, type: 3}
-  DamageState: 0
-  Quality: {fileID: 0}
-  Slot: 0
+  Text: The hero keeps breaking our pots, help us !
