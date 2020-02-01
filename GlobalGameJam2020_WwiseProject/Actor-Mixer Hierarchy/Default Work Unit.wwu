@@ -11,7 +11,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

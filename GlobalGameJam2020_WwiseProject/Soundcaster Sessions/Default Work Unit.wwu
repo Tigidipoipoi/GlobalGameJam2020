@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DD836DCA-3B14-485D-BF28-00DA75B1D0C6}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{DD836DCA-3B14-485D-BF28-00DA75B1D0C6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DD836DCA-3B14-485D-BF28-00DA75B1D0C6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{E0444CEE-43A4-4BEB-ABA4-BE350D6C32D3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_MK_Combat_A" ID="{89C71C52-7AF9-427E-9B03-86FD15DB937F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Music_Bus_Vol_to_0" ID="{3A0C9522-1C03-443B-B4CB-78D1A4EF3622}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MK_Extra" ID="{3B6F2BFD-B06E-42FF-A8C0-1CDFB0772CD8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Reset_Music_Bus_Vol" ID="{2D7584AB-69C2-4546-B557-25CBE0B858E8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_SFX_Bus_Vol_to_0" ID="{17792EB8-CFF1-4B8F-9C70-C3290D1FA8E1}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_placeholder" ID="{F81F1252-4FE5-4086-B92D-B4BC9E614935}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Reset_SFX_Bus_Vol" ID="{5CFC588D-8ED7-45AE-8958-8C61A8617238}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_test" ID="{463EF44C-52B5-4F97-ACD0-A96BAC01F321}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
