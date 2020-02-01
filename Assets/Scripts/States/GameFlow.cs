@@ -48,7 +48,6 @@ public class GameFlow : MonoBehaviour
 
     void GoToNextState()
     {
-        var lastState = History?[History.Count - 1];
         GameState nextState = null;
 
         switch (CurrentState)
@@ -134,6 +133,12 @@ public class GameFlow : MonoBehaviour
             CurrentState.Enter();
 
             CurrentState.Flow = this;
+
+            //Level up as soon as you get a villager complaint/testimony
+            if (CurrentState is TestimonyState)
+            {
+                ++CurrentLevel;
+            }
         }
     }
 
