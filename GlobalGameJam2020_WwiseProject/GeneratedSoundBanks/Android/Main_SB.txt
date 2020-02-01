@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	173327921	Play_placeholder			\Default Work Unit\Play_placeholder	
+	3187507146	Play_test			\Default Work Unit\Play_test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	51070242	GameJam_Plants_New_Heart_	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Android\SFX\GameJam_Plants_New_Heart__56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\GameJam_Plants_New_Heart_		181564
+	61936185	Empty_PlaceHolder	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Android\SFX\Empty_PlaceHolder_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\Empty_PlaceHolder		141072
+
