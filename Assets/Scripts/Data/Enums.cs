@@ -25,5 +25,5 @@ public enum Slots
     ARM_2 = 1 << 2,
     LEG_1 = 1 << 3,
     LEG_2 = 1 << 4,
-    HEAD = 1 << 5
+    EYE = 1 << 5
 }
