@@ -3,6 +3,9 @@
 [CreateAssetMenu]
 public class Hero : ScriptableObject
 {
-    public int Health;
+    public int MaxHealth;
+
+    public int CurrentHealth;
+
     public Elements Element;
 }

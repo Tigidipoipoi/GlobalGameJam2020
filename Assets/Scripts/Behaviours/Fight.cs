@@ -11,7 +11,7 @@ public class Fight : MonoBehaviour
 
     public void RunFight(out float remainingLife, out List<PotPart> potParts)
     {
-        remainingLife = Hero.Health;
+        remainingLife = Hero.CurrentHealth;
         potParts = Player.SelectedParts;
         foreach (PotPart part in potParts)
         {
