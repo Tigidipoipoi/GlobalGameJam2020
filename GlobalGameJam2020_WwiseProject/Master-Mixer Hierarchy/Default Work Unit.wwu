@@ -11,7 +11,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}"/>
-						<Bus Name="Music" ID="{4C90A0ED-694B-4F9F-ADDA-E668C5E5ABA7}"/>
+						<Bus Name="Music" ID="{4C90A0ED-694B-4F9F-ADDA-E668C5E5ABA7}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

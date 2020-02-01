@@ -1,8 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	173327921	Play_placeholder			\Default Work Unit\Play_placeholder	
+	510795939	Set_SFX_Bus_Vol_to_0			\Default Work Unit\Set_SFX_Bus_Vol_to_0	
+	1257580087	Set_Music_Bus_Vol_to_0			\Default Work Unit\Set_Music_Bus_Vol_to_0	
+	1285414837	Play_MK_Combat_A			\Default Work Unit\Play_MK_Combat_A	
+	1379997717	Play_MK_Extra			\Default Work Unit\Play_MK_Extra	
+	2023163491	Play_MK_Static			\Default Work Unit\Play_MK_Static	
+	3064570407	Reset_Music_Bus_Vol			\Default Work Unit\Reset_Music_Bus_Vol	
+	3176211351	Reset_SFX_Bus_Vol			\Default Work Unit\Reset_SFX_Bus_Vol	
 	3187507146	Play_test			\Default Work Unit\Play_test	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	51070242	GameJam_Plants_New_Heart_	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GameJam_Plants_New_Heart__56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\GameJam_Plants_New_Heart_		181564
 	61936185	Empty_PlaceHolder	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Empty_PlaceHolder_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\Empty_PlaceHolder		141072
+	374826309	GGJ20_Music_2_Medieval_Fight_91bpm_v2	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_2_Medieval_Fight_91bpm_v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Combat_music\GGJ20_Music_2_Medieval_Fight_91bpm_v2\GGJ20_Music_2_Medieval_Fight_91bpm_v2		22786876
+	375018684	GGJ20_Music_3_Medieval_May_Work_Idea_91bpm	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Extra_music\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm		4557424
+	504576153	GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Static_music\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2		12288064
 
