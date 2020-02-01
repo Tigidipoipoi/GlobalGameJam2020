@@ -2,18 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreatePot : MonoBehaviour
+[CreateAssetMenu(menuName = "GameState/PotCreation")]
+public class PotCreationState : GameState
 {
-    [Header("Input data")]
-    public Player Player;
+    /// <inheritdoc />
+    public override void Apply()
+    {
 
+    }
+
+    public override bool CanApply()
+    {
+        return playerHaveEnoughClay();
+    }
+
+    /// <summary>
+    /// Add the part to the list of selected parts
+    /// </summary>
+    /// <param name="part"></param>
     public void selectPart(PotPart part)
     {
         PotPart currentPart = whatsInThisSpot(part);
-        if (!playerHaveEnoughClay(currentPart, part))
-        {
-            return;
-        }
         if (currentPart != null)
         {
             addClay(currentPart.Element, currentPart.Value);
@@ -23,6 +32,10 @@ public class CreatePot : MonoBehaviour
         removeClay(part.Element, part.Value);
     }
 
+    /// <summary>
+    /// Remove the part from the list of selected parts
+    /// </summary>
+    /// <param name="part"></param>
     public void unselectPart(PotPart part)
     {
         Player.SelectedParts.Remove(part);
@@ -39,6 +52,11 @@ public class CreatePot : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Gives back the clay to the player
+    /// </summary>
+    /// <param name="element"></param>
+    /// <param name="number"></param>
     public void addClay(Elements element, int number)
     {
         foreach (GameMaterial gameMaterial in Player.Resources)
@@ -67,24 +85,20 @@ public class CreatePot : MonoBehaviour
         return null;
     }
 
-    public bool playerHaveEnoughClay(PotPart currentPart, PotPart newPart)
+    /// <summary>
+    /// Check if the player still have a positive amount of clay when all parts are selected
+    /// </summary>
+    /// <returns></returns>
+    public bool playerHaveEnoughClay()
     {
         int totalClay = 0;
         foreach (GameMaterial gameMaterial in Player.Resources)
         {
-            if (gameMaterial.Type == newPart.Element)
+            if (gameMaterial.Value < 0)
             {
-                totalClay += gameMaterial.Value;
+                return false;
             }
         }
-        if (currentPart != null)
-        {
-            totalClay += currentPart.Value;
-        }
-        if (totalClay >= newPart.Value)
-        {
-            return true;
-        }
-        return false;
+        return true;
     }
 }
