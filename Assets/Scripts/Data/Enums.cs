@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public enum Elements 
+public enum Elements
 {
     FIRE,
     PLANT,
@@ -17,4 +15,3 @@ public enum Damage
     DAMAGED,
     DESTROYED
 }
-

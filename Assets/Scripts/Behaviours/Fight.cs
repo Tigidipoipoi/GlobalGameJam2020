@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using GGJ2020.Variables;
 
 public class Fight : MonoBehaviour
 {
@@ -13,7 +11,7 @@ public class Fight : MonoBehaviour
 
     public void RunFight(out float remainingLife, out List<PotPart> potParts)
     {
-        remainingLife = Hero.Health.Value;
+        remainingLife = Hero.Health;
         potParts = Player.SelectedParts;
         foreach (PotPart part in potParts)
         {
