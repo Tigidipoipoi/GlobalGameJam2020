@@ -1,9 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 public class GameFlow : MonoBehaviour
 {
+    public static event Action<GameState> StateStarted;
+
+    public static event Action<GameState> StateEnded;
+
     public Hero Hero;
 
     public Player Player;
@@ -124,6 +129,9 @@ public class GameFlow : MonoBehaviour
 
             CurrentState.Flow = null;
             History.Add(CurrentState);
+
+            //Raise event
+            StateStarted?.Invoke(CurrentState);
         }
 
         CurrentState = next;
@@ -143,6 +151,9 @@ public class GameFlow : MonoBehaviour
             {
                 ++CurrentLevel;
             }
+
+            //Raise event
+            StateEnded?.Invoke(CurrentState);
         }
     }
 
