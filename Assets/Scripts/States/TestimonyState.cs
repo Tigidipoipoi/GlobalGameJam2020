@@ -2,13 +2,9 @@
 using System.Text;
 using UnityEngine;
 
-public class Testimony : MonoBehaviour
+[CreateAssetMenu(menuName = "GameState/Testimony")]
+public class TestimonyState : GameState
 {
-    [Header("Input data")]
-    public Hero Hero;
-
-    public Player Player;
-
     [Header("Lines")]
     public List<TestimonyPotPartLine> PotPartLines;
 
@@ -18,7 +14,7 @@ public class Testimony : MonoBehaviour
 
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
-    public string Testify()
+    public override void Apply()
     {
         //Reset testimony.
         m_TestimonyBuilder.Clear();
@@ -29,7 +25,8 @@ public class Testimony : MonoBehaviour
 
         BonusTestify();
 
-        return m_TestimonyBuilder.ToString();
+        //TODO: Prompt this
+        m_TestimonyBuilder.ToString();
     }
 
     void HeroTestify()
