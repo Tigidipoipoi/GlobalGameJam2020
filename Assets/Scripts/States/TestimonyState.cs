@@ -16,9 +16,12 @@ public class TestimonyState : GameState
 
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
+    public bool isDone = false;
+
     /// <inheritdoc />
     public override void Enter()
     {
+        isDone = false;
         //Reset testimony.
         m_TestimonyBuilder.Clear();
 
@@ -90,5 +93,10 @@ public class TestimonyState : GameState
                 m_TestimonyBuilder.AppendLine(bonusLine.Text);
             }
         }
+    }
+
+    public override bool IsDone()
+    {
+        return isDone;
     }
 }
