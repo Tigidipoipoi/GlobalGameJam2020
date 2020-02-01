@@ -25,11 +25,11 @@ public class PotCreationState : GameState
         PotPart currentPart = whatsInThisSpot(part);
         if (currentPart != null)
         {
-            addClay(currentPart.Element, currentPart.Value);
+            addClay(currentPart.Element, currentPart.Cost);
             unselectPart(currentPart);
         }
         Player.SelectedParts.Add(part);
-        removeClay(part.Element, part.Value);
+        removeClay(part.Element, part.Cost);
     }
 
     /// <summary>
@@ -43,11 +43,11 @@ public class PotCreationState : GameState
 
     public void removeClay(Elements element, int number)
     {
-        foreach (GameMaterial gameMaterial in Player.Resources)
+        foreach (GameResource gameMaterial in Player.Resources)
         {
             if (gameMaterial.Type == element)
             {
-                gameMaterial.Value -= number;
+                gameMaterial.Amount -= number;
             }
         }
     }
@@ -59,11 +59,11 @@ public class PotCreationState : GameState
     /// <param name="number"></param>
     public void addClay(Elements element, int number)
     {
-        foreach (GameMaterial gameMaterial in Player.Resources)
+        foreach (GameResource gameMaterial in Player.Resources)
         {
             if (gameMaterial.Type == element)
             {
-                gameMaterial.Value += number;
+                gameMaterial.Amount += number;
             }
         }
     }
@@ -92,9 +92,9 @@ public class PotCreationState : GameState
     public bool playerHaveEnoughClay()
     {
         int totalClay = 0;
-        foreach (GameMaterial gameMaterial in Player.Resources)
+        foreach (GameResource gameMaterial in Player.Resources)
         {
-            if (gameMaterial.Value < 0)
+            if (gameMaterial.Amount < 0)
             {
                 return false;
             }

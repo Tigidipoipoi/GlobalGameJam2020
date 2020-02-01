@@ -41,7 +41,7 @@ public class RecoveryState : GameState
                     throw new ArgumentOutOfRangeException();
             }
 
-            Player[playerPart.Element].Value += Mathf.RoundToInt(playerPart.Value * recoveryRatio);
+            Player[playerPart.Element].Amount += Mathf.RoundToInt(playerPart.Cost * recoveryRatio);
         }
     }
 }

@@ -4,8 +4,13 @@
 public class PotPart : ScriptableObject
 {
     public Elements Element;
-    public int Value;
+
+    public int Cost;
+
+    public Mesh Model;
+
     public Damages DamageState;
+
     public Quality Quality;
 
     [BitMask]

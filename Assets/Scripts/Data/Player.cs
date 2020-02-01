@@ -4,11 +4,11 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Player : ScriptableObject
 {
-    public List<GameMaterial> Resources;
+    public List<GameResource> Resources;
 
     public List<PotPart> SelectedParts;
 
-    public GameMaterial this[Elements element]
+    public GameResource this[Elements element]
     {
         get
         {
