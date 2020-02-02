@@ -28,6 +28,7 @@
 						<ObjectRef Name="Stop_FinalDestruction" ID="{3387A00F-EC5B-4776-89C1-2699EFDF1C94}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pot_Creation_Finished" ID="{9397586E-A162-47B3-81D6-E982FBDE62CE}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_door" ID="{3212714B-7A1A-47FD-AB49-E55B9165E29B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_click" ID="{ED430027-CEA0-4995-B7A8-2C2414EE7A6B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_HeroLoose" ID="{AC8C5241-4B4B-4A86-9B4E-D438F3D40600}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Walla_M3" ID="{7653BDE7-16C0-4A88-9AEC-1BA4726B2FE8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
