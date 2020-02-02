@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d11dd9a09880cc4b905699d6b5301b2, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  Text: The hero keeps breaking our pots, help us !
+  Text: 'That so-called "hero" has been nothing but trouble!
+
+    He keeps breaking the village''s heirlooms.
+
+    Can you make an unbreakable pot?
+
+    Please help us!'

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ef78060370e9b48acd288e3795bbf4, type: 3}
   m_Name: FullLifeTestimony
   m_EditorClassIdentifier: 
+  Text: The hero went along cheerfully after shattering the poor pot.
   RemainingHealthRatio: 1
-  Text: The hero went cheerfully after breaking this poor pot.
