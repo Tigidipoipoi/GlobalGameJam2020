@@ -70,7 +70,7 @@ public class CreationMenu : MonoBehaviour
         {
             gameObject.SetActive(true);
 
-            RePopulateGrid(gameFlow.currentInventory.OwnedParts);
+            RePopulateGrid(gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel));
 
             QualityDD.value = 0;
             ElementDD.value = 0;
@@ -130,7 +130,7 @@ public class CreationMenu : MonoBehaviour
         switch (QualityDD.value)
         {
             case (int)Qualities.PORCELAIN + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel))
                 {
                     if (part.Quality.quality == Qualities.PORCELAIN)
                     {
@@ -141,7 +141,7 @@ public class CreationMenu : MonoBehaviour
                 }
                 break;
             case (int)Qualities.TERRACOTTA + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel))
                 {
                     if (part.Quality.quality == Qualities.TERRACOTTA)
                     {
@@ -152,7 +152,7 @@ public class CreationMenu : MonoBehaviour
                 }
                 break;
             case (int)Qualities.IRON + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel))
                 {
                     if (part.Quality.quality == Qualities.IRON)
                     {
@@ -164,7 +164,7 @@ public class CreationMenu : MonoBehaviour
 
                 break;
             case (int)Qualities.GOLD + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel))
                 {
                     if (part.Quality.quality == Qualities.GOLD)
                     {
@@ -175,7 +175,7 @@ public class CreationMenu : MonoBehaviour
                 }
                 break;
             default:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.GetPartsForLevel(gameFlow.CurrentLevel))
                 {
                     filteredQualityParts.Add(part);
                     Debug.Log("filter quality add " + part);
