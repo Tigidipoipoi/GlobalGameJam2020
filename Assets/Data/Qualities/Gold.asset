@@ -12,13 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Data/Qualities/Steel.asset
-  quality: 6
-  material: {fileID: -3155047780354543793, guid: 8e2fc9e00e5e973409349eaf02de49f9,
-    type: 3}
-=======
   quality: 0
   material: {fileID: 2100000, guid: eced6addbe41c0f409854df411f65c52, type: 2}
->>>>>>> Stashed changes:Assets/Data/Qualities/Gold.asset
   Strength: 7
   Icon: {fileID: 0}

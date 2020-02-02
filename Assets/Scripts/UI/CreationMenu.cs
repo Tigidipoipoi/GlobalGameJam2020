@@ -288,13 +288,11 @@ public class CreationMenu : MonoBehaviour
         }
 
         Slots occupiedMask = 0;
-        bool areAllSelected = true;
+        var areAllSelected = PotCreation.Player.SelectedParts.Count == gameFlow.CurrentLevel;
         foreach (var part in PotCreation.Player.SelectedParts)
         {
             if (part == null)
             {
-                areAllSelected = false;
-
                 continue;
             }
 

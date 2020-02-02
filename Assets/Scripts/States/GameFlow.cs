@@ -116,17 +116,18 @@ public class GameFlow : MonoBehaviour
 
             case LootState _:
             {
-                UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
-                if (unlockState.NeedsUnlock(this))
-                {
-                    nextState = unlockState;
-                    Assert.IsNotNull(nextState);
-                }
-                else
-                {
-                    nextState = AllStates.Find(state => state is TestimonyState);
-                    Assert.IsNotNull(nextState);
-                }
+//                UnlockState unlockState = (UnlockState)AllStates.Find(state => state is UnlockState);
+//                if (unlockState.NeedsUnlock(this))
+//                {
+//                    nextState = unlockState;
+//                    Assert.IsNotNull(nextState);
+//                }
+//                else
+//                {
+                nextState = AllStates.Find(state => state is TestimonyState);
+                Assert.IsNotNull(nextState);
+
+//                }
 
                 break;
             }

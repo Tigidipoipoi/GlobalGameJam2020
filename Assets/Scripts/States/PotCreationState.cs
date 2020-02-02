@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "GameState/PotCreation")]
@@ -44,6 +43,18 @@ public class PotCreationState : GameState
         {
             addClay(currentPart.Element, currentPart.Cost);
             unselectPart(currentPart);
+        }
+        else
+        {
+            Player.SelectedParts.Remove(null);
+        }
+
+        if (Flow.CurrentLevel < 6)
+        {
+            if (Player.SelectedParts.Count == Flow.CurrentLevel)
+            {
+                return;
+            }
         }
 
         Player.SelectedParts.Add(part);

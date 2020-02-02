@@ -12,13 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Porcelain
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  quality: 1
-  material: {fileID: 5265512219702400684, guid: 7320c97da32b7a947a4940279f52a46a,
-    type: 3}
-=======
   quality: 0
   material: {fileID: 2100000, guid: a5707c890cc894b4980c5c1c96c74ad2, type: 2}
->>>>>>> Stashed changes
   Strength: 2
   Icon: {fileID: 0}
