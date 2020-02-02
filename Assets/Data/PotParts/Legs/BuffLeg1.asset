@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: BuffLeg1
   m_EditorClassIdentifier: 
   Element: 1
+<<<<<<< Updated upstream
   Cost: 0
   Model: {fileID: 0}
   DamageState: 0
   Quality: {fileID: 0}
   Slot: 8
+=======
+  Value: 3
+  DamageState: 0
+  Quality: 0
+  Slot: 0
+>>>>>>> Stashed changes
