@@ -3089,19 +3089,13 @@ MonoBehaviour:
     m_Options:
     - m_Text: ALL QUALITIES
       m_Image: {fileID: 0}
-    - m_Text: DIAMOND
+    - m_Text: GOLD
       m_Image: {fileID: 0}
     - m_Text: IRON
-      m_Image: {fileID: 0}
-    - m_Text: ROCK
-      m_Image: {fileID: 0}
-    - m_Text: SANDSTONE
       m_Image: {fileID: 0}
     - m_Text: TERRACOTTA
       m_Image: {fileID: 0}
     - m_Text: PORCELAIN
-      m_Image: {fileID: 0}
-    - m_Text: EARTHENWARE
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3468,7 +3462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000031668333}
+  m_AnchoredPosition: {x: 0.000061035156, y: -0.00001837334}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4888509977502612647
