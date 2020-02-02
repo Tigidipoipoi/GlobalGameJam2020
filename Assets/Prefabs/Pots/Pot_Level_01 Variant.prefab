@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &9217090598980806543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7943526384448652374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandledSlot: 1
+  Image: {fileID: 0}
 --- !u!1 &3933728962025255516
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 32
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1 &4117186337372627482
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 8
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1 &6438969268036732432
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,13 +128,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6438969268036732432}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6369861117993793093}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1954114589311385136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 16
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1 &6578698678929412785
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,13 +173,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6578698678929412785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.28, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6369861117993793093}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &6123656239870847620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,21 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 4
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
---- !u!114 &9217090598980806543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7943526384448652374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HandledSlot: 1
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1 &8562932729562271555
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 2
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1001 &2097831071223520607
 PrefabInstance:
   m_ObjectHideFlags: 0
