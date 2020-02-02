@@ -27,3 +27,14 @@ public enum Slots
     LEG_L = 1 << 4,
     EYE = 1 << 5
 }
+
+public enum Qualities
+{
+    EARTHENWARE,
+    PORCELAIN,
+    TERRACOTTA,
+    SANDSTONE,
+    ROCK,
+    IRON,
+    DIAMOND
+}
