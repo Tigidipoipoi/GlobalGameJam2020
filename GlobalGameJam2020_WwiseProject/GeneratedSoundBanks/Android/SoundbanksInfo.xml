@@ -50,6 +50,9 @@
 				<Event Id="3176211351" Name="Reset_SFX_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_SFX_Bus_Vol" MaxAttenuation="0.000000"/>
 				<Event Id="1257580087" Name="Set_Music_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_Music_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
 				<Event Id="510795939" Name="Set_SFX_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_SFX_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
+				<Event Id="2221466542" Name="Stop_Walla_M1" ObjectPath="\Events\Default Work Unit\Stop_Walla_M1" MaxAttenuation="0.000000"/>
+				<Event Id="2221466541" Name="Stop_Walla_M2" ObjectPath="\Events\Default Work Unit\Stop_Walla_M2" MaxAttenuation="0.000000"/>
+				<Event Id="2221466540" Name="Stop_Walla_M3" ObjectPath="\Events\Default Work Unit\Stop_Walla_M3" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12664886" Language="SFX">
@@ -67,6 +70,10 @@
 				<File Id="54397533" Language="SFX">
 					<ShortName>2nd_batch\Water_02_V1_NR.wav</ShortName>
 					<Path>SFX/2nd_batch/Water_02_V1_NR_56D34C19.wem</Path>
+				</File>
+				<File Id="56642091" Language="SFX">
+					<ShortName>3rd_batch\Ceramic_broken.wav</ShortName>
+					<Path>SFX/3rd_batch/Ceramic_broken_56D34C19.wem</Path>
 				</File>
 				<File Id="56771485" Language="SFX">
 					<ShortName>Bounced Files\Click_01.wav</ShortName>
