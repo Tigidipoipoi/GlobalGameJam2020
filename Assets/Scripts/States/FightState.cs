@@ -6,6 +6,7 @@ public class FightState : GameState
 {
     public override void Enter()
     {
+        AkSoundEngine.PostEvent("Play_MFire", Flow.gameObject);
         //Reset Hero's life
         Hero.CurrentHealth = Hero.MaxHealth;
 

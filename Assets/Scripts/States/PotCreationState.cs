@@ -10,6 +10,17 @@ public class PotCreationState : GameState
     /// <inheritdoc />
     public override void Apply() { }
 
+    public override void Enter()
+    {
+        base.Enter();
+        AkSoundEngine.PostEvent("Play_Pot_Creation_Process", Flow.gameObject);
+    }
+
+    public override void Exit()
+    {
+        AkSoundEngine.PostEvent("Play_Pot_Creation_Finished", Flow.gameObject);
+    }
+
     public override bool CanApply()
     {
         return playerHaveEnoughClay();

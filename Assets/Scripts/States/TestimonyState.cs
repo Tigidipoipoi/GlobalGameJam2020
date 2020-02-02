@@ -24,6 +24,8 @@ public class TestimonyState : GameState
     /// <inheritdoc />
     public override void Enter()
     {
+        AkSoundEngine.PostEvent("Play_Village_Ambience", Flow.gameObject);
+        AkSoundEngine.PostEvent("Play_Walla_M1", Flow.gameObject);
         //Reset testimony.
         m_TestimonyBuilder.Clear();
 
@@ -41,6 +43,14 @@ public class TestimonyState : GameState
         BonusTestify();
 
         LootTestify();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        AkSoundEngine.PostEvent("Stop_Walla_M1", Flow.gameObject);
+        AkSoundEngine.PostEvent("Stop_Walla_M2", Flow.gameObject);
+        AkSoundEngine.PostEvent("Stop_Walla_M3", Flow.gameObject);
     }
 
     /// <inheritdoc />
