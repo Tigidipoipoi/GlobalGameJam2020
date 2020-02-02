@@ -684,6 +684,7 @@ GameObject:
   - component: {fileID: 799646553709154915}
   - component: {fileID: 9207448352703570666}
   - component: {fileID: 9207448352703570667}
+  - component: {fileID: 2059211983496614352}
   m_Layer: 5
   m_Name: CraftUI
   m_TagString: Untagged
@@ -773,6 +774,29 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2059211983496614352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223860970467712577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a6439aa62e13a468faae31bfa2451b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PotCreation: {fileID: 0}
+  FireAmount: {fileID: 7133139094150304959}
+  PlantAmount: {fileID: 7012901514992313462}
+  AirAmount: {fileID: 2037269797691890903}
+  ThunderAmount: {fileID: 4280680675595819111}
+  WaterAmount: {fileID: 5765010499611440914}
+  Fire: {fileID: 11400000, guid: bef10ae07a596204d901109c3b00cfd0, type: 2}
+  Plant: {fileID: 11400000, guid: 52677b9c475b0ee458cf29c76a59cc75, type: 2}
+  Air: {fileID: 11400000, guid: cf789928876f4de4ba0ed96e2242559e, type: 2}
+  Thunder: {fileID: 11400000, guid: 706ea632aee9ead4ab8f3650d68ff01e, type: 2}
+  Water: {fileID: 11400000, guid: 0333e087e9f950c4f8041a924a84c731, type: 2}
 --- !u!1 &1290946172728268319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,8 +1584,8 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -0.00012207031}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &791251601536483250
@@ -1734,7 +1758,7 @@ GameObject:
   - component: {fileID: 1805211509540051935}
   - component: {fileID: 4280680675595819111}
   m_Layer: 0
-  m_Name: Amount
+  m_Name: ThunderAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1995,8 +2019,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ClickCredits
+      - m_Target: {fileID: 11400000, guid: 9be2b9ad3c92ea44dad5587bb5214c82, type: 2}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2359,7 +2383,7 @@ GameObject:
   - component: {fileID: 5481992701918949272}
   - component: {fileID: 7133139094150304959}
   m_Layer: 0
-  m_Name: Amount
+  m_Name: FireAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2464,7 +2488,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_ignoreRectMaskCulling: 0
   m_ignoreCulling: 1
@@ -2478,7 +2502,7 @@ MonoBehaviour:
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
-    textComponent: {fileID: 0}
+    textComponent: {fileID: 7133139094150304959}
     characterCount: 1
     spriteCount: 0
     spaceCount: 0
@@ -2534,7 +2558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.0000020557623}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3458882412928080042
@@ -3386,8 +3410,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ClickPlay
+      - m_Target: {fileID: 2059211983496614352}
+        m_MethodName: ResetPot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3729,7 +3753,7 @@ GameObject:
   - component: {fileID: 3910954626885165653}
   - component: {fileID: 5765010499611440914}
   m_Layer: 0
-  m_Name: Amount
+  m_Name: WaterAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6473,7 +6497,7 @@ GameObject:
   - component: {fileID: 749465184804908539}
   - component: {fileID: 2037269797691890903}
   m_Layer: 0
-  m_Name: Amount
+  m_Name: AirAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6942,7 +6966,7 @@ GameObject:
   - component: {fileID: 5927906445118982205}
   - component: {fileID: 7012901514992313462}
   m_Layer: 0
-  m_Name: Amount
+  m_Name: PlantAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
