@@ -14,11 +14,13 @@ public class PotMix : MonoBehaviour
     void OnEnable()
     {
         PotCreationState.PartSelected += OnPartSelected;
+        PotCreationState.PotReset += Redraw;
     }
 
     void OnDisable()
     {
         PotCreationState.PartSelected -= OnPartSelected;
+        PotCreationState.PotReset -= Redraw;
     }
 
     void OnPartSelected(PotPart selectedPart)
@@ -28,16 +30,23 @@ public class PotMix : MonoBehaviour
 
     public void Redraw()
     {
+        Destroy(CurrentPot);
+
+        if (Player.SelectedParts.Count <= 0)
+        {
+            return;
+        }
+
         var core = Player.SelectedParts.Find(part => part != null && part.Slot == Slots.CORE);
         if (core == null)
         {
             throw new Exception("TO FIX");
         }
 
-        Destroy(CurrentPot);
-
         //Model
-        CurrentPot = Instantiate(core.Model, Vector3.zero, Quaternion.identity, SpawnPoint);
+        CurrentPot = Instantiate(core.Model, SpawnPoint);
+        CurrentPot.transform.localPosition = Vector3.zero;
+        CurrentPot.transform.localRotation = Quaternion.identity;
 
         //Material
         var potRenderer = CurrentPot.GetComponentInChildren<MeshRenderer>();
@@ -55,7 +64,9 @@ public class PotMix : MonoBehaviour
             }
 
             var slotAnchor = GetSlotAnchor(part.Slot);
-            Instantiate(part.Model, Vector3.zero, Quaternion.identity, slotAnchor);
+            var limb = Instantiate(part.Model, slotAnchor);
+            limb.transform.localPosition = Vector3.zero;
+            limb.transform.localRotation = Quaternion.identity;
         }
     }
 
@@ -63,7 +74,7 @@ public class PotMix : MonoBehaviour
     {
         foreach (var potAnchor in PotAnchors)
         {
-            if (slot == potAnchor.HandledSlot)
+            if (slot.HasFlag(potAnchor.HandledSlot))
             {
                 return potAnchor.transform;
             }

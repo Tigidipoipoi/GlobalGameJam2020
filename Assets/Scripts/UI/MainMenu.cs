@@ -70,4 +70,12 @@ public class MainMenu : MonoBehaviour
 
         SfxIcon.sprite = m_IsSfxMute ? MuteSfxSprite : UnmuteSfxSprite;
     }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            AkSoundEngine.PostEvent("Play_click", gameObject);
+        }
+    }
 }

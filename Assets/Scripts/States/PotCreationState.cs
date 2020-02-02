@@ -1,11 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "GameState/PotCreation")]
 public class PotCreationState : GameState
 {
     public static event Action<PotPart> PartSelected;
+
+    public static event Action PotReset;
+
+    public static void RaisePotReset()
+    {
+        PotReset?.Invoke();
+    }
 
     /// <inheritdoc />
     public override void Apply() { }
@@ -37,6 +43,18 @@ public class PotCreationState : GameState
         {
             addClay(currentPart.Element, currentPart.Cost);
             unselectPart(currentPart);
+        }
+        else
+        {
+            Player.SelectedParts.Remove(null);
+        }
+
+        if (Flow.CurrentLevel < 6)
+        {
+            if (Player.SelectedParts.Count == Flow.CurrentLevel)
+            {
+                return;
+            }
         }
 
         Player.SelectedParts.Add(part);
@@ -103,5 +121,12 @@ public class PotCreationState : GameState
         }
 
         return true;
+    }
+    public override void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            AkSoundEngine.PostEvent("Play_click", Flow.gameObject);
+        }
     }
 }

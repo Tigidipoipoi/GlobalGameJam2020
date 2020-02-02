@@ -70,18 +70,23 @@ public class CreationMenu : MonoBehaviour
         {
             gameObject.SetActive(true);
 
-            //Clear grid
-            for (var i = RecipeGrid.childCount; i > 0; i--)
-            {
-                Destroy(RecipeGrid.GetChild(0).gameObject);
-            }
+            RePopulateGrid(gameFlow.currentInventory.OwnedParts);
+        }
+    }
 
-            //Fill grid
-            foreach (var ownedPart in gameFlow.currentInventory.OwnedParts)
-            {
-                var bluePrint = Instantiate(BluePrintPrefab, RecipeGrid.transform);
-                bluePrint.Initialize(ownedPart);
-            }
+    void RePopulateGrid(List<PotPart> parts)
+    {
+        //Clear grid
+        for (var i = RecipeGrid.childCount - 1 ; i >= 0; i--)
+        {
+            Destroy(RecipeGrid.GetChild(i).gameObject);
+        }
+
+        //Fill grid
+        foreach (var ownedPart in parts)
+        {
+            var bluePrint = Instantiate(BluePrintPrefab, RecipeGrid.transform);
+            bluePrint.Initialize(ownedPart);
         }
     }
 
@@ -104,163 +109,172 @@ public class CreationMenu : MonoBehaviour
 
     public void ResetPot()
     {
-        for (var i = 0; i < PotCreation.Player.SelectedParts.Count; i++)
+        for (var i = PotCreation.Player.SelectedParts.Count - 1; i >= 0; i--)
         {
             PotPart part = PotCreation.Player.SelectedParts[i];
             PotCreation.unselectPart(part);
-            break;
         }
 
-        foreach (var slotUi in m_SlotUis)
-        {
-            slotUi.gameObject.SetActive(true);
-        }
+        OnPartSelected(null);
+
+        PotCreationState.RaisePotReset();
     }
 
     public void UpdateRecipeList()
     {
-        List<PotPart> filteredParts = new List<PotPart>();
+        List<PotPart> filteredQualityParts = new List<PotPart>();
         switch (QualityDD.value)
         {
-            case (int)Qualities.EARTHENWARE + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
-                {
-                    if (part.Quality.quality == Qualities.EARTHENWARE)
-                    {
-                        filteredParts.Add(part);
-                    }
-                }
-
-                break;
             case (int)Qualities.PORCELAIN + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
                     if (part.Quality.quality == Qualities.PORCELAIN)
                     {
-                        filteredParts.Add(part);
+                        filteredQualityParts.Add(part);
+                        Debug.Log("filter quality add " + part);
+
                     }
                 }
-
                 break;
             case (int)Qualities.TERRACOTTA + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
                     if (part.Quality.quality == Qualities.TERRACOTTA)
                     {
-                        filteredParts.Add(part);
+                        filteredQualityParts.Add(part);
+                        Debug.Log("filter quality add " + part);
+
                     }
                 }
-
-                break;
-            case (int)Qualities.SANDSTONE + 1:
-                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
-                {
-                    if (part.Quality.quality == Qualities.SANDSTONE)
-                    {
-                        filteredParts.Add(part);
-                    }
-                }
-
                 break;
             case (int)Qualities.IRON + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
                     if (part.Quality.quality == Qualities.IRON)
                     {
-                        filteredParts.Add(part);
+                        filteredQualityParts.Add(part);
+                        Debug.Log("filter quality add " + part);
+
                     }
                 }
 
                 break;
-            case (int)Qualities.DIAMOND + 1:
+            case (int)Qualities.GOLD + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
-                    if (part.Quality.quality == Qualities.DIAMOND)
+                    if (part.Quality.quality == Qualities.GOLD)
                     {
-                        filteredParts.Add(part);
+                        filteredQualityParts.Add(part);
+                        Debug.Log("filter quality add " + part);
+
                     }
                 }
-
                 break;
             default:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
-                    filteredParts.Add(part);
+                    filteredQualityParts.Add(part);
+                    Debug.Log("filter quality add " + part);
+
                 }
 
                 break;
         }
 
+        List<PotPart> filteredElementParts = new List<PotPart>();
+
         switch (ElementDD.value)
         {
             case (int)Elements.FIRE + 1:
-                foreach (PotPart part in filteredParts)
+                foreach (PotPart part in filteredQualityParts)
                 {
-                    if (part.Element != Elements.FIRE)
+                    if (part.Element == Elements.FIRE)
                     {
-                        filteredParts.Remove(part);
+                        filteredElementParts.Add(part);
+                        Debug.Log("filter element add " + part);
+
                     }
                 }
 
                 break;
             case (int)Elements.PLANT + 1:
-                foreach (PotPart part in filteredParts)
+                foreach (PotPart part in filteredQualityParts)
                 {
-                    if (part.Element != Elements.PLANT)
+                    if (part.Element == Elements.PLANT)
                     {
-                        filteredParts.Remove(part);
+                        filteredElementParts.Add(part);
+                        Debug.Log("filter element add " + part);
+
                     }
                 }
 
                 break;
             case (int)Elements.AIR + 1:
-                foreach (PotPart part in filteredParts)
+                foreach (PotPart part in filteredQualityParts)
                 {
-                    if (part.Element != Elements.AIR)
+                    if (part.Element == Elements.AIR)
                     {
-                        filteredParts.Remove(part);
+                        filteredElementParts.Add(part);
+                        Debug.Log("filter element add " + part);
+
                     }
                 }
 
                 break;
             case (int)Elements.THUNDER + 1:
-                foreach (PotPart part in filteredParts)
+                foreach (PotPart part in filteredQualityParts)
                 {
-                    if (part.Element != Elements.THUNDER)
+                    if (part.Element == Elements.THUNDER)
                     {
-                        filteredParts.Remove(part);
+                        filteredElementParts.Add(part);
+                        Debug.Log("filter element add " + part);
+
                     }
                 }
 
                 break;
             case (int)Elements.WATER + 1:
-                foreach (PotPart part in filteredParts)
+                foreach (PotPart part in filteredQualityParts)
                 {
-                    if (part.Element != Elements.WATER)
+                    if (part.Element == Elements.WATER)
                     {
-                        filteredParts.Remove(part);
+                        filteredElementParts.Add(part);
+                        Debug.Log("filter element add " + part);
+
                     }
                 }
 
                 break;
             default:
+                foreach (PotPart part in filteredQualityParts)
+                {
+                    filteredElementParts.Add(part);
+                    Debug.Log("filter element add " + part);
+
+                }
                 break;
         }
 
-        foreach (PotPart part in filteredParts)
+        List<PotPart> filteredParts = new List<PotPart>();
+
+        if (SlotDD.value == 0)
         {
-            if (SlotDD.value == 0)
-            {
-                break;
-            }
-
-            if (!part.Slot.HasFlag(ConvertSlot(SlotDD.value)))
-            {
-                filteredParts.Remove(part);
-            }
+            RePopulateGrid(filteredElementParts);
         }
+        else
+        {
+            foreach (PotPart part in filteredElementParts)
+            {
 
-        //TODO generate content from that list
+                if (part.Slot.HasFlag(ConvertSlot(SlotDD.value)))
+                {
+                    filteredParts.Add(part);
+                    Debug.Log("filter flag add " + part);
+
+                }
+            }
+            RePopulateGrid(filteredParts);
+        }
     }
 
     private Slots ConvertSlot(int slotIndex)
@@ -290,13 +304,11 @@ public class CreationMenu : MonoBehaviour
         }
 
         Slots occupiedMask = 0;
-        bool areAllSelected = true;
+        var areAllSelected = PotCreation.Player.SelectedParts.Count == gameFlow.CurrentLevel;
         foreach (var part in PotCreation.Player.SelectedParts)
         {
             if (part == null)
             {
-                areAllSelected = false;
-
                 continue;
             }
 
@@ -307,21 +319,31 @@ public class CreationMenu : MonoBehaviour
         {
             if (occupiedMask == 0)
             {
-                slotUi.gameObject.SetActive(slotUi.HandledSlot == Slots.CORE);
+                var doShow = slotUi.HandledSlot == Slots.CORE;
+                slotUi.gameObject.SetActive(doShow);
+
+                if (doShow)
+                {
+                    slotUi.Show();
+                }
+                else
+                {
+                    slotUi.Hide();
+                }
 
                 continue;
             }
 
             slotUi.gameObject.SetActive(true);
 
-            if (!areAllSelected
-                && occupiedMask.HasFlag(slotUi.HandledSlot))
+            if (areAllSelected
+                || occupiedMask.HasFlag(slotUi.HandledSlot))
             {
-                slotUi.Show();
+                slotUi.Hide();
             }
             else
             {
-                slotUi.Hide();
+                slotUi.Show();
             }
         }
     }

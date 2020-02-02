@@ -3,46 +3,103 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{DD836DCA-3B14-485D-BF28-00DA75B1D0C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundcasterSession Name="New Soundcaster Session" ID="{E0444CEE-43A4-4BEB-ABA4-BE350D6C32D3}">
+				<SoundcasterSession Name="GGJ20_Mixer1" ID="{E0444CEE-43A4-4BEB-ABA4-BE350D6C32D3}">
 					<ModuleList>
 						<Module>
 							<ObjectRef Name="Play_MK_Combat_A" ID="{89C71C52-7AF9-427E-9B03-86FD15DB937F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_Music_Bus_Vol_to_0" ID="{3A0C9522-1C03-443B-B4CB-78D1A4EF3622}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_FCeramic" ID="{49B3F27D-EAB3-442F-978C-DDEDC472B59D}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MFire" ID="{584BAE99-5A3A-4688-95E5-C24BC91A1A1E}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Village_Ambience" ID="{7B29F928-840F-4C9E-B754-A29F31B24D56}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_MK_Extra" ID="{3B6F2BFD-B06E-42FF-A8C0-1CDFB0772CD8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Reset_Music_Bus_Vol" ID="{2D7584AB-69C2-4546-B557-25CBE0B858E8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_FLaser" ID="{5600417E-BD2D-410F-A3F0-7D22C1C5FAF7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MWater" ID="{799BE595-0A8A-4AAA-ACF0-E7F4FB5CA2F7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Walla_M1" ID="{88F67D90-BF18-4770-8F59-C8ED1765D8DD}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_SFX_Bus_Vol_to_0" ID="{17792EB8-CFF1-4B8F-9C70-C3290D1FA8E1}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_FSword" ID="{90BE406E-7408-4623-98F6-E5E3B0BD83BD}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_placeholder" ID="{F81F1252-4FE5-4086-B92D-B4BC9E614935}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_MWind" ID="{124BAD74-A6B6-4EE4-9497-694581B5BF2F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Walla_M2" ID="{102F0387-97A2-418C-A310-4EC7AFE8CB35}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MK_Combat_A" ID="{ED91BDFA-8D9A-4F15-981C-C03C229427B3}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Reset_SFX_Bus_Vol" ID="{5CFC588D-8ED7-45AE-8958-8C61A8617238}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_FWin" ID="{FC27A279-A5EE-4CCA-93D4-8D925E6C6AD2}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_test" ID="{463EF44C-52B5-4F97-ACD0-A96BAC01F321}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<ObjectRef Name="Play_Pot_Creation_Process" ID="{33177C8F-8065-4BCE-8E65-2087BEAD5B0B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Walla_M3" ID="{7653BDE7-16C0-4A88-9AEC-1BA4726B2FE8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MK_Extra" ID="{F10FD80B-362A-4E98-B5CA-03FE837A35F5}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="4" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Currency" ID="{5A2B2627-518D-4F89-A943-99965499B20A}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pot_Creation_Finished" ID="{9397586E-A162-47B3-81D6-E982FBDE62CE}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VillagersHappy" ID="{3EB12C10-B46D-4E2D-B9D2-122114EFFBD7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MK_Static" ID="{FD13D1B2-1FCC-46CB-A815-1B2F4F96EDFE}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="5" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Music_Vol_RTPC" ID="{78C93468-1C3C-4000-8B5E-9B29B9526DE9}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Vol_RTPC" ID="{68A690EC-3C37-4B24-85B1-B2C66A124E32}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

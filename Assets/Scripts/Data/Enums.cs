@@ -30,11 +30,8 @@ public enum Slots
 
 public enum Qualities
 {
-    EARTHENWARE,
     PORCELAIN,
     TERRACOTTA,
-    SANDSTONE,
-    ROCK,
     IRON,
-    DIAMOND
+    GOLD
 }

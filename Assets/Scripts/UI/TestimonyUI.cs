@@ -52,6 +52,7 @@ public class TestimonyUI : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Data.IsDone = true;
+            AkSoundEngine.PostEvent("Play_click", gameObject);
         }
     }
 }

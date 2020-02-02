@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="311910498" Name="Play_click" ObjectPath="\Events\Default Work Unit\Play_click"/>
 				<Event Id="3597897279" Name="Play_Currency" ObjectPath="\Events\Default Work Unit\Play_Currency"/>
+				<Event Id="3448859267" Name="Play_end_ref" ObjectPath="\Events\Default Work Unit\Play_end_ref"/>
 				<Event Id="3545098540" Name="Play_FCeramic" ObjectPath="\Events\Default Work Unit\Play_FCeramic"/>
 				<Event Id="2612811842" Name="Play_FinalDestruction" ObjectPath="\Events\Default Work Unit\Play_FinalDestruction"/>
 				<Event Id="828274961" Name="Play_FLaser" ObjectPath="\Events\Default Work Unit\Play_FLaser"/>
@@ -50,6 +51,14 @@
 				<Event Id="3176211351" Name="Reset_SFX_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_SFX_Bus_Vol" MaxAttenuation="0.000000"/>
 				<Event Id="1257580087" Name="Set_Music_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_Music_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
 				<Event Id="510795939" Name="Set_SFX_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_SFX_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
+				<Event Id="3317021012" Name="Stop_FinalDestruction" ObjectPath="\Events\Default Work Unit\Stop_FinalDestruction" MaxAttenuation="0.000000"/>
+				<Event Id="1442185766" Name="Stop_HeroLoose" ObjectPath="\Events\Default Work Unit\Stop_HeroLoose" MaxAttenuation="0.000000"/>
+				<Event Id="3673367607" Name="Stop_MK_Combat_A" ObjectPath="\Events\Default Work Unit\Stop_MK_Combat_A" MaxAttenuation="0.000000"/>
+				<Event Id="3651929831" Name="Stop_MK_Extra" ObjectPath="\Events\Default Work Unit\Stop_MK_Extra" MaxAttenuation="0.000000"/>
+				<Event Id="2100881141" Name="Stop_MK_Static" ObjectPath="\Events\Default Work Unit\Stop_MK_Static" MaxAttenuation="0.000000"/>
+				<Event Id="1911080813" Name="Stop_Monsters" ObjectPath="\Events\Default Work Unit\Stop_Monsters" MaxAttenuation="0.000000"/>
+				<Event Id="201525001" Name="Stop_Pot_Creation_Process" ObjectPath="\Events\Default Work Unit\Stop_Pot_Creation_Process" MaxAttenuation="0.000000"/>
+				<Event Id="1091357693" Name="Stop_VillagersHappy" ObjectPath="\Events\Default Work Unit\Stop_VillagersHappy" MaxAttenuation="0.000000"/>
 				<Event Id="2221466542" Name="Stop_Walla_M1" ObjectPath="\Events\Default Work Unit\Stop_Walla_M1" MaxAttenuation="0.000000"/>
 				<Event Id="2221466541" Name="Stop_Walla_M2" ObjectPath="\Events\Default Work Unit\Stop_Walla_M2" MaxAttenuation="0.000000"/>
 				<Event Id="2221466540" Name="Stop_Walla_M3" ObjectPath="\Events\Default Work Unit\Stop_Walla_M3" MaxAttenuation="0.000000"/>
@@ -66,10 +75,6 @@
 				<File Id="51687281" Language="SFX">
 					<ShortName>2nd_batch\Laser_02.wav</ShortName>
 					<Path>SFX/2nd_batch/Laser_02_56D34C19.wem</Path>
-				</File>
-				<File Id="54397533" Language="SFX">
-					<ShortName>2nd_batch\Water_02_V1_NR.wav</ShortName>
-					<Path>SFX/2nd_batch/Water_02_V1_NR_56D34C19.wem</Path>
 				</File>
 				<File Id="56642091" Language="SFX">
 					<ShortName>3rd_batch\Ceramic_broken.wav</ShortName>
@@ -94,6 +99,10 @@
 				<File Id="101502802" Language="SFX">
 					<ShortName>Bounced Files\Sword_03.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_03_56D34C19.wem</Path>
+				</File>
+				<File Id="216960247" Language="SFX">
+					<ShortName>4th_batch\Villagers_Happy_voices.wav</ShortName>
+					<Path>SFX/4th_batch/Villagers_Happy_voices_56D34C19.wem</Path>
 				</File>
 				<File Id="225380548" Language="SFX">
 					<ShortName>Bounced Files\Sword_08.wav</ShortName>
@@ -171,21 +180,25 @@
 					<ShortName>Bounced Files\Walla_M02.wav</ShortName>
 					<Path>SFX/Bounced Files/Walla_M02_56D34C19.wem</Path>
 				</File>
-				<File Id="830955331" Language="SFX">
-					<ShortName>2nd_batch\Water_V1_NR.wav</ShortName>
-					<Path>SFX/2nd_batch/Water_V1_NR_56D34C19.wem</Path>
+				<File Id="855874533" Language="SFX">
+					<ShortName>4th_batch\Monsters_approach_w_villager_final_voice.wav</ShortName>
+					<Path>SFX/4th_batch/Monsters_approach_w_villager_final_voice_56D34C19.wem</Path>
 				</File>
 				<File Id="930263848" Language="SFX">
 					<ShortName>Bounced Files\Sword_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_01_56D34C19.wem</Path>
 				</File>
-				<File Id="933779623" Language="SFX">
-					<ShortName>2nd_batch\Air_01.wav</ShortName>
-					<Path>SFX/2nd_batch/Air_01_56D34C19.wem</Path>
-				</File>
 				<File Id="958409137" Language="SFX">
 					<ShortName>2nd_batch\Laser_03.wav</ShortName>
 					<Path>SFX/2nd_batch/Laser_03_56D34C19.wem</Path>
+				</File>
+				<File Id="963476631" Language="SFX">
+					<ShortName>4th_batch\Complete_final.wav</ShortName>
+					<Path>SFX/4th_batch/Complete_final_56D34C19.wem</Path>
+				</File>
+				<File Id="995740326" Language="SFX">
+					<ShortName>4th_batch\Hero_loses_and_goes_away.wav</ShortName>
+					<Path>SFX/4th_batch/Hero_loses_and_goes_away_56D34C19.wem</Path>
 				</File>
 				<File Id="1034859551" Language="SFX">
 					<ShortName>2nd_batch\Village_Ambience.wav</ShortName>
