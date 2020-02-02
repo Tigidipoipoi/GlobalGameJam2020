@@ -600,6 +600,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_door" ID="{3212714B-7A1A-47FD-AB49-E55B9165E29B}">
+					<ChildrenList>
+						<Action Name="" ID="{C8FDF10B-BCA2-4C18-9BEB-FC00936197FE}" ShortID="560504693">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -19,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2221466541	Stop_Walla_M2			\Default Work Unit\Stop_Walla_M2	
 	2221466542	Stop_Walla_M1			\Default Work Unit\Stop_Walla_M1	
 	2257207145	Play_MWind			\Default Work Unit\Play_MWind	
+	2547633870	Play_door			\Default Work Unit\Play_door	
 	2612811842	Play_FinalDestruction			\Default Work Unit\Play_FinalDestruction	
 	2693592746	Play_FWin			\Default Work Unit\Play_FWin	
 	2736518758	Play_Pot_Creation_Finished			\Default Work Unit\Play_Pot_Creation_Finished	

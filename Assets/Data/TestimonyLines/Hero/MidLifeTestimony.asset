@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ef78060370e9b48acd288e3795bbf4, type: 3}
   m_Name: MidLifeTestimony
   m_EditorClassIdentifier: 
+  Text: Although victorious, the hero wore a grim look as he bolted away from the
+    pot remains.
   RemainingHealthRatio: 0.5
-  Text: The hero had a serious look on his face after the battle.

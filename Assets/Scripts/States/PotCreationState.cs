@@ -35,10 +35,9 @@ public class PotCreationState : GameState
     /// <summary>
     /// Add the part to the list of selected parts
     /// </summary>
-    /// <param name="part"></param>
-    public void selectPart(PotPart part)
+    public void selectPart(PotPart part, Slots slot)
     {
-        PotPart currentPart = whatsInThisSpot(part);
+        PotPart currentPart = whatsInThisSpot(slot);
         if (currentPart != null)
         {
             addClay(currentPart.Element, currentPart.Cost);
@@ -47,17 +46,16 @@ public class PotCreationState : GameState
         else
         {
             Player.SelectedParts.Remove(null);
-        }
 
-        if (Flow.CurrentLevel < 6)
-        {
-            if (Player.SelectedParts.Count == Flow.CurrentLevel)
+            if (Flow.CurrentLevel < 6
+                && Player.SelectedParts.Count == Flow.CurrentLevel)
             {
                 return;
             }
         }
 
         Player.SelectedParts.Add(part);
+        part.EquippedSlot = slot;
         removeClay(part.Element, part.Cost);
 
         PartSelected?.Invoke(part);
@@ -69,6 +67,7 @@ public class PotCreationState : GameState
     /// <param name="part"></param>
     public void unselectPart(PotPart part)
     {
+        part.EquippedSlot = 0;
         Player.SelectedParts.Remove(part);
     }
 
@@ -87,17 +86,13 @@ public class PotCreationState : GameState
         Player[element].Amount += number;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="part"></param>
     /// <returns>The PotPart already in the slot, null if the slot is empty</returns>
-    public PotPart whatsInThisSpot(PotPart part)
+    public PotPart whatsInThisSpot(Slots slot)
     {
         foreach (PotPart selectedPart in Player.SelectedParts)
         {
             if (selectedPart != null
-                && selectedPart.Slot == part.Slot)
+                && selectedPart.EquippedSlot == slot)
             {
                 return selectedPart;
             }
@@ -122,6 +117,7 @@ public class PotCreationState : GameState
 
         return true;
     }
+
     public override void Update()
     {
         if (Input.GetMouseButtonDown(0))

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d11dd9a09880cc4b905699d6b5301b2, type: 3}
   m_Name: LootTestimony
   m_EditorClassIdentifier: 
-  Text: 'The hero broke my pots as well... Here''s what remains: {0} Fire Clay, {1}
-    Plant Clay, {2} Air Clay, {3} Thunder Clay, and {4} Water Clay.'
+  Text: 'The hero broke my pots as well...
+
+    Maybe you can use what remains: {0} Fire Clay, {1} Plant Clay, {2} Air Clay, {3}
+    Thunder Clay, and {4} Water Clay.'

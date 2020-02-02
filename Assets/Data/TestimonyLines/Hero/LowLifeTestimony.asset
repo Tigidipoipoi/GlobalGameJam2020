@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ef78060370e9b48acd288e3795bbf4, type: 3}
   m_Name: LowLifeTestimony
   m_EditorClassIdentifier: 
+  Text: The hero may have won, but barely kept himself up as he shakingly left the
+    scene.
   RemainingHealthRatio: 0.2
-  Text: The hero shakingly left the scene.

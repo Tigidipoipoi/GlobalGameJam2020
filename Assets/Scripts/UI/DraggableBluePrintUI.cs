@@ -68,9 +68,9 @@ public class DraggableBluePrintUI : MonoBehaviour, IDragHandler, IBeginDragHandl
         {
             var selectedSlot = result.gameObject.GetComponent<SelectedSlotUI>();
             if (selectedSlot != null
-                && PotPart.Slot.HasFlag(selectedSlot.HandledSlot))
+                && PotPart.AllowedSlots.HasFlag(selectedSlot.HandledSlot))
             {
-                State.selectPart(PotPart);
+                State.selectPart(PotPart, selectedSlot.HandledSlot);
 
                 break;
             }
