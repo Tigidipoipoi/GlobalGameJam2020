@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: InventoryLvl1
   m_EditorClassIdentifier: 
   OwnedParts: []
-  OwnedQualities:
-  - {fileID: 11400000, guid: 869983f40cc22654ca8eef9f005d9b8e, type: 2}
-  AllowedSlots: -1
+  AllowedSlots: 1

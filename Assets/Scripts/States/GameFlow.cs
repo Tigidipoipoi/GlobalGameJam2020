@@ -149,7 +149,7 @@ public class GameFlow : MonoBehaviour
 
             case VictoryState _:
             {
-                //TBD
+                nextState = null;
 
                 break;
             }

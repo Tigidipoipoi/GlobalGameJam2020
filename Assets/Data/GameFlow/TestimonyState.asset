@@ -26,3 +26,7 @@ MonoBehaviour:
   BonusLines:
   - {fileID: 11400000, guid: 4ae242d652b6b2247adb2c8d35f4109b, type: 2}
   IntroductionLine: {fileID: 11400000, guid: 63e1f30e0f5e2784d805f23e06d54a32, type: 2}
+  LootLine: {fileID: 11400000, guid: 7caaf91b180f8d24b978053b92cb7d9f, type: 2}
+  RandomDrop: {fileID: 11400000, guid: 43c2cb335f124174a8f303f32c22b60b, type: 2}
+  FixedDrop: {fileID: 11400000, guid: b49c595540005094abc76e7c19974c8e, type: 2}
+  Gameflow: {fileID: 0}

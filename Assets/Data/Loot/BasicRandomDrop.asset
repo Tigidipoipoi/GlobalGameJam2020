@@ -34,5 +34,5 @@ MonoBehaviour:
       Amount: 4
     - Type: 4
       Amount: 4
-  Player: {fileID: 0}
+  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
   RandomLoot: 1
