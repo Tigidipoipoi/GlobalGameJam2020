@@ -16,6 +16,11 @@ public class PotPart : ScriptableObject
     [BitMask]
     public Slots Slot;
 
+    [Header("UI")]
+    public Sprite Icon;
+
+    public string Tooltip;
+
     public void Copy(PotPart potPart)
     {
         Element = potPart.Element;
@@ -24,5 +29,7 @@ public class PotPart : ScriptableObject
         DamageState = potPart.DamageState;
         Quality = potPart.Quality;
         Slot = potPart.Slot;
+        Icon = potPart.Icon;
+        Tooltip = potPart.Tooltip;
     }
 }

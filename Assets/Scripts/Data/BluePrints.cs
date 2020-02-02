@@ -6,8 +6,6 @@ public class BluePrints : ScriptableObject
 {
     public List<PotPart> OwnedParts;
 
-    public List<Quality> OwnedQualities;
-
     [BitMask]
     public Slots AllowedSlots;
 }
