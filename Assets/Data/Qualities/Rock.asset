@@ -16,4 +16,4 @@ MonoBehaviour:
   material: {fileID: 3986188387995331715, guid: 8b5b02054a099444b90285608c179ca5,
     type: 3}
   Strength: 5
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 7f7c0883fa6bbd24196f91ded7ad6d14, type: 3}
