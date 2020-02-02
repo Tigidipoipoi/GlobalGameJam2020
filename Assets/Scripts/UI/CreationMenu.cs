@@ -104,14 +104,15 @@ public class CreationMenu : MonoBehaviour
 
     public void ResetPot()
     {
-        for (var i = 0; i < PotCreation.Player.SelectedParts.Count; i++)
+        for (var i = PotCreation.Player.SelectedParts.Count - 1; i >= 0; i--)
         {
             PotPart part = PotCreation.Player.SelectedParts[i];
             PotCreation.unselectPart(part);
-            break;
         }
 
         OnPartSelected(null);
+
+        PotCreationState.RaisePotReset();
     }
 
     public void UpdateRecipeList()

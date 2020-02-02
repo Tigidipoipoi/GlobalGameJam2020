@@ -14,11 +14,13 @@ public class PotMix : MonoBehaviour
     void OnEnable()
     {
         PotCreationState.PartSelected += OnPartSelected;
+        PotCreationState.PotReset += Redraw;
     }
 
     void OnDisable()
     {
         PotCreationState.PartSelected -= OnPartSelected;
+        PotCreationState.PotReset -= Redraw;
     }
 
     void OnPartSelected(PotPart selectedPart)
@@ -28,13 +30,18 @@ public class PotMix : MonoBehaviour
 
     public void Redraw()
     {
+        Destroy(CurrentPot);
+
+        if (Player.SelectedParts.Count <= 0)
+        {
+            return;
+        }
+
         var core = Player.SelectedParts.Find(part => part != null && part.Slot == Slots.CORE);
         if (core == null)
         {
             throw new Exception("TO FIX");
         }
-
-        Destroy(CurrentPot);
 
         //Model
         CurrentPot = Instantiate(core.Model, SpawnPoint);
@@ -67,7 +74,7 @@ public class PotMix : MonoBehaviour
     {
         foreach (var potAnchor in PotAnchors)
         {
-            if (slot == potAnchor.HandledSlot)
+            if (slot.HasFlag(potAnchor.HandledSlot))
             {
                 return potAnchor.transform;
             }

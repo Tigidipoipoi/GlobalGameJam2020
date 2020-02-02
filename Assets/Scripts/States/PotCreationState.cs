@@ -7,6 +7,13 @@ public class PotCreationState : GameState
 {
     public static event Action<PotPart> PartSelected;
 
+    public static event Action PotReset;
+
+    public static void RaisePotReset()
+    {
+        PotReset?.Invoke();
+    }
+
     /// <inheritdoc />
     public override void Apply() { }
 
