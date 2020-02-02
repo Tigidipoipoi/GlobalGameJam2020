@@ -15,3 +15,5 @@ MonoBehaviour:
   Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
   Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
   Flow: {fileID: 0}
+  VictoryLine: {fileID: 11400000, guid: 090aaf9b4a5de9c4f8b7515b313c5640, type: 2}
+  StoryLine: {fileID: 11400000, guid: 7058341947cea004fbe53bc3b111c51b, type: 2}
