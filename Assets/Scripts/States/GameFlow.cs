@@ -133,7 +133,7 @@ public class GameFlow : MonoBehaviour
 
             case PotCreationState _:
             {
-                nextState = AllStates.Find(state => state is PotCreationState);
+                nextState = AllStates.Find(state => state is FightState);
                 Assert.IsNotNull(nextState);
 
                 break;

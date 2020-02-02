@@ -57,7 +57,7 @@ public class CreationMenu : MonoBehaviour
             //Clear grid
             for (var i = RecipeGrid.childCount; i > 0; i--)
             {
-                Destroy(RecipeGrid.GetChild(0));
+                Destroy(RecipeGrid.GetChild(0).gameObject);
             }
 
             //Fill grid
@@ -88,9 +88,11 @@ public class CreationMenu : MonoBehaviour
 
     public void ResetPot()
     {
-        foreach (PotPart part in PotCreation.Player.SelectedParts)
+        for (var i = 0; i < PotCreation.Player.SelectedParts.Count; i++)
         {
+            PotPart part = PotCreation.Player.SelectedParts[i];
             PotCreation.unselectPart(part);
+            break;
         }
     }
 
