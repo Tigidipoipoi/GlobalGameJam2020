@@ -74,6 +74,11 @@ public class TestimonyState : GameState
         {
             var playerPart = Player.SelectedParts[i];
 
+            if (playerPart == null)
+            {
+                continue;
+            }
+
             foreach (var potPartLine in PotPartLines)
             {
                 if (potPartLine.HandledSlots != 0

@@ -12,6 +12,11 @@ public class FightState : GameState
         //Reset parts' damage state
         foreach (var selectedPart in Player.SelectedParts)
         {
+            if (selectedPart == null)
+            {
+                continue;
+            }
+
             selectedPart.DamageState = Damages.INTACT;
         }
     }
@@ -26,6 +31,11 @@ public class FightState : GameState
     {
         foreach (PotPart part in potParts)
         {
+            if (part == null)
+            {
+                continue;
+            }
+
             if (((int)part.Element + 1) % GameFlow.NB_ELEMENTS == (int)Hero.Element)
             {
                 remainingLife -= Mathf.RoundToInt(part.Quality.Strength * GameFlow.ELEMENT_BUFF);

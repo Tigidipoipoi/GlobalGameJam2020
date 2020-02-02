@@ -205,7 +205,8 @@ public class GameFlow : MonoBehaviour
 
     public void selectBlueprintByLevel()
     {
-        currentInventory = Inventories[CurrentLevel];
+        var index = Math.Min(CurrentLevel, Inventories.Count - 1);
+        currentInventory = Inventories[index];
     }
 
     public void Reset()

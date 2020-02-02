@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
-public class FightUI : MonoBehaviour
+public class EnableOnStartState : MonoBehaviour
 {
     public GameFlow Flow;
 
-    public FightState State;
+    public GameState State;
+
+    public UnityEvent OnStateStartAction;
 
     void Start()
     {
@@ -14,6 +17,10 @@ public class FightUI : MonoBehaviour
         if (Flow.CurrentState != State)
         {
             gameObject.SetActive(false);
+        }
+        else
+        {
+            OnStateStartAction?.Invoke();
         }
     }
 
@@ -28,6 +35,8 @@ public class FightUI : MonoBehaviour
         if (state == State)
         {
             gameObject.SetActive(true);
+
+            OnStateStartAction?.Invoke();
         }
     }
 

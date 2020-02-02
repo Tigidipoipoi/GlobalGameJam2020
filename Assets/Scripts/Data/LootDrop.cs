@@ -18,8 +18,8 @@ public class LootDrop : ScriptableObject
         {
             level = LootLevels.Count - 1;
         }
-        Loot fixedLoot;
-        fixedLoot = LootLevels[level];
+
+        var fixedLoot = LootLevels[level % LootLevels.Count];
         if (fixedLoot != null)
         {
             foreach (Drop resourceAdded in fixedLoot.DropList)
@@ -27,7 +27,7 @@ public class LootDrop : ScriptableObject
                 GameResource resource = Player.Resources.Where(r => r.Type == resourceAdded.Type).FirstOrDefault();
                 if (resource != null)
                 {
-                    resource.Amount += (RandomLoot? Random.Range(0, resourceAdded.Amount) : resourceAdded.Amount);
+                    resource.Amount += (RandomLoot ? Random.Range(0, resourceAdded.Amount) : resourceAdded.Amount);
                 }
                 else
                 {

@@ -21,13 +21,16 @@ public class BluePrintUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         PotPart = potPart;
         Draggable.PotPart = potPart;
 
-        Background.sprite = PotPart.Quality.Icon;
-        Draggable.Background.sprite = PotPart.Quality.Icon;
+        if (PotPart != null)
+        {
+            Background.sprite = PotPart.Quality.Icon;
+            Draggable.Background.sprite = PotPart.Quality.Icon;
 
-        Icon.sprite = PotPart.Icon;
-        Draggable.Icon.sprite = PotPart.Icon;
+            Icon.sprite = PotPart.Icon;
+            Draggable.Icon.sprite = PotPart.Icon;
 
-        Tooltip.text = PotPart.Tooltip;
+            Tooltip.text = PotPart.Tooltip;
+        }
 
         Tooltip.transform.parent.gameObject.SetActive(false);
 

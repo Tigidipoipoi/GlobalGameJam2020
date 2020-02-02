@@ -16,6 +16,11 @@ public class RecoveryState : GameState
     {
         foreach (var playerPart in Player.SelectedParts)
         {
+            if (playerPart == null)
+            {
+                continue;
+            }
+
             float recoveryRatio;
             switch (playerPart.DamageState)
             {
