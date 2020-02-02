@@ -786,6 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a6439aa62e13a468faae31bfa2451b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameFlow: {fileID: 0}
   PotCreation: {fileID: 0}
   FireAmount: {fileID: 7133139094150304959}
   PlantAmount: {fileID: 7012901514992313462}
@@ -797,6 +798,9 @@ MonoBehaviour:
   Air: {fileID: 11400000, guid: cf789928876f4de4ba0ed96e2242559e, type: 2}
   Thunder: {fileID: 11400000, guid: 706ea632aee9ead4ab8f3650d68ff01e, type: 2}
   Water: {fileID: 11400000, guid: 0333e087e9f950c4f8041a924a84c731, type: 2}
+  QualityDD: {fileID: 0}
+  ElementDD: {fileID: 0}
+  SlotDD: {fileID: 0}
 --- !u!1 &1290946172728268319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,15 +2024,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 9be2b9ad3c92ea44dad5587bb5214c82, type: 2}
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: set_IsDone
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &2878463069525988164
 GameObject:
@@ -2278,25 +2282,36 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: All qualities
+    - m_Text: ALL QUALITIES
       m_Image: {fileID: 0}
-    - m_Text: Diamond
+    - m_Text: DIAMOND
       m_Image: {fileID: 0}
-    - m_Text: Iron
+    - m_Text: IRON
       m_Image: {fileID: 0}
-    - m_Text: Rock
+    - m_Text: ROCK
       m_Image: {fileID: 0}
-    - m_Text: Sandstone
+    - m_Text: SANDSTONE
       m_Image: {fileID: 0}
-    - m_Text: Terracotta
+    - m_Text: TERRACOTTA
       m_Image: {fileID: 0}
-    - m_Text: Porcelain
+    - m_Text: PORCELAIN
       m_Image: {fileID: 0}
-    - m_Text: Earthenware
+    - m_Text: EARTHENWARE
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059211983496614352}
+        m_MethodName: UpdateRecipeList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3013779135853558002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,21 +2701,32 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: All elements
+    - m_Text: ALL ELEMENTS
       m_Image: {fileID: 0}
-    - m_Text: Fire
+    - m_Text: FIRE
       m_Image: {fileID: 0}
-    - m_Text: Plant
+    - m_Text: PLANT
       m_Image: {fileID: 0}
-    - m_Text: Air
+    - m_Text: AIR
       m_Image: {fileID: 0}
-    - m_Text: Thunder
+    - m_Text: THUNDER
       m_Image: {fileID: 0}
-    - m_Text: Water
+    - m_Text: WATER
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059211983496614352}
+        m_MethodName: UpdateRecipeList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3579824461558827041
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,19 +3267,30 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: All slots
+    - m_Text: ALL SLOTS
       m_Image: {fileID: 0}
-    - m_Text: Pots
+    - m_Text: POTS
       m_Image: {fileID: 0}
-    - m_Text: Arms
+    - m_Text: ARMS
       m_Image: {fileID: 0}
-    - m_Text: Legs
+    - m_Text: LEGS
       m_Image: {fileID: 0}
-    - m_Text: Heads
+    - m_Text: HEADS
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059211983496614352}
+        m_MethodName: UpdateRecipeList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5138843983757310629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3649,7 +3686,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: All slots
+  m_text: ALL SLOTS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4177,7 +4214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: All elements
+  m_text: ALL ELEMENTS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4406,7 +4443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: All qualities
+  m_text: ALL QUALITIES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

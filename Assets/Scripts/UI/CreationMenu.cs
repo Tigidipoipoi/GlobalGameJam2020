@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CreationMenu : MonoBehaviour
 {
+    public GameFlow gameFlow;
+
     public PotCreationState PotCreation;
 
     public TextMeshProUGUI FireAmount;
@@ -19,10 +21,17 @@ public class CreationMenu : MonoBehaviour
     public GameResource Thunder;
     public GameResource Water;
 
+    public TMP_Dropdown QualityDD;
+    public TMP_Dropdown ElementDD;
+    public TMP_Dropdown SlotDD;
+
+    private List<PotPart> DisplayedPotParts;
+
     // Start is called before the first frame update
     void Start()
     {
         UpdateClayDisplays();
+        DisplayedPotParts = gameFlow.currentInventory.OwnedParts;
     }
 
     private void UpdateClayDisplays()
@@ -40,5 +49,156 @@ public class CreationMenu : MonoBehaviour
         {
             PotCreation.unselectPart(part);
         }
+    }
+
+    public void UpdateRecipeList()
+    {
+        List<PotPart> filteredParts = new List<PotPart>();
+        switch(QualityDD.value)
+        {
+            case (int)Qualities.EARTHENWARE + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.EARTHENWARE)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            case (int)Qualities.PORCELAIN + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.PORCELAIN)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            case (int)Qualities.TERRACOTTA + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.TERRACOTTA)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            case (int)Qualities.SANDSTONE + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.SANDSTONE)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            case (int)Qualities.IRON + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.IRON)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            case (int)Qualities.DIAMOND + 1:
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    if (part.Quality.quality == Qualities.DIAMOND)
+                    {
+                        filteredParts.Add(part);
+                    }
+                }
+                break;
+            default:
+                foreach(PotPart part in gameFlow.currentInventory.OwnedParts)
+                {
+                    filteredParts.Add(part);
+                }
+                break;
+        }
+
+        switch (ElementDD.value)
+        {
+            case (int)Elements.FIRE + 1:
+                foreach (PotPart part in filteredParts)
+                {
+                    if (part.Element != Elements.FIRE)
+                    {
+                        filteredParts.Remove(part);
+                    }
+                }
+                break;
+            case (int)Elements.PLANT + 1:
+                foreach (PotPart part in filteredParts)
+                {
+                    if (part.Element != Elements.PLANT)
+                    {
+                        filteredParts.Remove(part);
+                    }
+                }
+                break;
+            case (int)Elements.AIR + 1:
+                foreach (PotPart part in filteredParts)
+                {
+                    if (part.Element != Elements.AIR)
+                    {
+                        filteredParts.Remove(part);
+                    }
+                }
+                break;
+            case (int)Elements.THUNDER + 1:
+                foreach (PotPart part in filteredParts)
+                {
+                    if (part.Element != Elements.THUNDER)
+                    {
+                        filteredParts.Remove(part);
+                    }
+                }
+                break;
+            case (int)Elements.WATER + 1:
+                foreach (PotPart part in filteredParts)
+                {
+                    if (part.Element != Elements.WATER)
+                    {
+                        filteredParts.Remove(part);
+                    }
+                }
+                break;
+            default:
+                break;
+        }
+
+        foreach (PotPart part in filteredParts)
+        {
+            if(SlotDD.value == 0)
+            {
+                break;
+            }
+
+            if (!part.Slot.HasFlag(ConvertSlot(SlotDD.value)))
+            {
+                filteredParts.Remove(part);
+            }
+        }
+        //TODO generate content from that list
+    }
+
+    private Slots ConvertSlot(int slotIndex)
+    {
+        Slots slot = Slots.CORE;
+        switch(slotIndex)
+        {
+            case 2:
+                slot = Slots.ARM_1;
+                break;
+            case 3:
+                slot = Slots.LEG_1;
+                break;
+            case 4:
+                slot = Slots.EYE;
+                break;
+        }
+        return slot;
     }
 }
