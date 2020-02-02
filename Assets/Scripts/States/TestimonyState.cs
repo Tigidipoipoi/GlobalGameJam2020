@@ -10,8 +10,6 @@ public class TestimonyState : GameState
 
     public List<TestimonyHeroLine> HeroLines;
 
-    public List<TestimonyBonusLine> BonusLines;
-
     public TestimonyLine IntroductionLine;
 
     public TestimonyLine LootLine;
@@ -26,6 +24,7 @@ public class TestimonyState : GameState
     {
         AkSoundEngine.PostEvent("Play_Village_Ambience", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Walla_M1", Flow.gameObject);
+
         //Reset testimony.
         m_TestimonyBuilder.Clear();
 
@@ -39,8 +38,6 @@ public class TestimonyState : GameState
         HeroTestify();
 
         PotPartsTestify();
-
-        BonusTestify();
 
         LootTestify();
     }
@@ -103,24 +100,14 @@ public class TestimonyState : GameState
         }
     }
 
-    void BonusTestify()
-    {
-        foreach (var bonusLine in BonusLines)
-        {
-            if (bonusLine.Condition)
-            {
-                m_TestimonyBuilder.AppendLine(bonusLine.Text);
-            }
-        }
-    }
-
     void LootTestify()
     {
         List<int> oldResources = new List<int>();
-        foreach(GameResource resource in Player.Resources)
+        foreach (GameResource resource in Player.Resources)
         {
             oldResources.Add(resource.Amount);
         }
+
         RandomDrop.GiveLoot(Flow.CurrentLevel);
         FixedDrop.GiveLoot(Flow.CurrentLevel);
 
