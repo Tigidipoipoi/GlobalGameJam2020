@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_CLICK = 311910498U;
         static const AkUniqueID PLAY_CURRENCY = 3597897279U;
+        static const AkUniqueID PLAY_END_REF = 3448859267U;
         static const AkUniqueID PLAY_FCERAMIC = 3545098540U;
         static const AkUniqueID PLAY_FINALDESTRUCTION = 2612811842U;
         static const AkUniqueID PLAY_FLASER = 828274961U;
@@ -42,13 +43,24 @@ namespace AK
         static const AkUniqueID RESET_SFX_BUS_VOL = 3176211351U;
         static const AkUniqueID SET_MUSIC_BUS_VOL_TO_0 = 1257580087U;
         static const AkUniqueID SET_SFX_BUS_VOL_TO_0 = 510795939U;
+        static const AkUniqueID STOP_FINALDESTRUCTION = 3317021012U;
+        static const AkUniqueID STOP_HEROLOOSE = 1442185766U;
         static const AkUniqueID STOP_MK_COMBAT_A = 3673367607U;
         static const AkUniqueID STOP_MK_EXTRA = 3651929831U;
         static const AkUniqueID STOP_MK_STATIC = 2100881141U;
+        static const AkUniqueID STOP_MONSTERS = 1911080813U;
+        static const AkUniqueID STOP_POT_CREATION_PROCESS = 201525001U;
+        static const AkUniqueID STOP_VILLAGERSHAPPY = 1091357693U;
         static const AkUniqueID STOP_WALLA_M1 = 2221466542U;
         static const AkUniqueID STOP_WALLA_M2 = 2221466541U;
         static const AkUniqueID STOP_WALLA_M3 = 2221466540U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MUSIC_VOL_RTPC = 2911073178U;
+        static const AkUniqueID SFX_VOL_RTPC = 3005434258U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

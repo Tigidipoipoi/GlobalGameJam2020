@@ -1,13 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
 	173327921	Play_placeholder			\Default Work Unit\Play_placeholder	
+	201525001	Stop_Pot_Creation_Process			\Default Work Unit\Stop_Pot_Creation_Process	
 	262105351	Play_MFire			\Default Work Unit\Play_MFire	
 	311910498	Play_click			\Default Work Unit\Play_click	
 	510795939	Set_SFX_Bus_Vol_to_0			\Default Work Unit\Set_SFX_Bus_Vol_to_0	
 	828274961	Play_FLaser			\Default Work Unit\Play_FLaser	
+	1091357693	Stop_VillagersHappy			\Default Work Unit\Stop_VillagersHappy	
 	1257580087	Set_Music_Bus_Vol_to_0			\Default Work Unit\Set_Music_Bus_Vol_to_0	
 	1285414837	Play_MK_Combat_A			\Default Work Unit\Play_MK_Combat_A	
 	1379997717	Play_MK_Extra			\Default Work Unit\Play_MK_Extra	
+	1442185766	Stop_HeroLoose			\Default Work Unit\Stop_HeroLoose	
 	1865594480	Play_HeroLoose			\Default Work Unit\Play_HeroLoose	
+	1911080813	Stop_Monsters			\Default Work Unit\Stop_Monsters	
 	2023163491	Play_MK_Static			\Default Work Unit\Play_MK_Static	
 	2072794187	Play_Monsters			\Default Work Unit\Play_Monsters	
 	2100881141	Stop_MK_Static			\Default Work Unit\Stop_MK_Static	
@@ -24,7 +28,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3176211351	Reset_SFX_Bus_Vol			\Default Work Unit\Reset_SFX_Bus_Vol	
 	3187507146	Play_test			\Default Work Unit\Play_test	
 	3256485433	Play_Village_Ambience			\Default Work Unit\Play_Village_Ambience	
+	3317021012	Stop_FinalDestruction			\Default Work Unit\Stop_FinalDestruction	
 	3318378243	Play_Pot_Creation_Process			\Default Work Unit\Play_Pot_Creation_Process	
+	3448859267	Play_end_ref			\Default Work Unit\Play_end_ref	
 	3545098540	Play_FCeramic			\Default Work Unit\Play_FCeramic	
 	3597897279	Play_Currency			\Default Work Unit\Play_Currency	
 	3651929831	Stop_MK_Extra			\Default Work Unit\Stop_MK_Extra	
@@ -39,13 +45,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12664886	Creating_Pot_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Creating_Pot_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Creating_Pot_01		938472
 	51070242	GameJam_Plants_New_Heart_	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\GameJam_Plants_New_Heart__56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\GameJam_Plants_New_Heart_		181564
 	51687281	Laser_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Laser_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Laser\Laser_02		226380
-	54397533	Water_02_V1_NR	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Water_02_V1_NR_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Water\Water_02_V1_NR		183532
 	56642091	Ceramic_broken	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\3rd_batch\Ceramic_broken_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Ceramic_battle\Ceramic_broken		473664
 	56771485	Click_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Click_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Menu\Click_01		158208
 	61936185	Empty_PlaceHolder	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Empty_PlaceHolder_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\Empty_PlaceHolder		141072
 	65352832	Air_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Air_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Wind\Air_02		516608
 	73226339	Sword_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Sword_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_02		129972
 	101502802	Sword_03	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Sword_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_03		109280
+	216960247	Villagers_Happy_voices	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\4th_batch\Villagers_Happy_voices_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Villagers_Happy_voices		388416
 	225380548	Sword_08	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Sword_08_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_08		105756
 	237102178	Fire_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Fire_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Fire\Fire_02		423844
 	296180385	Currency	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Currency_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Currency\Currency		199496
@@ -65,9 +71,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	720072435	Laser_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Laser_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Laser\Laser_01		228364
 	751447610	Fire_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Fire_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Fire\Fire_01		419904
 	797544827	Walla_M02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Walla_M02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Villagers\Walla_M02		4140852
-	830955331	Water_V1_NR	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Water_V1_NR_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Water\Water_V1_NR		280812
+	855874533	Monsters_approach_w_villager_final_voice	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\4th_batch\Monsters_approach_w_villager_final_voice_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Monsters_approach_w_villager_final_voice		2586688
 	930263848	Sword_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\Bounced Files\Sword_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_01		108644
-	933779623	Air_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Air_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Wind\Air_01		646208
 	958409137	Laser_03	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Laser_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Laser\Laser_03		245836
+	963476631	Complete_final	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\4th_batch\Complete_final_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Complete_final		4620352
+	995740326	Hero_loses_and_goes_away	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\4th_batch\Hero_loses_and_goes_away_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Hero_loses_and_goes_away		1715724
 	1034859551	Village_Ambience	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Village_Ambience_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Village_Ambience		23040064
 
