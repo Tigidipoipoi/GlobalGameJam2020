@@ -190,10 +190,10 @@ public class CreationMenu : MonoBehaviour
         switch(slotIndex)
         {
             case 2:
-                slot = Slots.ARM_1;
+                slot = Slots.ARM_L;
                 break;
             case 3:
-                slot = Slots.LEG_1;
+                slot = Slots.LEG_L;
                 break;
             case 4:
                 slot = Slots.EYE;
