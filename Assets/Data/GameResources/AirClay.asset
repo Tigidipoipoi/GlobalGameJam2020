@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AirClay
   m_EditorClassIdentifier: 
   Type: 2
-  Value: 0
+  Amount: 9

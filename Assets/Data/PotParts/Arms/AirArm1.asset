@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: FireArm2R
+  m_Name: AirArm1
   m_EditorClassIdentifier: 
-  Element: 0
+  Element: 2
   Cost: 5
-  Model: {fileID: -927199367670048503, guid: 98769d08f91d76a4cbf37fd78f31f84c, type: 3}
-  DamageState: 0
+  Model: {fileID: -927199367670048503, guid: d133ddd6954d62142b4fdc1a24d3d2a8, type: 3}
+  DamageState: 1
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  Slot: 6
-  Icon: {fileID: 21300000, guid: 4866d63be613c354cbcdf4c240a5fcd6, type: 3}
+  AllowedSlots: 6
+  EquippedSlot: 0
+  Icon: {fileID: 21300000, guid: 2be344b0e8ad12e45bbf732bb1302080, type: 3}
   Tooltip: 

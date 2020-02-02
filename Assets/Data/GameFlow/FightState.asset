@@ -15,4 +15,3 @@ MonoBehaviour:
   Hero: {fileID: 11400000, guid: 96554ce819d90dc46bcda7f4c5f7cffa, type: 2}
   Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
   Flow: {fileID: 0}
-  Buff: 2

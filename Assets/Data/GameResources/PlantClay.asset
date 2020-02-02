@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlantClay
   m_EditorClassIdentifier: 
   Type: 1
-  Value: 0
+  Amount: 1

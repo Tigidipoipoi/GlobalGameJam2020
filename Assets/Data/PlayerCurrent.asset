@@ -18,4 +18,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52677b9c475b0ee458cf29c76a59cc75, type: 2}
   - {fileID: 11400000, guid: 706ea632aee9ead4ab8f3650d68ff01e, type: 2}
   - {fileID: 11400000, guid: 0333e087e9f950c4f8041a924a84c731, type: 2}
-  SelectedParts: []
+  SelectedParts:
+  - {fileID: 11400000, guid: 7907be85fbc2c2e47be3fd0f0bed96ba, type: 2}
+  - {fileID: 11400000, guid: a590e9d07f7a5dc45a949ec34aea676d, type: 2}
+  - {fileID: 11400000, guid: 700367f8bbbc7804ea09c86108f2bf26, type: 2}
+  - {fileID: 11400000, guid: 870bd68ba97e6fd4cb42736a5684d5fd, type: 2}

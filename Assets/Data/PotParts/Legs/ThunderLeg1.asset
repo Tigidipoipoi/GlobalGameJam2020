@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: ThunderArm1R
+  m_Name: ThunderLeg1
   m_EditorClassIdentifier: 
   Element: 3
   Cost: 5
-  Model: {fileID: -927199367670048503, guid: 19a0599091eb0284ba6229e42d36f86b, type: 3}
+  Model: {fileID: -927199367670048503, guid: 818b3a603fa9ab24d834dcb934386a54, type: 3}
   DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  Slot: 6
-  Icon: {fileID: 21300000, guid: 5b92bb325f69e1349a96072ecd3c7ead, type: 3}
+  AllowedSlots: 24
+  EquippedSlot: 0
+  Icon: {fileID: 21300000, guid: 9d90b86d4f0afc94f801c4f4aa68323d, type: 3}
   Tooltip: 

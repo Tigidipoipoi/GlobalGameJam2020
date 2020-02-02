@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: WaterLeg2R
+  m_Name: WaterLeg1
   m_EditorClassIdentifier: 
   Element: 4
   Cost: 5
-  Model: {fileID: -927199367670048503, guid: b73e5ed0ff0c8e34aa7e3f75be910bea, type: 3}
+  Model: {fileID: -927199367670048503, guid: 77727a9bba79b404ea889d1b0f5899d2, type: 3}
   DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  Slot: 24
-  Icon: {fileID: 21300000, guid: faceae0dea94bd646a036cf9326283e9, type: 3}
+  AllowedSlots: 24
+  EquippedSlot: 0
+  Icon: {fileID: 21300000, guid: 22055033589cc9c409236b12f28ba126, type: 3}
   Tooltip: 

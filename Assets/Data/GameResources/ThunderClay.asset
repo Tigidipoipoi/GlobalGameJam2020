@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ThunderClay
   m_EditorClassIdentifier: 
   Type: 3
-  Value: 0
+  Amount: 8

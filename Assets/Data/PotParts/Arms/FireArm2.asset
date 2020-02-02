@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04dacea7d0466144eb1f8f2748e170af, type: 3}
-  m_Name: FireLeg2R
+  m_Name: FireArm2
   m_EditorClassIdentifier: 
   Element: 0
   Cost: 5
-  Model: {fileID: -927199367670048503, guid: 5e4a6e4ee648dac4e885459d997b729f, type: 3}
+  Model: {fileID: -927199367670048503, guid: 98769d08f91d76a4cbf37fd78f31f84c, type: 3}
   DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  AllowedSlots: 24
+  AllowedSlots: 6
   EquippedSlot: 0
   Icon: {fileID: 21300000, guid: 4866d63be613c354cbcdf4c240a5fcd6, type: 3}
   Tooltip: 

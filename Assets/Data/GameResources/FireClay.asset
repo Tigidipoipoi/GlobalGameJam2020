@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: FireClay
   m_EditorClassIdentifier: 
   Type: 0
-  Value: 0
+  Amount: 10

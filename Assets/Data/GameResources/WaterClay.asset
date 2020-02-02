@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: WaterClay
   m_EditorClassIdentifier: 
   Type: 4
-  Value: 0
+  Amount: 2
