@@ -463,6 +463,54 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_MK_Static" ID="{FD13D1B2-1FCC-46CB-A815-1B2F4F96EDFE}">
+					<ChildrenList>
+						<Action Name="" ID="{C1297212-0D6A-4345-9967-F91EDAC110E5}" ShortID="939040653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Static_music" ID="{AF8C166C-EBC4-4412-AF0D-19434EBE4EA5}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MK_Combat_A" ID="{ED91BDFA-8D9A-4F15-981C-C03C229427B3}">
+					<ChildrenList>
+						<Action Name="" ID="{F00BA1D0-C858-4255-BF46-9F174AA7C1F9}" ShortID="858992028">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Combat_music" ID="{5F769CC4-8FA0-4D47-93FD-1F37D108FD41}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MK_Extra" ID="{F10FD80B-362A-4E98-B5CA-03FE837A35F5}">
+					<ChildrenList>
+						<Action Name="" ID="{5EF6654B-7AC1-4C77-952C-69776A5837BE}" ShortID="628707815">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Extra_music" ID="{F66994A6-B6A4-4884-8250-33B735C427ED}" WorkUnitID="{0871311B-9FDD-4B38-909E-E914E5FFEAFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

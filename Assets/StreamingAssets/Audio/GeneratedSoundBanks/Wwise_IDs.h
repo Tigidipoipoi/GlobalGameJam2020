@@ -42,6 +42,9 @@ namespace AK
         static const AkUniqueID RESET_SFX_BUS_VOL = 3176211351U;
         static const AkUniqueID SET_MUSIC_BUS_VOL_TO_0 = 1257580087U;
         static const AkUniqueID SET_SFX_BUS_VOL_TO_0 = 510795939U;
+        static const AkUniqueID STOP_MK_COMBAT_A = 3673367607U;
+        static const AkUniqueID STOP_MK_EXTRA = 3651929831U;
+        static const AkUniqueID STOP_MK_STATIC = 2100881141U;
         static const AkUniqueID STOP_WALLA_M1 = 2221466542U;
         static const AkUniqueID STOP_WALLA_M2 = 2221466541U;
         static const AkUniqueID STOP_WALLA_M3 = 2221466540U;

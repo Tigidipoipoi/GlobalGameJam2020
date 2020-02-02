@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1865594480	Play_HeroLoose			\Default Work Unit\Play_HeroLoose	
 	2023163491	Play_MK_Static			\Default Work Unit\Play_MK_Static	
 	2072794187	Play_Monsters			\Default Work Unit\Play_Monsters	
+	2100881141	Stop_MK_Static			\Default Work Unit\Stop_MK_Static	
 	2221466540	Stop_Walla_M3			\Default Work Unit\Stop_Walla_M3	
 	2221466541	Stop_Walla_M2			\Default Work Unit\Stop_Walla_M2	
 	2221466542	Stop_Walla_M1			\Default Work Unit\Stop_Walla_M1	
@@ -26,6 +27,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3318378243	Play_Pot_Creation_Process			\Default Work Unit\Play_Pot_Creation_Process	
 	3545098540	Play_FCeramic			\Default Work Unit\Play_FCeramic	
 	3597897279	Play_Currency			\Default Work Unit\Play_Currency	
+	3651929831	Stop_MK_Extra			\Default Work Unit\Stop_MK_Extra	
+	3673367607	Stop_MK_Combat_A			\Default Work Unit\Stop_MK_Combat_A	
 	3771359620	Play_MWater			\Default Work Unit\Play_MWater	
 	3906169736	Play_Walla_M1			\Default Work Unit\Play_Walla_M1	
 	3906169738	Play_Walla_M3			\Default Work Unit\Play_Walla_M3	

@@ -88,6 +88,9 @@
 					</TransitionList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{92035F83-79AE-415D-B973-56F9DDADE2A5}" ShortID="172630222">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{E44E56E2-8F50-4788-A561-527D2DE6088F}" ShortID="921210314">
 									<PropertyList>
@@ -119,6 +122,8 @@
 						<MusicSegment Name="GGJ20_Music_2_Medieval_Fight_91bpm_v2" ID="{3C27ED8F-A152-4E7D-BD66-6A2748176B00}" ShortID="8759821">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="118681.3125"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="91"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -170,7 +175,7 @@
 								<MusicCue Name="Exit Cue" ID="{FD40966E-CA47-45D7-95E6-D240A0CCEC9C}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="118681.3125"/>
+										<Property Name="TimeMs" Type="Real64" Value="100219.78021978"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -191,6 +196,9 @@
 					</TransitionList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{FF154C0F-3937-4A94-90C8-574787090A0D}" ShortID="51292967">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{5FD47290-6651-43B0-9C57-4757C9F7CF04}" ShortID="349067730">
 									<PropertyList>
@@ -214,7 +222,9 @@
 					<ChildrenList>
 						<MusicSegment Name="GGJ20_Music_3_Medieval_May_Work_Idea_91bpm" ID="{2ADD3A36-761E-41C5-BCD1-F2F38E16DAA9}" ShortID="462777988">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="23736.25"/>
+								<Property Name="EndPosition" Type="Real64" Value="23736.2637362637"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="91"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -266,7 +276,7 @@
 								<MusicCue Name="Exit Cue" ID="{24666F30-7279-4EE1-BC9F-4A1AF898C6AD}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="23736.25"/>
+										<Property Name="TimeMs" Type="Real64" Value="18461.5384615385"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -287,6 +297,9 @@
 					</TransitionList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{2F293AA7-9641-40EE-B975-2D877F35A895}" ShortID="951533365">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{6ADF80E0-DED3-4FC6-AAAB-1E3ACDB1AA52}" ShortID="901831241">
 									<PropertyList>
