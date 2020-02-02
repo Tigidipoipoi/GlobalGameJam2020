@@ -24,6 +24,7 @@ public class TestimonyState : GameState
     /// <inheritdoc />
     public override void Enter()
     {
+        AkSoundEngine.PostEvent("Play_door", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Village_Ambience", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Walla_M1", Flow.gameObject);
         //Reset testimony.
@@ -117,7 +118,7 @@ public class TestimonyState : GameState
     void LootTestify()
     {
         List<int> oldResources = new List<int>();
-        foreach(GameResource resource in Player.Resources)
+        foreach (GameResource resource in Player.Resources)
         {
             oldResources.Add(resource.Amount);
         }
