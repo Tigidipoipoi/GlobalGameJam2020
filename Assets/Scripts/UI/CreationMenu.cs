@@ -280,19 +280,17 @@ public class CreationMenu : MonoBehaviour
         return slot;
     }
 
-    void OnPartSelected()
+    void OnPartSelected(PotPart selectedPart)
     {
         Slots occupiedMask = 0;
+        bool areAllSelected = true;
         foreach (var part in PotCreation.Player.SelectedParts)
         {
             if (part == null)
             {
-                foreach (var slotUi in m_SlotUis)
-                {
-                    slotUi.gameObject.SetActive(true);
-                }
+                areAllSelected = false;
 
-                return;
+                continue;
             }
 
             occupiedMask |= part.Slot;
@@ -300,8 +298,9 @@ public class CreationMenu : MonoBehaviour
 
         foreach (var slotUi in m_SlotUis)
         {
-            var isSlotOccupied = occupiedMask.HasFlag(slotUi.HandledSlot);
-            slotUi.gameObject.SetActive(isSlotOccupied);
+            var flag = !areAllSelected
+                && occupiedMask.HasFlag(slotUi.HandledSlot);
+            slotUi.gameObject.SetActive(flag);
         }
     }
 }
