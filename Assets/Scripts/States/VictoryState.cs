@@ -9,6 +9,7 @@ public class VictoryState : GameState
     public override void Enter()
     {
         base.Enter();
+        AkSoundEngine.PostEvent("Stop_MK_Static", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_FWin", Flow.gameObject);
     }
 

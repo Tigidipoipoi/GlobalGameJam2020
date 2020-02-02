@@ -6,7 +6,7 @@ public class FightState : GameState
 {
     public override void Enter()
     {
-        AkSoundEngine.PostEvent("Play_MFire", Flow.gameObject);
+        AkSoundEngine.PostEvent("Play_MK_Combat_A", Flow.gameObject);
         //Reset Hero's life
         Hero.CurrentHealth = Hero.MaxHealth;
 
@@ -20,6 +20,12 @@ public class FightState : GameState
 
             selectedPart.DamageState = Damages.INTACT;
         }
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        AkSoundEngine.PostEvent("Stop_MK_Combat_A", Flow.gameObject);
     }
 
     /// <inheritdoc />

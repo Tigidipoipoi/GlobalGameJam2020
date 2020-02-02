@@ -122,4 +122,11 @@ public class PotCreationState : GameState
 
         return true;
     }
+    public override void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            AkSoundEngine.PostEvent("Play_click", Flow.gameObject);
+        }
+    }
 }
