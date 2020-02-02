@@ -16,5 +16,10 @@ MonoBehaviour:
   Cost: 0
   Model: {fileID: 0}
   DamageState: 0
+<<<<<<< Updated upstream
   Quality: {fileID: 0}
   Slot: 16
+=======
+  Quality: 0
+  Slot: 0
+>>>>>>> Stashed changes
