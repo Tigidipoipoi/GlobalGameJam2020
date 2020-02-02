@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5654801598364652976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052488889918843570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HandledSlot: 1
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
 --- !u!1 &2291489079990332372
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,7 +11,7 @@ GameObject:
   - component: {fileID: 2438193063619272993}
   - component: {fileID: 3308605580159501660}
   m_Layer: 0
-  m_Name: ArmR
+  m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 2
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  HandledSlot: 8
+  Image: {fileID: 0}
 --- !u!1 &2375884415203737950
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 32
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 0}
 --- !u!1 &4869314558529943216
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +101,7 @@ GameObject:
   - component: {fileID: 3024739873870957093}
   - component: {fileID: 7024885313789835344}
   m_Layer: 0
-  m_Name: LegL
+  m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,8 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 16
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  HandledSlot: 4
+  Image: {fileID: 0}
 --- !u!1 &5551129825309569100
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +146,7 @@ GameObject:
   - component: {fileID: 3562306000226483115}
   - component: {fileID: 7902891374432472444}
   m_Layer: 0
-  m_Name: LegR
+  m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,8 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 8
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  HandledSlot: 2
+  Image: {fileID: 0}
 --- !u!1 &6838038511599876423
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +191,7 @@ GameObject:
   - component: {fileID: 9007730901566296578}
   - component: {fileID: 6810167779218606805}
   m_Layer: 0
-  m_Name: ArmL
+  m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,8 +223,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 4
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  HandledSlot: 16
+  Image: {fileID: 0}
+--- !u!114 &5654801598364652976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052488889918843570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandledSlot: 1
+  Image: {fileID: 0}
 --- !u!1001 &8023737588458402747
 PrefabInstance:
   m_ObjectHideFlags: 0
