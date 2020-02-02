@@ -18,5 +18,5 @@ MonoBehaviour:
   DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
   Slot: 1
-  Icon: {fileID: 21300000, guid: 79291075d88c5b047ae7d9a1cbdf5b2b, type: 3}
+  Icon: {fileID: 21300000, guid: 29a323c6522e808479824b925c77958e, type: 3}
   Tooltip: 
