@@ -100,7 +100,7 @@ public class GameFlow : MonoBehaviour
 
             case RecoveryState _:
             {
-                nextState = AllStates.Find(state => state is TestimonyState);
+                nextState = AllStates.Find(state => state is LootState);
                 Assert.IsNotNull(nextState);
 
                 break;
@@ -108,7 +108,7 @@ public class GameFlow : MonoBehaviour
 
             case TestimonyState _:
             {
-                nextState = AllStates.Find(state => state is LootState);
+                nextState = AllStates.Find(state => state is PotCreationState);
                 Assert.IsNotNull(nextState);
 
                 break;
@@ -124,7 +124,7 @@ public class GameFlow : MonoBehaviour
                 }
                 else
                 {
-                    nextState = AllStates.Find(state => state is PotCreationState);
+                    nextState = AllStates.Find(state => state is TestimonyState);
                     Assert.IsNotNull(nextState);
                 }
 
@@ -134,6 +134,14 @@ public class GameFlow : MonoBehaviour
             case PotCreationState _:
             {
                 nextState = AllStates.Find(state => state is PotCreationState);
+                Assert.IsNotNull(nextState);
+
+                break;
+            }
+
+            case UnlockState _:
+            {
+                nextState = AllStates.Find(state => state is TestimonyState);
                 Assert.IsNotNull(nextState);
 
                 break;
