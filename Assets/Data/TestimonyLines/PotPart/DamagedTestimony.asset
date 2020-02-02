@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61965eec8c38d774c935558ab52115b8, type: 3}
   m_Name: DamagedTestimony
   m_EditorClassIdentifier: 
+  Text: The {0} part sufferred some damage.
   Damage: 1
   HandledSlots: -1
-  Text: The {0} part sufferred some damage.
