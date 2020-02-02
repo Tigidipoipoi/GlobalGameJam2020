@@ -39,11 +39,11 @@ public class BluePrintUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Tooltip.transform.parent.gameObject.SetActive(true);
+//        Tooltip.transform.parent.gameObject.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Tooltip.transform.parent.gameObject.SetActive(false);
+//        Tooltip.transform.parent.gameObject.SetActive(false);
     }
 }
