@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -25,13 +25,59 @@ public class CreationMenu : MonoBehaviour
     public TMP_Dropdown ElementDD;
     public TMP_Dropdown SlotDD;
 
-    private List<PotPart> DisplayedPotParts;
+    public Transform RecipeGrid;
 
-    // Start is called before the first frame update
+    public BluePrintUI BluePrintPrefab;
+
     void Start()
     {
+        GameFlow.StateStarted += OnStateStarted;
+        GameFlow.StateEnded += OnStateEnded;
+
+        if (gameFlow.CurrentState != PotCreation)
+        {
+            gameObject.SetActive(false);
+        }
+
         UpdateClayDisplays();
-        DisplayedPotParts = gameFlow.currentInventory.OwnedParts;
+    }
+
+    void OnDestroy()
+    {
+        GameFlow.StateEnded -= OnStateEnded;
+        GameFlow.StateStarted -= OnStateStarted;
+    }
+
+    void OnEnable()
+    {
+        //Clear grid
+        for (var i = RecipeGrid.childCount; i > 0; i--)
+        {
+            Destroy(RecipeGrid.GetChild(0));
+        }
+
+        //Fill grid
+        foreach (var ownedPart in gameFlow.currentInventory.OwnedParts)
+        {
+            var bluePrint = Instantiate(BluePrintPrefab, RecipeGrid.transform);
+            bluePrint.Initialize(ownedPart);
+        }
+    }
+
+    void OnStateStarted(GameState state)
+    {
+        if (state == PotCreation)
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
+    void OnStateEnded(GameState state)
+    {
+        if (state == PotCreation)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void UpdateClayDisplays()
@@ -45,7 +91,7 @@ public class CreationMenu : MonoBehaviour
 
     public void ResetPot()
     {
-        foreach(PotPart part in PotCreation.Player.SelectedParts)
+        foreach (PotPart part in PotCreation.Player.SelectedParts)
         {
             PotCreation.unselectPart(part);
         }
@@ -54,7 +100,7 @@ public class CreationMenu : MonoBehaviour
     public void UpdateRecipeList()
     {
         List<PotPart> filteredParts = new List<PotPart>();
-        switch(QualityDD.value)
+        switch (QualityDD.value)
         {
             case (int)Qualities.EARTHENWARE + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -64,6 +110,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             case (int)Qualities.PORCELAIN + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -73,6 +120,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             case (int)Qualities.TERRACOTTA + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -82,6 +130,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             case (int)Qualities.SANDSTONE + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -91,6 +140,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             case (int)Qualities.IRON + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -100,6 +150,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             case (int)Qualities.DIAMOND + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -109,12 +160,14 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Add(part);
                     }
                 }
+
                 break;
             default:
-                foreach(PotPart part in gameFlow.currentInventory.OwnedParts)
+                foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
                     filteredParts.Add(part);
                 }
+
                 break;
         }
 
@@ -128,6 +181,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Remove(part);
                     }
                 }
+
                 break;
             case (int)Elements.PLANT + 1:
                 foreach (PotPart part in filteredParts)
@@ -137,6 +191,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Remove(part);
                     }
                 }
+
                 break;
             case (int)Elements.AIR + 1:
                 foreach (PotPart part in filteredParts)
@@ -146,6 +201,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Remove(part);
                     }
                 }
+
                 break;
             case (int)Elements.THUNDER + 1:
                 foreach (PotPart part in filteredParts)
@@ -155,6 +211,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Remove(part);
                     }
                 }
+
                 break;
             case (int)Elements.WATER + 1:
                 foreach (PotPart part in filteredParts)
@@ -164,6 +221,7 @@ public class CreationMenu : MonoBehaviour
                         filteredParts.Remove(part);
                     }
                 }
+
                 break;
             default:
                 break;
@@ -171,7 +229,7 @@ public class CreationMenu : MonoBehaviour
 
         foreach (PotPart part in filteredParts)
         {
-            if(SlotDD.value == 0)
+            if (SlotDD.value == 0)
             {
                 break;
             }
@@ -181,13 +239,14 @@ public class CreationMenu : MonoBehaviour
                 filteredParts.Remove(part);
             }
         }
+
         //TODO generate content from that list
     }
 
     private Slots ConvertSlot(int slotIndex)
     {
         Slots slot = Slots.CORE;
-        switch(slotIndex)
+        switch (slotIndex)
         {
             case 2:
                 slot = Slots.ARM_L;
@@ -199,6 +258,7 @@ public class CreationMenu : MonoBehaviour
                 slot = Slots.EYE;
                 break;
         }
+
         return slot;
     }
 }

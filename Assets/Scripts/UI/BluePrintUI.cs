@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -11,15 +12,20 @@ public class BluePrintUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public Image Icon;
 
+    public DraggableBluePrintUI Draggable;
+
     PotPart m_PotPart;
 
     public void Initialize(PotPart potPart)
     {
         m_PotPart = potPart;
+        Draggable.PotPart = potPart;
 
         Background.sprite = m_PotPart.Quality.Icon;
+        Draggable.Background.sprite = m_PotPart.Quality.Icon;
 
         Icon.sprite = m_PotPart.Icon;
+        Draggable.Icon.sprite = m_PotPart.Icon;
 
         Tooltip.text = m_PotPart.Tooltip;
 
