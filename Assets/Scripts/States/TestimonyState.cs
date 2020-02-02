@@ -14,6 +14,13 @@ public class TestimonyState : GameState
 
     public TestimonyLine IntroductionLine;
 
+    public TestimonyLine LootLine;
+
+    public LootDrop RandomDrop;
+    public LootDrop FixedDrop;
+
+    public GameFlow Gameflow;
+
     StringBuilder m_TestimonyBuilder = new StringBuilder();
 
     /// <inheritdoc />
@@ -34,6 +41,8 @@ public class TestimonyState : GameState
         PotPartsTestify();
 
         BonusTestify();
+
+        LootTestify();
     }
 
     /// <inheritdoc />
@@ -90,5 +99,24 @@ public class TestimonyState : GameState
                 m_TestimonyBuilder.AppendLine(bonusLine.Text);
             }
         }
+    }
+
+    void LootTestify()
+    {
+        List<GameResource> oldResources = Player.Resources;
+        RandomDrop.GiveLoot(Gameflow.CurrentLevel);
+        FixedDrop.GiveLoot(Gameflow.CurrentLevel);
+
+        List<int> elementDrops = new List<int>();
+
+        for(int i = 0; i < Player.Resources.Count; i++)
+        {
+            elementDrops.Add(Player.Resources[i].Amount - oldResources[i].Amount);
+        }
+
+        m_TestimonyBuilder.AppendFormat(LootLine.Text, elementDrops);
+
+
+
     }
 }
