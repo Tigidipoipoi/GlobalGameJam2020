@@ -367,7 +367,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Hero_loses_and_goes_away" ID="{7E90B1EC-4428-4F4B-B4B9-D9402D4FB67A}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="stubbed_merci_high" ID="{2C47EBFA-03A0-4172-82EF-139266051C39}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -399,6 +399,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{5B5D8B50-614C-476E-928D-56F5EE62D281}" ShortID="610272678">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rumble_loop_30s" ID="{71AC14F3-78EC-4F31-9ACC-CECCE797EA99}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_FinalDestruction" ID="{40CA1CA0-F67B-4200-B78A-D98D98FC345E}">
@@ -406,10 +416,11 @@
 						<Action Name="" ID="{5642AFFA-05BE-4B28-82E4-E6A0036E78C9}" ShortID="581533851">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Flames_rumble_loop_30s" ID="{5B77D7ED-AB77-4792-8F14-217EC9CBD5E1}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -602,13 +613,24 @@
 				</Event>
 				<Event Name="Play_door" ID="{3212714B-7A1A-47FD-AB49-E55B9165E29B}">
 					<ChildrenList>
-						<Action Name="" ID="{C8FDF10B-BCA2-4C18-9BEB-FC00936197FE}" ShortID="560504693">
+						<Action Name="" ID="{A4A34736-C08D-4A26-B407-7DAD99A31D84}" ShortID="716843229">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Knock_on_door" ID="{7F2364B1-E610-4BB2-B3ED-C9F82BC2126D}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D8758911-DEB5-4F35-86E3-EA7963ECE339}" ShortID="688816765">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hello_high" ID="{8C5B9AFC-FEB9-4BF0-9FE9-D0A6A9CDCF9A}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
