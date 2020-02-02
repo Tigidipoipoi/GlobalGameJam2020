@@ -1,8 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "GameState/PotCreation")]
 public class PotCreationState : GameState
 {
+    public static event Action<PotPart> PartSelected;
+
     /// <inheritdoc />
     public override void Apply() { }
 
@@ -26,6 +30,8 @@ public class PotCreationState : GameState
 
         Player.SelectedParts.Add(part);
         removeClay(part.Element, part.Cost);
+
+        PartSelected?.Invoke(part);
     }
 
     /// <summary>
