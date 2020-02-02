@@ -24,6 +24,7 @@ public class TestimonyState : GameState
     /// <inheritdoc />
     public override void Enter()
     {
+        AkSoundEngine.PostEvent("Play_door", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Village_Ambience", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Walla_M1", Flow.gameObject);
         //Reset testimony.
@@ -92,7 +93,8 @@ public class TestimonyState : GameState
             foreach (var potPartLine in PotPartLines)
             {
                 if (potPartLine.HandledSlots != 0
-                    && potPartLine.HandledSlots.HasFlag(playerPart.AllowedSlots))
+                    && potPartLine.HandledSlots.HasFlag(playerPart.AllowedSlots)
+                    && potPartLine.Damage == playerPart.DamageState)
                 {
                     m_TestimonyBuilder.AppendLine();
                     m_TestimonyBuilder.AppendFormat(potPartLine.Text, playerPart.name);
@@ -117,7 +119,7 @@ public class TestimonyState : GameState
     void LootTestify()
     {
         List<int> oldResources = new List<int>();
-        foreach(GameResource resource in Player.Resources)
+        foreach (GameResource resource in Player.Resources)
         {
             oldResources.Add(resource.Amount);
         }

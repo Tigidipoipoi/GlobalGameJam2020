@@ -17,6 +17,7 @@ MonoBehaviour:
   Model: {fileID: -927199367670048503, guid: 19a0599091eb0284ba6229e42d36f86b, type: 3}
   DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  Slot: 6
+  AllowedSlots: 6
+  EquippedSlot: 0
   Icon: {fileID: 21300000, guid: 5b92bb325f69e1349a96072ecd3c7ead, type: 3}
   Tooltip: 

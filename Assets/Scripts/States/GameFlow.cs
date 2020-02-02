@@ -31,6 +31,8 @@ public class GameFlow : MonoBehaviour
 
     public const float ELEMENT_BUFF = 2.0f;
 
+    public List<Quality> AllQualities;
+
     public void Start()
     {
         Reset();
