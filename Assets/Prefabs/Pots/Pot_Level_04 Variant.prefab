@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2438193063619272993}
   - component: {fileID: 3308605580159501660}
   m_Layer: 0
-  m_Name: ArmR
+  m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 2
+  HandledSlot: 8
   Image: {fileID: 0}
 --- !u!1 &2375884415203737950
 GameObject:
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 3024739873870957093}
   - component: {fileID: 7024885313789835344}
   m_Layer: 0
-  m_Name: LegL
+  m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 16
+  HandledSlot: 4
   Image: {fileID: 0}
 --- !u!1 &5551129825309569100
 GameObject:
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 3562306000226483115}
   - component: {fileID: 7902891374432472444}
   m_Layer: 0
-  m_Name: LegR
+  m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 8
+  HandledSlot: 2
   Image: {fileID: 0}
 --- !u!1 &6838038511599876423
 GameObject:
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 9007730901566296578}
   - component: {fileID: 6810167779218606805}
   m_Layer: 0
-  m_Name: ArmL
+  m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74228a7af13bbda4188ac60db23e181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandledSlot: 4
+  HandledSlot: 16
   Image: {fileID: 0}
 --- !u!114 &5654801598364652976
 MonoBehaviour:

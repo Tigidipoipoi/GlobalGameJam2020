@@ -511,6 +511,81 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Pot_Creation_Process" ID="{6261D91A-A40F-4102-A571-6A01A95DEF66}">
+					<ChildrenList>
+						<Action Name="" ID="{C4DCDC76-CFF5-4731-836B-BEEC8E4854D7}" ShortID="905843640">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_HeroLoose" ID="{AC8C5241-4B4B-4A86-9B4E-D438F3D40600}">
+					<ChildrenList>
+						<Action Name="" ID="{AA3F602B-6A63-407B-973B-23CE0D5A23B8}" ShortID="518615101">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_VillagersHappy" ID="{61236E2A-0DD1-437E-B0F8-8FC16335EAB3}">
+					<ChildrenList>
+						<Action Name="" ID="{D6E15C42-F198-42F0-862E-378673D5E7D7}" ShortID="136920832">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Monsters" ID="{6E92A214-006F-45F4-8EA5-8399D097F586}">
+					<ChildrenList>
+						<Action Name="" ID="{4406319C-9CA3-4C27-8CD9-3F07CEEF2425}" ShortID="52354192">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_FinalDestruction" ID="{3387A00F-EC5B-4776-89C1-2699EFDF1C94}">
+					<ChildrenList>
+						<Action Name="" ID="{F093B709-F72D-4E8D-829A-46AF2788F2DA}" ShortID="212936865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
