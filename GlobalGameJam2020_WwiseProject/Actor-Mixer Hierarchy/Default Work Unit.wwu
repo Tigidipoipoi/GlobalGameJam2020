@@ -1233,6 +1233,154 @@
 								<ActiveSource Name="Complete_final" ID="{0C8FEA99-F156-4E92-803A-69AC2DDEDAE2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Knock_on_door" ID="{7F2364B1-E610-4BB2-B3ED-C9F82BC2126D}" ShortID="714999786">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Knock_on_door" ID="{A0890010-45CF-4FE3-BC19-4E59EA5F5DB3}" ShortID="1020546851">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\Knock_on_door.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Knock_on_door" ID="{A0890010-45CF-4FE3-BC19-4E59EA5F5DB3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="hello_high" ID="{8C5B9AFC-FEB9-4BF0-9FE9-D0A6A9CDCF9A}" ShortID="477928108">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hello_high" ID="{FD72FA73-B241-419D-8752-747D6F6DA9ED}" ShortID="322831769">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.40178125"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.66401438053097"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\hello_high.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hello_high" ID="{FD72FA73-B241-419D-8752-747D6F6DA9ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Flames_rumble_loop_30s" ID="{5B77D7ED-AB77-4792-8F14-217EC9CBD5E1}" ShortID="259826629">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Flames_rumble_loop_30s" ID="{2889394F-4767-4018-A9B5-D5EF9E49077D}" ShortID="463987867">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\Flames_rumble_loop_30s.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Flames_rumble_loop_30s" ID="{2889394F-4767-4018-A9B5-D5EF9E49077D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rumble_loop_30s" ID="{71AC14F3-78EC-4F31-9ACC-CECCE797EA99}" ShortID="261004974">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rumble_loop_30s" ID="{46EE01FE-8C21-4B5E-B207-25278EF15AF2}" ShortID="765788790">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\Rumble_loop_30s.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rumble_loop_30s" ID="{46EE01FE-8C21-4B5E-B207-25278EF15AF2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="stubbed_merci_high" ID="{2C47EBFA-03A0-4172-82EF-139266051C39}" ShortID="1059784784">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stubbed_merci_high" ID="{0223D2A5-D645-40B6-8C0F-0BA2DC425CE3}" ShortID="199647378">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\stubbed_merci_high.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stubbed_merci_high" ID="{0223D2A5-D645-40B6-8C0F-0BA2DC425CE3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="stubbed" ID="{76873C39-E659-4864-AE4B-6F3BDB05FF18}" ShortID="325327824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stubbed" ID="{4FC20A46-137D-4540-815E-FA03FC20996B}" ShortID="773545147">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\stubbed.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stubbed" ID="{4FC20A46-137D-4540-815E-FA03FC20996B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="4th_batch" ID="{792FD59E-179D-44DF-A29E-1A47BD728A1D}" ShortID="886092736">
@@ -1273,6 +1421,124 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Monster_voices_only" ID="{19BFD5F2-68D3-4B22-9F61-C7E0CB76EA2B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="5th_batch" ID="{8D73E9BD-6913-4B24-9C17-5D240BDEE9A0}" ShortID="869418003">
+					<ChildrenList>
+						<Sound Name="BOUNCE_122-01" ID="{58DBD878-0121-46AA-B134-86080AC0BD57}" ShortID="48801485">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOUNCE_122-01" ID="{1CAA0700-C6E1-46A2-8BD0-DB757AA84EA1}" ShortID="340147113">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\BOUNCE_122-01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOUNCE_122-01" ID="{1CAA0700-C6E1-46A2-8BD0-DB757AA84EA1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOUNCE_122-07" ID="{0DF532FD-A086-4685-A83E-867A3673D62A}" ShortID="235932281">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOUNCE_122-07" ID="{8D417464-96E2-4D96-B563-A49732CEBEAD}" ShortID="67247442">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\BOUNCE_122-07.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOUNCE_122-07" ID="{8D417464-96E2-4D96-B563-A49732CEBEAD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hello_hello" ID="{68371DB1-70E7-4AAF-A395-01820D18E3F3}" ShortID="489460086">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hello_hello" ID="{BBC779A7-7E32-47CB-8708-BB97C84EB19B}" ShortID="584887510">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\Hello_hello.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hello_hello" ID="{BBC779A7-7E32-47CB-8708-BB97C84EB19B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="hello_low" ID="{CDF0F588-6031-4109-9141-52FEE1A06C4D}" ShortID="695542568">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hello_low" ID="{C9276D14-C0C1-4B2F-9E48-85FC86D20700}" ShortID="469844416">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\hello_low.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hello_low" ID="{C9276D14-C0C1-4B2F-9E48-85FC86D20700}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Merci" ID="{74DA3E04-97BF-47D2-A946-5F8702DB1047}" ShortID="902090308">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Merci" ID="{B8D01749-B82C-403B-9823-6A9193B0AB57}" ShortID="311487036">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\Merci.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Merci" ID="{B8D01749-B82C-403B-9823-6A9193B0AB57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="stubbed_merci_low" ID="{C3D55DAB-BE84-4B5F-BB48-CD00F17992BD}" ShortID="497435419">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stubbed_merci_low" ID="{61AE0A65-546B-44E9-9837-7BD8FD222DF7}" ShortID="1069088444">
+									<Language>SFX</Language>
+									<AudioFile>5th_batch\stubbed_merci_low.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stubbed_merci_low" ID="{61AE0A65-546B-44E9-9837-7BD8FD222DF7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

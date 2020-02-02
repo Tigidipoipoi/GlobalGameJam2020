@@ -101,6 +101,10 @@
 					<ShortName>Bounced Files\Sword_03.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_03_56D34C19.wem</Path>
 				</File>
+				<File Id="199647378" Language="SFX">
+					<ShortName>5th_batch\stubbed_merci_high.wav</ShortName>
+					<Path>SFX/5th_batch/stubbed_merci_high_56D34C19.wem</Path>
+				</File>
 				<File Id="216960247" Language="SFX">
 					<ShortName>4th_batch\Villagers_Happy_voices.wav</ShortName>
 					<Path>SFX/4th_batch/Villagers_Happy_voices_56D34C19.wem</Path>
@@ -116,6 +120,10 @@
 				<File Id="296180385" Language="SFX">
 					<ShortName>Bounced Files\Currency.wav</ShortName>
 					<Path>SFX/Bounced Files/Currency_56D34C19.wem</Path>
+				</File>
+				<File Id="322831769" Language="SFX">
+					<ShortName>5th_batch\hello_high.wav</ShortName>
+					<Path>SFX/5th_batch/hello_high_4A0D6035.wem</Path>
 				</File>
 				<File Id="374826309" Language="SFX">
 					<ShortName>GGJ20_Music_2_Medieval_Fight_91bpm_v2.wav</ShortName>
@@ -140,6 +148,10 @@
 				<File Id="449189275" Language="SFX">
 					<ShortName>2nd_batch\Currency_OpB.wav</ShortName>
 					<Path>SFX/2nd_batch/Currency_OpB_56D34C19.wem</Path>
+				</File>
+				<File Id="463987867" Language="SFX">
+					<ShortName>5th_batch\Flames_rumble_loop_30s.wav</ShortName>
+					<Path>SFX/5th_batch/Flames_rumble_loop_30s_8956FC97.wem</Path>
 				</File>
 				<File Id="468309706" Language="SFX">
 					<ShortName>Bounced Files\Walla_M03.wav</ShortName>
@@ -177,6 +189,10 @@
 					<ShortName>2nd_batch\Fire_01.wav</ShortName>
 					<Path>SFX/2nd_batch/Fire_01_56D34C19.wem</Path>
 				</File>
+				<File Id="765788790" Language="SFX">
+					<ShortName>5th_batch\Rumble_loop_30s.wav</ShortName>
+					<Path>SFX/5th_batch/Rumble_loop_30s_8956FC97.wem</Path>
+				</File>
 				<File Id="797544827" Language="SFX">
 					<ShortName>Bounced Files\Walla_M02.wav</ShortName>
 					<Path>SFX/Bounced Files/Walla_M02_56D34C19.wem</Path>
@@ -197,9 +213,9 @@
 					<ShortName>4th_batch\Complete_final.wav</ShortName>
 					<Path>SFX/4th_batch/Complete_final_56D34C19.wem</Path>
 				</File>
-				<File Id="995740326" Language="SFX">
-					<ShortName>4th_batch\Hero_loses_and_goes_away.wav</ShortName>
-					<Path>SFX/4th_batch/Hero_loses_and_goes_away_56D34C19.wem</Path>
+				<File Id="1020546851" Language="SFX">
+					<ShortName>5th_batch\Knock_on_door.wav</ShortName>
+					<Path>SFX/5th_batch/Knock_on_door_56D34C19.wem</Path>
 				</File>
 				<File Id="1034859551" Language="SFX">
 					<ShortName>2nd_batch\Village_Ambience.wav</ShortName>
