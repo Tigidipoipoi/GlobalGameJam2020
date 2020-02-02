@@ -15,7 +15,7 @@ MonoBehaviour:
   Element: 3
   Cost: 5
   Model: {fileID: -927199367670048503, guid: 818b3a603fa9ab24d834dcb934386a54, type: 3}
-  DamageState: 0
+  DamageState: 1
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
   AllowedSlots: 24
   EquippedSlot: 0
