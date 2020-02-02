@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e4b878253a9ae42a121c6561e873a7, type: 3}
   m_Name: HeroInit
   m_EditorClassIdentifier: 
-  MaxHealth: 15
-  CurrentHealth: 15
+  MaxHealth: 30
+  CurrentHealth: 30
   Element: 4
