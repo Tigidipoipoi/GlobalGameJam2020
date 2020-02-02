@@ -2356,6 +2356,7 @@ GameObject:
   - component: {fileID: 1106557687644699985}
   - component: {fileID: 1632946088546260639}
   - component: {fileID: 893204181445478416}
+  - component: {fileID: 6774896458563030708}
   m_Layer: 0
   m_Name: ThunderClay
   m_TagString: Untagged
@@ -2419,6 +2420,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6774896458563030708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3013779135853558002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5a6fbd67014049a425d2d59f5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: 3
+  textMesh: {fileID: 4280680675595819111}
+  resource: {fileID: 11400000, guid: 706ea632aee9ead4ab8f3650d68ff01e, type: 2}
 --- !u!1 &3181576867496620067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,7 +2623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.0008015866}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000026015812}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4888509977502612647
@@ -3008,6 +3024,7 @@ GameObject:
   - component: {fileID: 3506716072940901139}
   - component: {fileID: 6733100163118476910}
   - component: {fileID: 2438869058314622559}
+  - component: {fileID: 1144736030864087252}
   m_Layer: 0
   m_Name: AirClay
   m_TagString: Untagged
@@ -3071,6 +3088,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1144736030864087252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875048282185310444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5a6fbd67014049a425d2d59f5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: 2
+  textMesh: {fileID: 2037269797691890903}
+  resource: {fileID: 11400000, guid: cf789928876f4de4ba0ed96e2242559e, type: 2}
 --- !u!1 &4120769985935428197
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,6 +4422,7 @@ GameObject:
   - component: {fileID: 3250543960235453775}
   - component: {fileID: 5406405444758030518}
   - component: {fileID: 4745969054566225556}
+  - component: {fileID: 8832530077567526314}
   m_Layer: 0
   m_Name: WaterClay
   m_TagString: Untagged
@@ -4453,6 +4486,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8832530077567526314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984302706830415933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5a6fbd67014049a425d2d59f5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: 4
+  textMesh: {fileID: 5765010499611440914}
+  resource: {fileID: 11400000, guid: 0333e087e9f950c4f8041a924a84c731, type: 2}
 --- !u!1 &6316209076046413715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,6 +5109,7 @@ GameObject:
   - component: {fileID: 6318046053902454419}
   - component: {fileID: 8418469548384180792}
   - component: {fileID: 2396674558880988925}
+  - component: {fileID: 5448238265915794589}
   m_Layer: 0
   m_Name: PlantClay
   m_TagString: Untagged
@@ -5124,6 +5173,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5448238265915794589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6867649916900948794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5a6fbd67014049a425d2d59f5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: 1
+  textMesh: {fileID: 7012901514992313462}
+  resource: {fileID: 11400000, guid: 52677b9c475b0ee458cf29c76a59cc75, type: 2}
 --- !u!1 &6933136492439347557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,7 +6308,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8757524942322045343}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99739456
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7503,6 +7567,7 @@ GameObject:
   - component: {fileID: 1163831878712759462}
   - component: {fileID: 446386537281884434}
   - component: {fileID: 7864291221999582229}
+  - component: {fileID: 152565269293764589}
   m_Layer: 0
   m_Name: FireClay
   m_TagString: Untagged
@@ -7566,3 +7631,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &152565269293764589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9147527018178855903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5a6fbd67014049a425d2d59f5814d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: 0
+  textMesh: {fileID: 7133139094150304959}
+  resource: {fileID: 11400000, guid: bef10ae07a596204d901109c3b00cfd0, type: 2}
