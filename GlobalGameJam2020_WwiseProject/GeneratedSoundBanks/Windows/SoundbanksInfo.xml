@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="311910498" Name="Play_click" ObjectPath="\Events\Default Work Unit\Play_click"/>
 				<Event Id="3597897279" Name="Play_Currency" ObjectPath="\Events\Default Work Unit\Play_Currency"/>
+				<Event Id="2547633870" Name="Play_door" ObjectPath="\Events\Default Work Unit\Play_door"/>
 				<Event Id="3448859267" Name="Play_end_ref" ObjectPath="\Events\Default Work Unit\Play_end_ref"/>
 				<Event Id="3545098540" Name="Play_FCeramic" ObjectPath="\Events\Default Work Unit\Play_FCeramic"/>
 				<Event Id="2612811842" Name="Play_FinalDestruction" ObjectPath="\Events\Default Work Unit\Play_FinalDestruction"/>
