@@ -11,6 +11,13 @@ public class TestimonyUI : MonoBehaviour
     {
         GameFlow.StateStarted += OnStateStarted;
         GameFlow.StateEnded += OnStateEnded;
+
+        var gameFlow = FindObjectOfType<GameFlow>();
+        if (gameFlow != null
+            && gameFlow.CurrentState != Data)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     void OnDestroy()

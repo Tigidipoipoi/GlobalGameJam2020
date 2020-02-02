@@ -1,18 +1,53 @@
 Event	ID	Name			Wwise Object Path	Notes
 	173327921	Play_placeholder			\Default Work Unit\Play_placeholder	
+	262105351	Play_MFire			\Default Work Unit\Play_MFire	
+	311910498	Play_click			\Default Work Unit\Play_click	
 	510795939	Set_SFX_Bus_Vol_to_0			\Default Work Unit\Set_SFX_Bus_Vol_to_0	
+	828274961	Play_FLaser			\Default Work Unit\Play_FLaser	
 	1257580087	Set_Music_Bus_Vol_to_0			\Default Work Unit\Set_Music_Bus_Vol_to_0	
 	1285414837	Play_MK_Combat_A			\Default Work Unit\Play_MK_Combat_A	
 	1379997717	Play_MK_Extra			\Default Work Unit\Play_MK_Extra	
+	1865594480	Play_HeroLoose			\Default Work Unit\Play_HeroLoose	
 	2023163491	Play_MK_Static			\Default Work Unit\Play_MK_Static	
+	2072794187	Play_Monsters			\Default Work Unit\Play_Monsters	
+	2257207145	Play_MWind			\Default Work Unit\Play_MWind	
+	2612811842	Play_FinalDestruction			\Default Work Unit\Play_FinalDestruction	
+	2693592746	Play_FWin			\Default Work Unit\Play_FWin	
+	2736518758	Play_Pot_Creation_Finished			\Default Work Unit\Play_Pot_Creation_Finished	
 	3064570407	Reset_Music_Bus_Vol			\Default Work Unit\Reset_Music_Bus_Vol	
+	3074229139	Play_FSword			\Default Work Unit\Play_FSword	
+	3167144222	Play_FLoose			\Default Work Unit\Play_FLoose	
 	3176211351	Reset_SFX_Bus_Vol			\Default Work Unit\Reset_SFX_Bus_Vol	
 	3187507146	Play_test			\Default Work Unit\Play_test	
+	3256485433	Play_Village_Ambience			\Default Work Unit\Play_Village_Ambience	
+	3318378243	Play_Pot_Creation_Process			\Default Work Unit\Play_Pot_Creation_Process	
+	3545098540	Play_FCeramic			\Default Work Unit\Play_FCeramic	
+	3597897279	Play_Currency			\Default Work Unit\Play_Currency	
+	3771359620	Play_MWater			\Default Work Unit\Play_MWater	
+	3906169736	Play_Walla_M1			\Default Work Unit\Play_Walla_M1	
+	3906169738	Play_Walla_M3			\Default Work Unit\Play_Walla_M3	
+	3906169739	Play_Walla_M2			\Default Work Unit\Play_Walla_M2	
+	4066344583	Play_VillagersHappy			\Default Work Unit\Play_VillagersHappy	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	12664886	Creating_Pot_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Creating_Pot_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Creating_Pot_01		938472
 	51070242	GameJam_Plants_New_Heart_	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GameJam_Plants_New_Heart__56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\GameJam_Plants_New_Heart_		181564
+	56771485	Click_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Click_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Menu\Click_01		158208
 	61936185	Empty_PlaceHolder	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Empty_PlaceHolder_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test_Sounds\Empty_PlaceHolder		141072
+	73226339	Sword_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_02		129972
+	101502802	Sword_03	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_03		109280
+	225380548	Sword_08	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_08_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_08		105756
+	296180385	Currency	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Currency_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Currency		199496
 	374826309	GGJ20_Music_2_Medieval_Fight_91bpm_v2	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_2_Medieval_Fight_91bpm_v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Combat_music\GGJ20_Music_2_Medieval_Fight_91bpm_v2\GGJ20_Music_2_Medieval_Fight_91bpm_v2		22786876
 	375018684	GGJ20_Music_3_Medieval_May_Work_Idea_91bpm	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Extra_music\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm\GGJ20_Music_3_Medieval_May_Work_Idea_91bpm		4557424
+	377541779	Walla_M01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Walla_M01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Villagers\Walla_M01		3361404
+	414187101	Sword_07	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_07_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_07		111596
+	468309706	Walla_M03	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Walla_M03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Villagers\Walla_M03		2582116
 	504576153	GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Static_music\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2\GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2		12288064
+	540466215	Sword_04	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_04		122092
+	553351632	Pot_Creation_Finished	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Pot_Creation_Finished_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pot_Creation\Pot_Creation_Finished		191180
+	618008716	Sword_05	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_05		126824
+	639895378	Sword_06	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_06		133212
+	797544827	Walla_M02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Walla_M02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Villagers\Walla_M02		4140852
+	930263848	Sword_01	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Windows\SFX\Bounced Files\Sword_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Sword\Sword_01		108644
 
