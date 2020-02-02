@@ -9,6 +9,8 @@ public class InitializationState : GameState
     public override void Apply()
     {
         Initialize();
+
+        IsDone = true;
     }
 
     public void Initialize()

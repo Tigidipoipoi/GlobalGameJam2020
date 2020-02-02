@@ -44,7 +44,7 @@ public class TestimonyUI : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Data.isDone = true;
+            Data.IsDone = true;
         }
     }
 }
