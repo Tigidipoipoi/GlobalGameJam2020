@@ -29,6 +29,8 @@ public class CreationMenu : MonoBehaviour
 
     public BluePrintUI BluePrintPrefab;
 
+    SelectedSlotUI[] m_SlotUis;
+
     void Start()
     {
         GameFlow.StateStarted += OnStateStarted;
@@ -39,6 +41,8 @@ public class CreationMenu : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        m_SlotUis = GetComponentsInChildren<SelectedSlotUI>();
+
         UpdateClayDisplays();
     }
 
@@ -46,6 +50,18 @@ public class CreationMenu : MonoBehaviour
     {
         GameFlow.StateEnded -= OnStateEnded;
         GameFlow.StateStarted -= OnStateStarted;
+    }
+
+    void OnEnable()
+    {
+        PotCreationState.PartSelected += OnPartSelected;
+
+        OnPartSelected(null);
+    }
+
+    void OnDisable()
+    {
+        PotCreationState.PartSelected -= OnPartSelected;
     }
 
     void OnStateStarted(GameState state)
@@ -57,7 +73,7 @@ public class CreationMenu : MonoBehaviour
             //Clear grid
             for (var i = RecipeGrid.childCount; i > 0; i--)
             {
-                Destroy(RecipeGrid.GetChild(0));
+                Destroy(RecipeGrid.GetChild(0).gameObject);
             }
 
             //Fill grid
@@ -88,9 +104,16 @@ public class CreationMenu : MonoBehaviour
 
     public void ResetPot()
     {
-        foreach (PotPart part in PotCreation.Player.SelectedParts)
+        for (var i = 0; i < PotCreation.Player.SelectedParts.Count; i++)
         {
+            PotPart part = PotCreation.Player.SelectedParts[i];
             PotCreation.unselectPart(part);
+            break;
+        }
+
+        foreach (var slotUi in m_SlotUis)
+        {
+            slotUi.gameObject.SetActive(true);
         }
     }
 
@@ -257,5 +280,49 @@ public class CreationMenu : MonoBehaviour
         }
 
         return slot;
+    }
+
+    void OnPartSelected(PotPart _)
+    {
+        if (m_SlotUis == null)
+        {
+            return;
+        }
+
+        Slots occupiedMask = 0;
+        bool areAllSelected = true;
+        foreach (var part in PotCreation.Player.SelectedParts)
+        {
+            if (part == null)
+            {
+                areAllSelected = false;
+
+                continue;
+            }
+
+            occupiedMask |= part.Slot;
+        }
+
+        foreach (var slotUi in m_SlotUis)
+        {
+            if (occupiedMask == 0)
+            {
+                slotUi.gameObject.SetActive(slotUi.HandledSlot == Slots.CORE);
+
+                continue;
+            }
+
+            slotUi.gameObject.SetActive(true);
+
+            if (!areAllSelected
+                && occupiedMask.HasFlag(slotUi.HandledSlot))
+            {
+                slotUi.Show();
+            }
+            else
+            {
+                slotUi.Hide();
+            }
+        }
     }
 }

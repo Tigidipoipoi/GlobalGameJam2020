@@ -133,7 +133,7 @@ public class GameFlow : MonoBehaviour
 
             case PotCreationState _:
             {
-                nextState = AllStates.Find(state => state is PotCreationState);
+                nextState = AllStates.Find(state => state is FightState);
                 Assert.IsNotNull(nextState);
 
                 break;
@@ -205,7 +205,8 @@ public class GameFlow : MonoBehaviour
 
     public void selectBlueprintByLevel()
     {
-        currentInventory = Inventories[CurrentLevel];
+        var index = Math.Min(CurrentLevel, Inventories.Count - 1);
+        currentInventory = Inventories[index];
     }
 
     public void Reset()

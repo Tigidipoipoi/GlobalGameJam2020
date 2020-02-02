@@ -11,31 +11,42 @@ public class RecoveryState : GameState
 
     public float DestroyedRecoveryRatio = 0.0f;
 
+    public override void Enter()
+    {
+        base.Enter();
+        AkSoundEngine.PostEvent("Play_FLoose", Flow.gameObject);
+    }
+
     /// <inheritdoc />
     public override void Apply()
     {
         foreach (var playerPart in Player.SelectedParts)
         {
+            if (playerPart == null)
+            {
+                continue;
+            }
+
             float recoveryRatio;
             switch (playerPart.DamageState)
             {
                 case Damages.INTACT:
-                {
-                    recoveryRatio = IntactRecoveryRatio;
-                    break;
-                }
+                    {
+                        recoveryRatio = IntactRecoveryRatio;
+                        break;
+                    }
 
                 case Damages.DAMAGED:
-                {
-                    recoveryRatio = DamagedRecoveryRatio;
-                    break;
-                }
+                    {
+                        recoveryRatio = DamagedRecoveryRatio;
+                        break;
+                    }
 
                 case Damages.DESTROYED:
-                {
-                    recoveryRatio = DestroyedRecoveryRatio;
-                    break;
-                }
+                    {
+                        recoveryRatio = DestroyedRecoveryRatio;
+                        break;
+                    }
 
                 default:
                     throw new ArgumentOutOfRangeException();

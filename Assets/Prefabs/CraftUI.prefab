@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 2
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 911597723197272713}
 --- !u!1 &76827335761737551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 1
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 5024796339000490033}
 --- !u!1 &1849842496920471841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,7 +2623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000026015812}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000296382}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4888509977502612647
@@ -2888,7 +2888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 32
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 6847735603907756242}
 --- !u!1 &3749631106968241127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4743,7 +4743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 16
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 3262786805371085125}
 --- !u!1 &6501401371183526011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,7 +5870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 8
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 3564097722285553886}
 --- !u!1 &7921149259046413560
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,7 +6400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandledSlot: 4
-  Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
+  Image: {fileID: 4750364372891011000}
 --- !u!1 &8276549776252722860
 GameObject:
   m_ObjectHideFlags: 0

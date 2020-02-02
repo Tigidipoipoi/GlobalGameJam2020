@@ -50,6 +50,9 @@
 				<Event Id="3176211351" Name="Reset_SFX_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_SFX_Bus_Vol" MaxAttenuation="0.000000"/>
 				<Event Id="1257580087" Name="Set_Music_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_Music_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
 				<Event Id="510795939" Name="Set_SFX_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_SFX_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
+				<Event Id="2221466542" Name="Stop_Walla_M1" ObjectPath="\Events\Default Work Unit\Stop_Walla_M1" MaxAttenuation="0.000000"/>
+				<Event Id="2221466541" Name="Stop_Walla_M2" ObjectPath="\Events\Default Work Unit\Stop_Walla_M2" MaxAttenuation="0.000000"/>
+				<Event Id="2221466540" Name="Stop_Walla_M3" ObjectPath="\Events\Default Work Unit\Stop_Walla_M3" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12664886" Language="SFX">
@@ -60,6 +63,18 @@
 					<ShortName>GameJam_Plants_New_Heart_.wav</ShortName>
 					<Path>SFX/GameJam_Plants_New_Heart__56D34C19.wem</Path>
 				</File>
+				<File Id="51687281" Language="SFX">
+					<ShortName>2nd_batch\Laser_02.wav</ShortName>
+					<Path>SFX/2nd_batch/Laser_02_56D34C19.wem</Path>
+				</File>
+				<File Id="54397533" Language="SFX">
+					<ShortName>2nd_batch\Water_02_V1_NR.wav</ShortName>
+					<Path>SFX/2nd_batch/Water_02_V1_NR_56D34C19.wem</Path>
+				</File>
+				<File Id="56642091" Language="SFX">
+					<ShortName>3rd_batch\Ceramic_broken.wav</ShortName>
+					<Path>SFX/3rd_batch/Ceramic_broken_56D34C19.wem</Path>
+				</File>
 				<File Id="56771485" Language="SFX">
 					<ShortName>Bounced Files\Click_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Click_01_56D34C19.wem</Path>
@@ -67,6 +82,10 @@
 				<File Id="61936185" Language="SFX">
 					<ShortName>Empty_PlaceHolder.wav</ShortName>
 					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
+				</File>
+				<File Id="65352832" Language="SFX">
+					<ShortName>2nd_batch\Air_02.wav</ShortName>
+					<Path>SFX/2nd_batch/Air_02_56D34C19.wem</Path>
 				</File>
 				<File Id="73226339" Language="SFX">
 					<ShortName>Bounced Files\Sword_02.wav</ShortName>
@@ -79,6 +98,10 @@
 				<File Id="225380548" Language="SFX">
 					<ShortName>Bounced Files\Sword_08.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_08_56D34C19.wem</Path>
+				</File>
+				<File Id="237102178" Language="SFX">
+					<ShortName>2nd_batch\Fire_02.wav</ShortName>
+					<Path>SFX/2nd_batch/Fire_02_56D34C19.wem</Path>
 				</File>
 				<File Id="296180385" Language="SFX">
 					<ShortName>Bounced Files\Currency.wav</ShortName>
@@ -96,9 +119,17 @@
 					<ShortName>Bounced Files\Walla_M01.wav</ShortName>
 					<Path>SFX/Bounced Files/Walla_M01_56D34C19.wem</Path>
 				</File>
+				<File Id="391642486" Language="SFX">
+					<ShortName>2nd_batch\Water_V1_R.wav</ShortName>
+					<Path>SFX/2nd_batch/Water_V1_R_56D34C19.wem</Path>
+				</File>
 				<File Id="414187101" Language="SFX">
 					<ShortName>Bounced Files\Sword_07.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_07_56D34C19.wem</Path>
+				</File>
+				<File Id="449189275" Language="SFX">
+					<ShortName>2nd_batch\Currency_OpB.wav</ShortName>
+					<Path>SFX/2nd_batch/Currency_OpB_56D34C19.wem</Path>
 				</File>
 				<File Id="468309706" Language="SFX">
 					<ShortName>Bounced Files\Walla_M03.wav</ShortName>
@@ -116,6 +147,10 @@
 					<ShortName>Bounced Files\Pot_Creation_Finished.wav</ShortName>
 					<Path>SFX/Bounced Files/Pot_Creation_Finished_56D34C19.wem</Path>
 				</File>
+				<File Id="612888431" Language="SFX">
+					<ShortName>2nd_batch\Water_02_V2_R.wav</ShortName>
+					<Path>SFX/2nd_batch/Water_02_V2_R_56D34C19.wem</Path>
+				</File>
 				<File Id="618008716" Language="SFX">
 					<ShortName>Bounced Files\Sword_05.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_05_56D34C19.wem</Path>
@@ -124,13 +159,37 @@
 					<ShortName>Bounced Files\Sword_06.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_06_56D34C19.wem</Path>
 				</File>
+				<File Id="720072435" Language="SFX">
+					<ShortName>2nd_batch\Laser_01.wav</ShortName>
+					<Path>SFX/2nd_batch/Laser_01_56D34C19.wem</Path>
+				</File>
+				<File Id="751447610" Language="SFX">
+					<ShortName>2nd_batch\Fire_01.wav</ShortName>
+					<Path>SFX/2nd_batch/Fire_01_56D34C19.wem</Path>
+				</File>
 				<File Id="797544827" Language="SFX">
 					<ShortName>Bounced Files\Walla_M02.wav</ShortName>
 					<Path>SFX/Bounced Files/Walla_M02_56D34C19.wem</Path>
 				</File>
+				<File Id="830955331" Language="SFX">
+					<ShortName>2nd_batch\Water_V1_NR.wav</ShortName>
+					<Path>SFX/2nd_batch/Water_V1_NR_56D34C19.wem</Path>
+				</File>
 				<File Id="930263848" Language="SFX">
 					<ShortName>Bounced Files\Sword_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_01_56D34C19.wem</Path>
+				</File>
+				<File Id="933779623" Language="SFX">
+					<ShortName>2nd_batch\Air_01.wav</ShortName>
+					<Path>SFX/2nd_batch/Air_01_56D34C19.wem</Path>
+				</File>
+				<File Id="958409137" Language="SFX">
+					<ShortName>2nd_batch\Laser_03.wav</ShortName>
+					<Path>SFX/2nd_batch/Laser_03_56D34C19.wem</Path>
+				</File>
+				<File Id="1034859551" Language="SFX">
+					<ShortName>2nd_batch\Village_Ambience.wav</ShortName>
+					<Path>SFX/2nd_batch/Village_Ambience_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

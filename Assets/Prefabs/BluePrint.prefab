@@ -426,6 +426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Background: {fileID: 8082186647753694359}
   Icon: {fileID: 3355094475281788411}
+  PotPart: {fileID: 0}
+  State: {fileID: 11400000, guid: 9be2b9ad3c92ea44dad5587bb5214c82, type: 2}
 --- !u!1 &6649348420368625077
 GameObject:
   m_ObjectHideFlags: 0

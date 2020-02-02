@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
         //Force music on at start.
         m_IsMusicMute = true;
         ToggleMusic();
+        AkSoundEngine.PostEvent("Play_MK_Static", gameObject);
 
         //Force sfx on at start.
         m_IsSfxMute = true;
