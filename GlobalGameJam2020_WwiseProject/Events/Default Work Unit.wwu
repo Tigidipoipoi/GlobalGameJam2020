@@ -199,7 +199,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Village_Ambience" ID="{AE6E3D17-4C8A-4701-897F-1573863D5F59}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -213,7 +213,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Currency" ID="{84534E71-DDBE-406F-8EF4-7A421FD710C4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Currency" ID="{C9A1E2E8-D73F-4524-A905-EDD13D387CAA}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -283,7 +283,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Laser" ID="{C2DE7515-55DF-4F03-83A5-C0D7BA2CE558}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -297,7 +297,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Fire" ID="{3EBE7839-27A4-426D-8520-227AC784553B}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -311,7 +311,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Wind" ID="{980954E7-7A12-4EBA-80DE-0A9665C1F062}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -325,7 +325,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Water" ID="{C408EBB3-3385-47AF-967B-3E1A2B73B744}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
