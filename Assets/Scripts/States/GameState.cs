@@ -38,5 +38,5 @@ public abstract class GameState : ScriptableObject
     /// <summary>
     /// Is the state's animation over and ready to go to the next step ?
     /// </summary>
-    public virtual bool IsDone() => true;
+    public bool IsDone;
 }

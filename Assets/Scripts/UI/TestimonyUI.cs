@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class TestimonyUI : MonoBehaviour
 {
     public TestimonyState Data;
+
+    public TextMeshProUGUI Text;
 
     void Start()
     {
@@ -29,6 +32,19 @@ public class TestimonyUI : MonoBehaviour
         if (state == Data)
         {
             gameObject.SetActive(false);
+        }
+    }
+
+    void OnEnable()
+    {
+        Text.text = Data.GetTestimony();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Data.IsDone = true;
         }
     }
 }

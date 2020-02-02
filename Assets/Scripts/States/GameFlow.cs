@@ -63,7 +63,7 @@ public class GameFlow : MonoBehaviour
         }
 
         //Try transitioning.
-        if (CurrentState.IsDone())
+        if (CurrentState.IsDone)
         {
             GoToNextState();
         }
@@ -180,6 +180,8 @@ public class GameFlow : MonoBehaviour
             }
 
             //Setup state
+            CurrentState.IsDone = false;
+
             CurrentState.Enter();
 
             //Raise event
