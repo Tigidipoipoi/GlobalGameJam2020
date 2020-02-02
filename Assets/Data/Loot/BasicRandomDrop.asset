@@ -15,24 +15,36 @@ MonoBehaviour:
   LootLevels:
   - DropList:
     - Type: 0
-      Amount: 3
-  - DropList:
-    - Type: 0
       Amount: 2
     - Type: 1
       Amount: 2
     - Type: 2
       Amount: 2
-  - DropList:
-    - Type: 0
-      Amount: 4
-    - Type: 1
-      Amount: 4
-    - Type: 2
-      Amount: 4
     - Type: 3
-      Amount: 4
+      Amount: 2
     - Type: 4
-      Amount: 4
+      Amount: 2
+  - DropList:
+    - Type: 0
+      Amount: 5
+    - Type: 1
+      Amount: 5
+    - Type: 2
+      Amount: 5
+    - Type: 3
+      Amount: 5
+    - Type: 4
+      Amount: 5
+  - DropList:
+    - Type: 0
+      Amount: 7
+    - Type: 1
+      Amount: 7
+    - Type: 2
+      Amount: 7
+    - Type: 3
+      Amount: 7
+    - Type: 4
+      Amount: 7
   Player: {fileID: 11400000, guid: 853c0fe5912cab0419603ac427cc5512, type: 2}
   RandomLoot: 1
