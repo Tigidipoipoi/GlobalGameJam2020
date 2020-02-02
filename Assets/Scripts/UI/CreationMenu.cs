@@ -111,10 +111,7 @@ public class CreationMenu : MonoBehaviour
             break;
         }
 
-        foreach (var slotUi in m_SlotUis)
-        {
-            slotUi.gameObject.SetActive(true);
-        }
+        OnPartSelected(null);
     }
 
     public void UpdateRecipeList()
@@ -314,14 +311,14 @@ public class CreationMenu : MonoBehaviour
 
             slotUi.gameObject.SetActive(true);
 
-            if (!areAllSelected
-                && occupiedMask.HasFlag(slotUi.HandledSlot))
+            if (areAllSelected
+                || occupiedMask.HasFlag(slotUi.HandledSlot))
             {
-                slotUi.Show();
+                slotUi.Hide();
             }
             else
             {
-                slotUi.Hide();
+                slotUi.Show();
             }
         }
     }

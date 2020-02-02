@@ -37,7 +37,9 @@ public class PotMix : MonoBehaviour
         Destroy(CurrentPot);
 
         //Model
-        CurrentPot = Instantiate(core.Model, Vector3.zero, Quaternion.identity, SpawnPoint);
+        CurrentPot = Instantiate(core.Model, SpawnPoint);
+        CurrentPot.transform.localPosition = Vector3.zero;
+        CurrentPot.transform.localRotation = Quaternion.identity;
 
         //Material
         var potRenderer = CurrentPot.GetComponentInChildren<MeshRenderer>();
@@ -55,7 +57,9 @@ public class PotMix : MonoBehaviour
             }
 
             var slotAnchor = GetSlotAnchor(part.Slot);
-            Instantiate(part.Model, Vector3.zero, Quaternion.identity, slotAnchor);
+            var limb = Instantiate(part.Model, slotAnchor);
+            limb.transform.localPosition = Vector3.zero;
+            limb.transform.localRotation = Quaternion.identity;
         }
     }
 
