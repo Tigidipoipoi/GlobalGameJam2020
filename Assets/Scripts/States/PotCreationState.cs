@@ -27,6 +27,14 @@ public class PotCreationState : GameState
         AkSoundEngine.PostEvent("Play_Pot_Creation_Finished", Flow.gameObject);
     }
 
+    public void CreatePot()
+    {
+        if (playerHaveEnoughClay())
+        {
+            IsDone = true;
+        }
+    }
+
     public override bool CanApply()
     {
         return playerHaveEnoughClay();
@@ -40,7 +48,6 @@ public class PotCreationState : GameState
         PotPart currentPart = whatsInThisSpot(slot);
         if (currentPart != null)
         {
-            addClay(currentPart.Element, currentPart.Cost);
             unselectPart(currentPart);
         }
         else
@@ -68,6 +75,7 @@ public class PotCreationState : GameState
     public void unselectPart(PotPart part)
     {
         part.EquippedSlot = 0;
+        addClay(part.Element, part.Cost);
         Player.SelectedParts.Remove(part);
     }
 
