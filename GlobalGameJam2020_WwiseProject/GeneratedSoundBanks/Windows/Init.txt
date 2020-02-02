@@ -1,7 +1,15 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2911073178	Music_Vol_RTPC			\Default Work Unit\Music_Vol_RTPC	
+	3005434258	SFX_Vol_RTPC			\Default Work Unit\SFX_Vol_RTPC	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	142628219	Wwise Gain (Custom)	Wwise Gain			
+	1004323877	Wwise Gain (Custom)	Wwise Gain			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
