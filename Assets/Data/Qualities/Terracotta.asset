@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Terracotta
   m_EditorClassIdentifier: 
-  material: {fileID: -8554066299265748271, guid: 8cd6eee5479ed0043bb0af37d7259ff1,
+  quality: 2
+  material: {fileID: -8554066299265748271, guid: 41d070e1ceb653e47b4bb942cf271224,
     type: 3}
   Strength: 3
+  Icon: {fileID: 0}

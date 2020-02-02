@@ -3,7 +3,16 @@ guid: aa5755a2e81e61f4c8878c2d94202f4d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MenuPanel: {instanceID: 0}
+  - CreditsPanel: {instanceID: 0}
+  - MusicIcon: {instanceID: 0}
+  - MuteMusicSprite: {fileID: 21300000, guid: 78f344b7a243a234885ed33dfc5648b9, type: 3}
+  - UnmuteMusicSprite: {fileID: 21300000, guid: 5010e2c86a711a64e821c547423cf0ff,
+      type: 3}
+  - SfxIcon: {instanceID: 0}
+  - MuteSfxSprite: {fileID: 21300000, guid: 61c580522a230cf488eeccb781c2301a, type: 3}
+  - UnmuteSfxSprite: {fileID: 21300000, guid: 646739a2da351454482e85a8b530830f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
