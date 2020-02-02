@@ -48,27 +48,24 @@ public class CreationMenu : MonoBehaviour
         GameFlow.StateStarted -= OnStateStarted;
     }
 
-    void OnEnable()
-    {
-        //Clear grid
-        for (var i = RecipeGrid.childCount; i > 0; i--)
-        {
-            Destroy(RecipeGrid.GetChild(0));
-        }
-
-        //Fill grid
-        foreach (var ownedPart in gameFlow.currentInventory.OwnedParts)
-        {
-            var bluePrint = Instantiate(BluePrintPrefab, RecipeGrid.transform);
-            bluePrint.Initialize(ownedPart);
-        }
-    }
-
     void OnStateStarted(GameState state)
     {
         if (state == PotCreation)
         {
             gameObject.SetActive(true);
+
+            //Clear grid
+            for (var i = RecipeGrid.childCount; i > 0; i--)
+            {
+                Destroy(RecipeGrid.GetChild(0));
+            }
+
+            //Fill grid
+            foreach (var ownedPart in gameFlow.currentInventory.OwnedParts)
+            {
+                var bluePrint = Instantiate(BluePrintPrefab, RecipeGrid.transform);
+                bluePrint.Initialize(ownedPart);
+            }
         }
     }
 
