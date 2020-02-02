@@ -77,7 +77,7 @@ public class CreationMenu : MonoBehaviour
     void RePopulateGrid(List<PotPart> parts)
     {
         //Clear grid
-        for (var i = RecipeGrid.childCount - 1 ; i >= 0; i--)
+        for (var i = RecipeGrid.childCount - 1; i >= 0; i--)
         {
             Destroy(RecipeGrid.GetChild(i).gameObject);
         }
@@ -132,9 +132,9 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredQualityParts.Add(part);
                         Debug.Log("filter quality add " + part);
-
                     }
                 }
+
                 break;
             case (int)Qualities.TERRACOTTA + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -143,9 +143,9 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredQualityParts.Add(part);
                         Debug.Log("filter quality add " + part);
-
                     }
                 }
+
                 break;
             case (int)Qualities.IRON + 1:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
@@ -154,7 +154,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredQualityParts.Add(part);
                         Debug.Log("filter quality add " + part);
-
                     }
                 }
 
@@ -166,16 +165,15 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredQualityParts.Add(part);
                         Debug.Log("filter quality add " + part);
-
                     }
                 }
+
                 break;
             default:
                 foreach (PotPart part in gameFlow.currentInventory.OwnedParts)
                 {
                     filteredQualityParts.Add(part);
                     Debug.Log("filter quality add " + part);
-
                 }
 
                 break;
@@ -192,7 +190,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredElementParts.Add(part);
                         Debug.Log("filter element add " + part);
-
                     }
                 }
 
@@ -204,7 +201,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredElementParts.Add(part);
                         Debug.Log("filter element add " + part);
-
                     }
                 }
 
@@ -216,7 +212,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredElementParts.Add(part);
                         Debug.Log("filter element add " + part);
-
                     }
                 }
 
@@ -228,7 +223,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredElementParts.Add(part);
                         Debug.Log("filter element add " + part);
-
                     }
                 }
 
@@ -240,7 +234,6 @@ public class CreationMenu : MonoBehaviour
                     {
                         filteredElementParts.Add(part);
                         Debug.Log("filter element add " + part);
-
                     }
                 }
 
@@ -250,8 +243,8 @@ public class CreationMenu : MonoBehaviour
                 {
                     filteredElementParts.Add(part);
                     Debug.Log("filter element add " + part);
-
                 }
+
                 break;
         }
 
@@ -265,14 +258,13 @@ public class CreationMenu : MonoBehaviour
         {
             foreach (PotPart part in filteredElementParts)
             {
-
-                if (part.Slot.HasFlag(ConvertSlot(SlotDD.value)))
+                if (part.AllowedSlots.HasFlag(ConvertSlot(SlotDD.value)))
                 {
                     filteredParts.Add(part);
                     Debug.Log("filter flag add " + part);
-
                 }
             }
+
             RePopulateGrid(filteredParts);
         }
     }
@@ -312,7 +304,7 @@ public class CreationMenu : MonoBehaviour
                 continue;
             }
 
-            occupiedMask |= part.Slot;
+            occupiedMask |= part.EquippedSlot;
         }
 
         foreach (var slotUi in m_SlotUis)
