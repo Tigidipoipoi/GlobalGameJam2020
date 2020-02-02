@@ -127,6 +127,6 @@ public class TestimonyState : GameState
             elementDrops.Add(Player.Resources[i].Amount - oldResources[i].Amount);
         }
 
-        m_TestimonyBuilder.AppendFormat(LootLine.Text, elementDrops);
+        m_TestimonyBuilder.AppendFormat(LootLine.Text, elementDrops[0], elementDrops[1], elementDrops[2], elementDrops[3], elementDrops[4]);
     }
 }
