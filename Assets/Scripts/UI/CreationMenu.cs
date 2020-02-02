@@ -29,6 +29,8 @@ public class CreationMenu : MonoBehaviour
 
     public BluePrintUI BluePrintPrefab;
 
+    SelectedSlotUI[] m_SlotUis;
+
     void Start()
     {
         GameFlow.StateStarted += OnStateStarted;
@@ -39,6 +41,8 @@ public class CreationMenu : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        m_SlotUis = GetComponentsInChildren<SelectedSlotUI>();
+
         UpdateClayDisplays();
     }
 
@@ -46,6 +50,16 @@ public class CreationMenu : MonoBehaviour
     {
         GameFlow.StateEnded -= OnStateEnded;
         GameFlow.StateStarted -= OnStateStarted;
+    }
+
+    void OnEnable()
+    {
+        PotCreationState.PartSelected += OnPartSelected;
+    }
+
+    void OnDisable()
+    {
+        PotCreationState.PartSelected -= OnPartSelected;
     }
 
     void OnStateStarted(GameState state)
@@ -93,6 +107,11 @@ public class CreationMenu : MonoBehaviour
             PotPart part = PotCreation.Player.SelectedParts[i];
             PotCreation.unselectPart(part);
             break;
+        }
+
+        foreach (var slotUi in m_SlotUis)
+        {
+            slotUi.gameObject.SetActive(true);
         }
     }
 
@@ -259,5 +278,30 @@ public class CreationMenu : MonoBehaviour
         }
 
         return slot;
+    }
+
+    void OnPartSelected()
+    {
+        Slots occupiedMask = 0;
+        foreach (var part in PotCreation.Player.SelectedParts)
+        {
+            if (part == null)
+            {
+                foreach (var slotUi in m_SlotUis)
+                {
+                    slotUi.gameObject.SetActive(true);
+                }
+
+                return;
+            }
+
+            occupiedMask |= part.Slot;
+        }
+
+        foreach (var slotUi in m_SlotUis)
+        {
+            var isSlotOccupied = occupiedMask.HasFlag(slotUi.HandledSlot);
+            slotUi.gameObject.SetActive(isSlotOccupied);
+        }
     }
 }
