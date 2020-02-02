@@ -21,20 +21,68 @@
 			<ShortName>Main_SB</ShortName>
 			<Path>Main_SB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="311910498" Name="Play_click" ObjectPath="\Events\Default Work Unit\Play_click"/>
+				<Event Id="3597897279" Name="Play_Currency" ObjectPath="\Events\Default Work Unit\Play_Currency"/>
+				<Event Id="3545098540" Name="Play_FCeramic" ObjectPath="\Events\Default Work Unit\Play_FCeramic"/>
+				<Event Id="2612811842" Name="Play_FinalDestruction" ObjectPath="\Events\Default Work Unit\Play_FinalDestruction"/>
+				<Event Id="828274961" Name="Play_FLaser" ObjectPath="\Events\Default Work Unit\Play_FLaser"/>
+				<Event Id="3167144222" Name="Play_FLoose" ObjectPath="\Events\Default Work Unit\Play_FLoose"/>
+				<Event Id="3074229139" Name="Play_FSword" ObjectPath="\Events\Default Work Unit\Play_FSword"/>
+				<Event Id="2693592746" Name="Play_FWin" ObjectPath="\Events\Default Work Unit\Play_FWin"/>
+				<Event Id="1865594480" Name="Play_HeroLoose" ObjectPath="\Events\Default Work Unit\Play_HeroLoose"/>
+				<Event Id="262105351" Name="Play_MFire" ObjectPath="\Events\Default Work Unit\Play_MFire"/>
 				<Event Id="1285414837" Name="Play_MK_Combat_A" ObjectPath="\Events\Default Work Unit\Play_MK_Combat_A"/>
 				<Event Id="1379997717" Name="Play_MK_Extra" ObjectPath="\Events\Default Work Unit\Play_MK_Extra"/>
 				<Event Id="2023163491" Name="Play_MK_Static" ObjectPath="\Events\Default Work Unit\Play_MK_Static"/>
+				<Event Id="2072794187" Name="Play_Monsters" ObjectPath="\Events\Default Work Unit\Play_Monsters"/>
+				<Event Id="3771359620" Name="Play_MWater" ObjectPath="\Events\Default Work Unit\Play_MWater"/>
+				<Event Id="2257207145" Name="Play_MWind" ObjectPath="\Events\Default Work Unit\Play_MWind"/>
 				<Event Id="173327921" Name="Play_placeholder" ObjectPath="\Events\Default Work Unit\Play_placeholder"/>
+				<Event Id="2736518758" Name="Play_Pot_Creation_Finished" ObjectPath="\Events\Default Work Unit\Play_Pot_Creation_Finished"/>
+				<Event Id="3318378243" Name="Play_Pot_Creation_Process" ObjectPath="\Events\Default Work Unit\Play_Pot_Creation_Process"/>
 				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
+				<Event Id="3256485433" Name="Play_Village_Ambience" ObjectPath="\Events\Default Work Unit\Play_Village_Ambience"/>
+				<Event Id="4066344583" Name="Play_VillagersHappy" ObjectPath="\Events\Default Work Unit\Play_VillagersHappy"/>
+				<Event Id="3906169736" Name="Play_Walla_M1" ObjectPath="\Events\Default Work Unit\Play_Walla_M1"/>
+				<Event Id="3906169739" Name="Play_Walla_M2" ObjectPath="\Events\Default Work Unit\Play_Walla_M2"/>
+				<Event Id="3906169738" Name="Play_Walla_M3" ObjectPath="\Events\Default Work Unit\Play_Walla_M3"/>
+				<Event Id="3064570407" Name="Reset_Music_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_Music_Bus_Vol" MaxAttenuation="0.000000"/>
+				<Event Id="3176211351" Name="Reset_SFX_Bus_Vol" ObjectPath="\Events\Default Work Unit\Reset_SFX_Bus_Vol" MaxAttenuation="0.000000"/>
+				<Event Id="1257580087" Name="Set_Music_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_Music_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
+				<Event Id="510795939" Name="Set_SFX_Bus_Vol_to_0" ObjectPath="\Events\Default Work Unit\Set_SFX_Bus_Vol_to_0" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="12664886" Language="SFX">
+					<ShortName>Bounced Files\Creating_Pot_01.wav</ShortName>
+					<Path>SFX/Bounced Files/Creating_Pot_01_56D34C19.wem</Path>
+				</File>
 				<File Id="51070242" Language="SFX">
 					<ShortName>GameJam_Plants_New_Heart_.wav</ShortName>
 					<Path>SFX/GameJam_Plants_New_Heart__56D34C19.wem</Path>
 				</File>
+				<File Id="56771485" Language="SFX">
+					<ShortName>Bounced Files\Click_01.wav</ShortName>
+					<Path>SFX/Bounced Files/Click_01_56D34C19.wem</Path>
+				</File>
 				<File Id="61936185" Language="SFX">
 					<ShortName>Empty_PlaceHolder.wav</ShortName>
 					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
+				</File>
+				<File Id="73226339" Language="SFX">
+					<ShortName>Bounced Files\Sword_02.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_02_56D34C19.wem</Path>
+				</File>
+				<File Id="101502802" Language="SFX">
+					<ShortName>Bounced Files\Sword_03.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_03_56D34C19.wem</Path>
+				</File>
+				<File Id="225380548" Language="SFX">
+					<ShortName>Bounced Files\Sword_08.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_08_56D34C19.wem</Path>
+				</File>
+				<File Id="296180385" Language="SFX">
+					<ShortName>Bounced Files\Currency.wav</ShortName>
+					<Path>SFX/Bounced Files/Currency_56D34C19.wem</Path>
 				</File>
 				<File Id="374826309" Language="SFX">
 					<ShortName>GGJ20_Music_2_Medieval_Fight_91bpm_v2.wav</ShortName>
@@ -44,9 +92,45 @@
 					<ShortName>GGJ20_Music_3_Medieval_May_Work_Idea_91bpm.wav</ShortName>
 					<Path>SFX/GGJ20_Music_3_Medieval_May_Work_Idea_91bpm_8956FC97.wem</Path>
 				</File>
+				<File Id="377541779" Language="SFX">
+					<ShortName>Bounced Files\Walla_M01.wav</ShortName>
+					<Path>SFX/Bounced Files/Walla_M01_56D34C19.wem</Path>
+				</File>
+				<File Id="414187101" Language="SFX">
+					<ShortName>Bounced Files\Sword_07.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_07_56D34C19.wem</Path>
+				</File>
+				<File Id="468309706" Language="SFX">
+					<ShortName>Bounced Files\Walla_M03.wav</ShortName>
+					<Path>SFX/Bounced Files/Walla_M03_56D34C19.wem</Path>
+				</File>
 				<File Id="504576153" Language="SFX">
 					<ShortName>GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2.wav</ShortName>
 					<Path>SFX/GGJ20_Music_1_StaticMenu_Conversation_120bpm_v2_8956FC97.wem</Path>
+				</File>
+				<File Id="540466215" Language="SFX">
+					<ShortName>Bounced Files\Sword_04.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_04_56D34C19.wem</Path>
+				</File>
+				<File Id="553351632" Language="SFX">
+					<ShortName>Bounced Files\Pot_Creation_Finished.wav</ShortName>
+					<Path>SFX/Bounced Files/Pot_Creation_Finished_56D34C19.wem</Path>
+				</File>
+				<File Id="618008716" Language="SFX">
+					<ShortName>Bounced Files\Sword_05.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_05_56D34C19.wem</Path>
+				</File>
+				<File Id="639895378" Language="SFX">
+					<ShortName>Bounced Files\Sword_06.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_06_56D34C19.wem</Path>
+				</File>
+				<File Id="797544827" Language="SFX">
+					<ShortName>Bounced Files\Walla_M02.wav</ShortName>
+					<Path>SFX/Bounced Files/Walla_M02_56D34C19.wem</Path>
+				</File>
+				<File Id="930263848" Language="SFX">
+					<ShortName>Bounced Files\Sword_01.wav</ShortName>
+					<Path>SFX/Bounced Files/Sword_01_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

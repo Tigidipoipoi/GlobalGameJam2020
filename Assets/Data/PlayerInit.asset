@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PlayerInit
   m_EditorClassIdentifier: 
   Resources:
-  - {fileID: 11400000, guid: cf789928876f4de4ba0ed96e2242559e, type: 2}
-  - {fileID: 11400000, guid: bef10ae07a596204d901109c3b00cfd0, type: 2}
-  - {fileID: 11400000, guid: 52677b9c475b0ee458cf29c76a59cc75, type: 2}
-  - {fileID: 11400000, guid: 706ea632aee9ead4ab8f3650d68ff01e, type: 2}
-  - {fileID: 11400000, guid: 0333e087e9f950c4f8041a924a84c731, type: 2}
+  - {fileID: 11400000, guid: 9fd7a6b00e763ad428e5e60b7f5d99e8, type: 2}
+  - {fileID: 11400000, guid: baa885f7976e02944a80ba79e44e2725, type: 2}
+  - {fileID: 11400000, guid: 2016f0917030c6441a61d2134b51c9c2, type: 2}
+  - {fileID: 11400000, guid: 12558947db0d2da41a94445db2b02955, type: 2}
+  - {fileID: 11400000, guid: f77f6707085c15543b50dd2a1d99a562, type: 2}
   SelectedParts:
   - {fileID: 0}

@@ -45,6 +45,320 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Main_Menu" ID="{854D4F41-057B-4B23-84AA-A825BC17AB10}" ShortID="421984909">
+					<ChildrenList>
+						<Sound Name="Click_01" ID="{DD67CF56-E4C8-43DC-A4EE-8AAE5442659F}" ShortID="692252532">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Click_01" ID="{AD0C52A1-85FF-48AA-9868-05A612445208}" ShortID="56771485">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Click_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Click_01" ID="{AD0C52A1-85FF-48AA-9868-05A612445208}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Villagers" ID="{D6761A75-8698-474C-A85B-D3F8560F039B}" ShortID="302651564">
+					<ChildrenList>
+						<Sound Name="Walla_M01" ID="{69FF39F3-A2FE-4754-A56B-2A6955B42828}" ShortID="27504445">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Walla_M01" ID="{52141255-5FC6-4D81-B001-A1EB1B971745}" ShortID="377541779">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Walla_M01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Walla_M01" ID="{52141255-5FC6-4D81-B001-A1EB1B971745}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Walla_M02" ID="{B034F0C6-3E28-4BC3-B8E7-AEC0758A8367}" ShortID="856866052">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Walla_M02" ID="{75C3CB1C-4819-4B66-9806-071EA0D112D5}" ShortID="797544827">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Walla_M02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Walla_M02" ID="{75C3CB1C-4819-4B66-9806-071EA0D112D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Walla_M03" ID="{27FCE7E0-DF7D-414F-8B5C-241C6C6E9AD9}" ShortID="735922267">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Walla_M03" ID="{DADA52E9-B066-4C0F-81F6-AE7B9A6A20A7}" ShortID="468309706">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Walla_M03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Walla_M03" ID="{DADA52E9-B066-4C0F-81F6-AE7B9A6A20A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Pot_Creation" ID="{01F935EC-F0BD-42A8-863A-3AC749A8411B}" ShortID="307907830">
+					<ChildrenList>
+						<Sound Name="Creating_Pot_01" ID="{1800E429-D645-4A80-BFF7-FDE93A6EA8DA}" ShortID="548975985">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Creating_Pot_01" ID="{AE41AEEA-C163-4370-87F6-B1287FE3A47D}" ShortID="12664886">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Creating_Pot_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Creating_Pot_01" ID="{AE41AEEA-C163-4370-87F6-B1287FE3A47D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Currency" ID="{84534E71-DDBE-406F-8EF4-7A421FD710C4}" ShortID="477503614">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Currency" ID="{AAA7636C-A193-49D2-9EF0-B17E07FD23DC}" ShortID="296180385">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Currency.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Currency" ID="{AAA7636C-A193-49D2-9EF0-B17E07FD23DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pot_Creation_Finished" ID="{24C13D69-E5DF-4DF1-8A22-C8C41CBAB088}" ShortID="505160137">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pot_Creation_Finished" ID="{2192F5E8-179A-4247-9D06-D3362671021B}" ShortID="553351632">
+									<Language>SFX</Language>
+									<AudioFile>Bounced Files\Pot_Creation_Finished.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pot_Creation_Finished" ID="{2192F5E8-179A-4247-9D06-D3362671021B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Combat" ID="{ED412ED3-FAFD-4912-B049-4B78C4898927}" ShortID="911013426">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Sword" ID="{07783DA3-CA79-401B-A897-A6A7864152B3}" ShortID="815653457">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sword_01" ID="{42EA3B86-F044-4A7A-B022-8AC41558BAF0}" ShortID="702460995">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_01" ID="{B976337D-CA88-4282-BA72-BDAEE6AA4FE2}" ShortID="930263848">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_01" ID="{B976337D-CA88-4282-BA72-BDAEE6AA4FE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_02" ID="{FE3C011B-48AC-4281-B92C-630265488187}" ShortID="316526594">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_02" ID="{CF91BEB1-9382-4A43-8AD5-C006E326D8D0}" ShortID="73226339">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_02" ID="{CF91BEB1-9382-4A43-8AD5-C006E326D8D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_03" ID="{53A17954-980C-4369-95E7-4D871B05A6AD}" ShortID="378139887">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_03" ID="{C3D82A95-98B4-42CC-9A97-237A98C0076A}" ShortID="101502802">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_03" ID="{C3D82A95-98B4-42CC-9A97-237A98C0076A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_04" ID="{CD3B3427-C55D-4E81-81CF-E5E452527B47}" ShortID="639289174">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_04" ID="{B43FEEEF-0D2B-4788-966B-6F56A170F035}" ShortID="540466215">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_04" ID="{B43FEEEF-0D2B-4788-966B-6F56A170F035}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_05" ID="{EB8A8068-B15F-4211-8E1C-272D6EF0DA15}" ShortID="878801452">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_05" ID="{E4525DFF-B155-4C41-929A-4AA76C585BA6}" ShortID="618008716">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_05" ID="{E4525DFF-B155-4C41-929A-4AA76C585BA6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_06" ID="{F3779676-DF08-4E78-BD94-DD928D37328F}" ShortID="225710204">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_06" ID="{9D587A66-3E1C-4863-A2D6-961444455A71}" ShortID="639895378">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_06" ID="{9D587A66-3E1C-4863-A2D6-961444455A71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_07" ID="{245666AD-E396-4F4C-A35F-27C20305FA1D}" ShortID="412128425">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_07" ID="{2BE91123-9DF7-47A8-A28C-A72617D7B722}" ShortID="414187101">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_07" ID="{2BE91123-9DF7-47A8-A28C-A72617D7B722}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sword_08" ID="{E5F25506-F1D8-4C9E-9BC2-D5F4C3A4CA2F}" ShortID="998813446">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sword_08" ID="{7CEB0619-6AAA-4C66-B7BC-1813A0437671}" ShortID="225380548">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\Sword_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sword_08" ID="{7CEB0619-6AAA-4C66-B7BC-1813A0437671}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Animatics" ID="{8C6A1F6B-04E1-4FB4-8C8E-F725BA395914}" ShortID="228819741"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
