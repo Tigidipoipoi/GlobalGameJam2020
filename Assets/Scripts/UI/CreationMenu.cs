@@ -305,7 +305,17 @@ public class CreationMenu : MonoBehaviour
         {
             if (occupiedMask == 0)
             {
-                slotUi.gameObject.SetActive(slotUi.HandledSlot == Slots.CORE);
+                var doShow = slotUi.HandledSlot == Slots.CORE;
+                slotUi.gameObject.SetActive(doShow);
+
+                if (doShow)
+                {
+                    slotUi.Show();
+                }
+                else
+                {
+                    slotUi.Hide();
+                }
 
                 continue;
             }
