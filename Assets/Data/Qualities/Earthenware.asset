@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Earthenware
   m_EditorClassIdentifier: 
-  material: {fileID: -8840350476506940904, guid: 6c9a8b0f6d012a649be2d87a1c53d957,
+  quality: 0
+  material: {fileID: -8840350476506940904, guid: 01b0b2d7e50044845b2ee68407961fc0,
     type: 3}
   Strength: 1
+  Icon: {fileID: 0}
