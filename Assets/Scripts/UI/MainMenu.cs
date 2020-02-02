@@ -49,6 +49,13 @@ public class MainMenu : MonoBehaviour
         MenuPanel.SetActive(false);
     }
 
+    public void ClickMainMenu()
+    {
+        CreditsPanel.SetActive(false);
+
+        MenuPanel.SetActive(true);
+    }
+
     public void ToggleMusic()
     {
         string eventName = m_IsMusicMute ? "Reset_Music_Bus_Vol" : "Set_Music_Bus_Vol_to_0";

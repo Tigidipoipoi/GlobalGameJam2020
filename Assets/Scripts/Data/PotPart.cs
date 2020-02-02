@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu]
 public class PotPart : ScriptableObject
@@ -13,8 +14,11 @@ public class PotPart : ScriptableObject
 
     public Quality Quality;
 
+    [FormerlySerializedAs("Slot")]
     [BitMask]
-    public Slots Slot;
+    public Slots AllowedSlots;
+
+    public Slots EquippedSlot;
 
     [Header("UI")]
     public Sprite Icon;
@@ -28,7 +32,7 @@ public class PotPart : ScriptableObject
         Model = potPart.Model;
         DamageState = potPart.DamageState;
         Quality = potPart.Quality;
-        Slot = potPart.Slot;
+        AllowedSlots = potPart.AllowedSlots;
         Icon = potPart.Icon;
         Tooltip = potPart.Tooltip;
     }

@@ -37,7 +37,7 @@ public class PotMix : MonoBehaviour
             return;
         }
 
-        var core = Player.SelectedParts.Find(part => part != null && part.Slot == Slots.CORE);
+        var core = Player.SelectedParts.Find(part => part != null && part.AllowedSlots == Slots.CORE);
         if (core == null)
         {
             throw new Exception("TO FIX");
@@ -63,7 +63,7 @@ public class PotMix : MonoBehaviour
                 continue;
             }
 
-            var slotAnchor = GetSlotAnchor(part.Slot);
+            var slotAnchor = GetSlotAnchor(part.EquippedSlot);
             var limb = Instantiate(part.Model, slotAnchor);
             limb.transform.localPosition = Vector3.zero;
             limb.transform.localRotation = Quaternion.identity;
@@ -74,7 +74,7 @@ public class PotMix : MonoBehaviour
     {
         foreach (var potAnchor in PotAnchors)
         {
-            if (slot.HasFlag(potAnchor.HandledSlot))
+            if (slot == potAnchor.HandledSlot)
             {
                 return potAnchor.transform;
             }
