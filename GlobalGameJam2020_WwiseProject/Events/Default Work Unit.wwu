@@ -255,7 +255,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+									<ObjectRef Name="Ceramic_damage" ID="{30F6E7A8-4570-4623-8147-1C63438E3301}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -409,6 +409,91 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{ABB6BC30-0234-434F-BB36-194E8010CA1A}" ShortID="712938772">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2.7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monsters_approach_w_villager_final_voice" ID="{DA817F3E-0F5E-41CF-BC41-31DA26147E83}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8FE4282A-2354-499B-AACD-D9B50B8D168E}" ShortID="393173059">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="5.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monsters_approach_w_villager_final_voice" ID="{DA817F3E-0F5E-41CF-BC41-31DA26147E83}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E7CABD05-07E0-4249-B35D-9F5766C864BB}" ShortID="551838039">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-001" ID="{0EEABB98-E13F-418C-AC91-1D267C09D0C3}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BD4634B4-FBE7-4A15-B2C9-7E8FB6AEA0FF}" ShortID="531091386">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="4.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-002" ID="{7F24B81E-04F8-4690-82E6-0E1A36499BAA}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{66E2BBB0-3F1E-4508-8306-E84BD92D5CA4}" ShortID="773780973">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="7.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-003" ID="{9F1E0381-691B-4AAE-BC6A-DA447F179656}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{868D1E9F-81B3-40E2-B648-1321857F4583}" ShortID="58925834">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-003_01" ID="{A7C689A1-0C04-446D-96B1-0CB08279CDB5}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4CAE5E69-BF1E-4607-A29B-DF4579F9ED6E}" ShortID="756681680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monster_voices_only" ID="{C4FE0F7E-C8B9-485C-980D-1D0922882A50}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_FinalDestruction" ID="{40CA1CA0-F67B-4200-B78A-D98D98FC345E}">
@@ -535,6 +620,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{95406C19-AE10-4F59-B354-8136F37947C0}" ShortID="244213714">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Creating_Pot_01" ID="{1800E429-D645-4A80-BFF7-FDE93A6EA8DA}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_HeroLoose" ID="{AC8C5241-4B4B-4A86-9B4E-D438F3D40600}">
@@ -565,6 +661,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{992CE784-26B5-41EE-ADD2-81C24CF107AA}" ShortID="804306048">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Villagers_Happy_voices" ID="{8991EDFF-4BA4-4219-ABEE-D8802E2C60B9}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_Monsters" ID="{6E92A214-006F-45F4-8EA5-8399D097F586}">
@@ -580,6 +687,83 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{F38630DC-3793-4E02-A7D5-C89CEEC77C5C}" ShortID="694824773">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-001" ID="{0EEABB98-E13F-418C-AC91-1D267C09D0C3}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DC9A2A04-BBA1-4757-979E-5800DA9E8165}" ShortID="170931473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-002" ID="{7F24B81E-04F8-4690-82E6-0E1A36499BAA}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{544461AA-7F27-4B00-B03F-D1D20094A08C}" ShortID="623298589">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-003" ID="{9F1E0381-691B-4AAE-BC6A-DA447F179656}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5AC02544-8F68-4998-834E-1D14D50C9895}" ShortID="505352442">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="-003_01" ID="{A7C689A1-0C04-446D-96B1-0CB08279CDB5}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D514FE7F-5468-4858-BE31-564D4F0EF141}" ShortID="260284349">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monster_voices_only" ID="{C4FE0F7E-C8B9-485C-980D-1D0922882A50}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{081649D5-154E-480A-A218-19BA7675E069}" ShortID="1040678556">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rumble_loop_30s" ID="{71AC14F3-78EC-4F31-9ACC-CECCE797EA99}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0D4ABBC3-700D-4202-BB6D-86C73A02CD6C}" ShortID="790489126">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monsters_approach_w_villager_final_voice" ID="{DA817F3E-0F5E-41CF-BC41-31DA26147E83}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_FinalDestruction" ID="{3387A00F-EC5B-4776-89C1-2699EFDF1C94}">
@@ -592,6 +776,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D8079301-159D-4E2C-80B2-44277CACAD7F}" ShortID="629410162">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Flames_rumble_loop_30s" ID="{5B77D7ED-AB77-4792-8F14-217EC9CBD5E1}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

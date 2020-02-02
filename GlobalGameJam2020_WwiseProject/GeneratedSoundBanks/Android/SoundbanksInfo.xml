@@ -69,13 +69,13 @@
 					<ShortName>Bounced Files\Creating_Pot_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Creating_Pot_01_56D34C19.wem</Path>
 				</File>
-				<File Id="51070242" Language="SFX">
-					<ShortName>GameJam_Plants_New_Heart_.wav</ShortName>
-					<Path>SFX/GameJam_Plants_New_Heart__56D34C19.wem</Path>
+				<File Id="19720045" Language="SFX">
+					<ShortName>3rd_batch\Ceramic_damaged_03.wav</ShortName>
+					<Path>SFX/3rd_batch/Ceramic_damaged_03_56D34C19.wem</Path>
 				</File>
-				<File Id="51687281" Language="SFX">
-					<ShortName>2nd_batch\Laser_02.wav</ShortName>
-					<Path>SFX/2nd_batch/Laser_02_56D34C19.wem</Path>
+				<File Id="29755577" Language="SFX">
+					<ShortName>3rd_batch\Ceramic_damaged_01.wav</ShortName>
+					<Path>SFX/3rd_batch/Ceramic_damaged_01_56D34C19.wem</Path>
 				</File>
 				<File Id="56642091" Language="SFX">
 					<ShortName>3rd_batch\Ceramic_broken.wav</ShortName>
@@ -85,10 +85,6 @@
 					<ShortName>Bounced Files\Click_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Click_01_56D34C19.wem</Path>
 				</File>
-				<File Id="61936185" Language="SFX">
-					<ShortName>Empty_PlaceHolder.wav</ShortName>
-					<Path>SFX/Empty_PlaceHolder_56D34C19.wem</Path>
-				</File>
 				<File Id="65352832" Language="SFX">
 					<ShortName>2nd_batch\Air_02.wav</ShortName>
 					<Path>SFX/2nd_batch/Air_02_56D34C19.wem</Path>
@@ -97,9 +93,17 @@
 					<ShortName>Bounced Files\Sword_02.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_02_56D34C19.wem</Path>
 				</File>
+				<File Id="99697418" Language="SFX">
+					<ShortName>6th_batch\-002.wav</ShortName>
+					<Path>SFX/6th_batch/-002_EE09F0DB.wem</Path>
+				</File>
 				<File Id="101502802" Language="SFX">
 					<ShortName>Bounced Files\Sword_03.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_03_56D34C19.wem</Path>
+				</File>
+				<File Id="128168805" Language="SFX">
+					<ShortName>6th_batch\-001.wav</ShortName>
+					<Path>SFX/6th_batch/-001_6803E51D.wem</Path>
 				</File>
 				<File Id="199647378" Language="SFX">
 					<ShortName>5th_batch\stubbed_merci_high.wav</ShortName>
@@ -123,7 +127,7 @@
 				</File>
 				<File Id="322831769" Language="SFX">
 					<ShortName>5th_batch\hello_high.wav</ShortName>
-					<Path>SFX/5th_batch/hello_high_4A0D6035.wem</Path>
+					<Path>SFX/5th_batch/hello_high_37015C8C.wem</Path>
 				</File>
 				<File Id="374826309" Language="SFX">
 					<ShortName>GGJ20_Music_2_Medieval_Fight_91bpm_v2.wav</ShortName>
@@ -181,10 +185,6 @@
 					<ShortName>Bounced Files\Sword_06.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_06_56D34C19.wem</Path>
 				</File>
-				<File Id="720072435" Language="SFX">
-					<ShortName>2nd_batch\Laser_01.wav</ShortName>
-					<Path>SFX/2nd_batch/Laser_01_56D34C19.wem</Path>
-				</File>
 				<File Id="751447610" Language="SFX">
 					<ShortName>2nd_batch\Fire_01.wav</ShortName>
 					<Path>SFX/2nd_batch/Fire_01_56D34C19.wem</Path>
@@ -197,21 +197,25 @@
 					<ShortName>Bounced Files\Walla_M02.wav</ShortName>
 					<Path>SFX/Bounced Files/Walla_M02_56D34C19.wem</Path>
 				</File>
+				<File Id="829974452" Language="SFX">
+					<ShortName>6th_batch\-003.wav</ShortName>
+					<Path>SFX/6th_batch/-003_AB87B730.wem</Path>
+				</File>
 				<File Id="855874533" Language="SFX">
 					<ShortName>4th_batch\Monsters_approach_w_villager_final_voice.wav</ShortName>
-					<Path>SFX/4th_batch/Monsters_approach_w_villager_final_voice_56D34C19.wem</Path>
+					<Path>SFX/4th_batch/Monsters_approach_w_villager_final_voice_F97F2545.wem</Path>
 				</File>
 				<File Id="930263848" Language="SFX">
 					<ShortName>Bounced Files\Sword_01.wav</ShortName>
 					<Path>SFX/Bounced Files/Sword_01_56D34C19.wem</Path>
 				</File>
-				<File Id="958409137" Language="SFX">
-					<ShortName>2nd_batch\Laser_03.wav</ShortName>
-					<Path>SFX/2nd_batch/Laser_03_56D34C19.wem</Path>
-				</File>
 				<File Id="963476631" Language="SFX">
 					<ShortName>4th_batch\Complete_final.wav</ShortName>
 					<Path>SFX/4th_batch/Complete_final_56D34C19.wem</Path>
+				</File>
+				<File Id="995289893" Language="SFX">
+					<ShortName>3rd_batch\Ceramic_damaged_02.wav</ShortName>
+					<Path>SFX/3rd_batch/Ceramic_damaged_02_56D34C19.wem</Path>
 				</File>
 				<File Id="1020546851" Language="SFX">
 					<ShortName>5th_batch\Knock_on_door.wav</ShortName>

@@ -6,6 +6,13 @@
 				<Folder Name="Test_Sounds" ID="{A6A702E7-39B7-4FD9-92ED-45281F7D45A5}" ShortID="101814939">
 					<ChildrenList>
 						<Sound Name="GameJam_Plants_New_Heart_" ID="{BCDA8135-8ABE-49AA-B8C7-355B26148151}" ShortID="775798497">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -25,6 +32,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Empty_PlaceHolder" ID="{222E3164-EA9A-4DE1-8CDC-2AD8EBC153E4}" ShortID="929771826">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -966,6 +980,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Laser" ID="{C2DE7515-55DF-4F03-83A5-C0D7BA2CE558}" ShortID="745176005">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1168,6 +1189,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Monsters_approach_w_villager_final_voice" ID="{1F8F63F7-978B-46CF-9CDA-ACBAA86B6B9F}" ShortID="855874533">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.65953002610966"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.34792689295039"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>4th_batch\Monsters_approach_w_villager_final_voice.wav</AudioFile>
 								</AudioFileSource>
@@ -1196,6 +1222,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Hero_loses_and_goes_away" ID="{7E90B1EC-4428-4F4B-B4B9-D9402D4FB67A}" ShortID="459100188">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1381,10 +1414,6 @@
 								<ActiveSource Name="stubbed" ID="{4FC20A46-137D-4540-815E-FA03FC20996B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="4th_batch" ID="{792FD59E-179D-44DF-A29E-1A47BD728A1D}" ShortID="886092736">
-					<ChildrenList>
 						<Sound Name="Footsteps_only" ID="{91BF7CAB-FD7F-412F-95A8-6E8B31BF39C1}" ShortID="1060081647">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1404,6 +1433,10 @@
 								<ActiveSource Name="Footsteps_only" ID="{23232E9F-5968-47B8-A2BE-2B663D95D599}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="4th_batch" ID="{792FD59E-179D-44DF-A29E-1A47BD728A1D}" ShortID="886092736">
+					<ChildrenList>
 						<Sound Name="Monster_voices_only" ID="{76EBFC08-760F-4E06-AC39-01D4FA640571}" ShortID="153227014">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1428,6 +1461,13 @@
 				<Folder Name="5th_batch" ID="{8D73E9BD-6913-4B24-9C17-5D240BDEE9A0}" ShortID="869418003">
 					<ChildrenList>
 						<Sound Name="BOUNCE_122-01" ID="{58DBD878-0121-46AA-B134-86080AC0BD57}" ShortID="48801485">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1447,6 +1487,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="BOUNCE_122-07" ID="{0DF532FD-A086-4685-A83E-867A3673D62A}" ShortID="235932281">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1485,6 +1532,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="hello_low" ID="{CDF0F588-6031-4109-9141-52FEE1A06C4D}" ShortID="695542568">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1504,6 +1558,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Merci" ID="{74DA3E04-97BF-47D2-A946-5F8702DB1047}" ShortID="902090308">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1523,6 +1584,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="stubbed_merci_low" ID="{C3D55DAB-BE84-4B5F-BB48-CD00F17992BD}" ShortID="497435419">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
@@ -1539,6 +1607,136 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="stubbed_merci_low" ID="{61AE0A65-546B-44E9-9837-7BD8FD222DF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="6th_batch" ID="{95561EA9-825E-4035-B122-043B6A5F0CBE}" ShortID="870733103">
+					<ChildrenList>
+						<Sound Name="-001" ID="{0EEABB98-E13F-418C-AC91-1D267C09D0C3}" ShortID="747947351">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="-001" ID="{C5E35B42-0DEE-4B24-8A5F-07CCD25AF0B1}" ShortID="128168805">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.9089159051349"/>
+										<Property Name="TrimBegin" Type="Real64" Value="18.9736814225199"/>
+										<Property Name="TrimEnd" Type="Real64" Value="23.4796656331593"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>6th_batch\-001.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="-001" ID="{C5E35B42-0DEE-4B24-8A5F-07CCD25AF0B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="-002" ID="{7F24B81E-04F8-4690-82E6-0E1A36499BAA}" ShortID="141093496">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="-002" ID="{F72AEA28-A860-497A-8F5A-F24879358FD2}" ShortID="99697418">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.29069908616189"/>
+										<Property Name="TrimBegin" Type="Real64" Value="64.2915806790526"/>
+										<Property Name="TrimEnd" Type="Real64" Value="68.6761955451063"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>6th_batch\-002.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="-002" ID="{F72AEA28-A860-497A-8F5A-F24879358FD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="-003" ID="{9F1E0381-691B-4AAE-BC6A-DA447F179656}" ShortID="697982521">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="-003" ID="{6A506689-349E-433E-9B37-9E0C361AEB4E}" ShortID="380309159">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.29069908616188"/>
+										<Property Name="TrimBegin" Type="Real64" Value="125.988449738903"/>
+										<Property Name="TrimEnd" Type="Real64" Value="131.047076887511"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>6th_batch\-003.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="829974452"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="-003" ID="{6A506689-349E-433E-9B37-9E0C361AEB4E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Monster_voices_only" ID="{C4FE0F7E-C8B9-485C-980D-1D0922882A50}" ShortID="864759720">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Monster_voices_only" ID="{1BBB54CC-E1E2-44BC-9E31-0985CB81508D}" ShortID="114482966">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.879829552983987"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.594932364398696"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.81783181026981"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>6th_batch\Monster_voices_only.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Monster_voices_only" ID="{1BBB54CC-E1E2-44BC-9E31-0985CB81508D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="-003_01" ID="{A7C689A1-0C04-446D-96B1-0CB08279CDB5}" ShortID="62322135">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D70639D-A966-403E-AD09-05C8029788F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{103C998B-7A79-4AB7-B8DB-E46A7F12C08C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="-003" ID="{C6F2EDB9-8ADC-411E-9CD4-68DC2E34138F}" ShortID="829974452">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.29069908616188"/>
+										<Property Name="TrimBegin" Type="Real64" Value="137.632836760226"/>
+										<Property Name="TrimEnd" Type="Real64" Value="141.164331184726"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>6th_batch\-003.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="380309159"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="-003" ID="{C6F2EDB9-8ADC-411E-9CD4-68DC2E34138F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -22,6 +22,10 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Stop_Monsters" ID="{6E92A214-006F-45F4-8EA5-8399D097F586}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_MK_Extra" ID="{3B6F2BFD-B06E-42FF-A8C0-1CDFB0772CD8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -38,6 +42,10 @@
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Monsters" ID="{FEE98AC9-83C0-4D4D-B628-2781C9A4D96E}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -52,6 +60,10 @@
 						<Module>
 							<ObjectRef Name="Play_Walla_M2" ID="{102F0387-97A2-418C-A310-4EC7AFE8CB35}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_HeroLoose" ID="{E99146ED-8CBD-4CA1-9F46-33CCBF9BDF31}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_MK_Combat_A" ID="{ED91BDFA-8D9A-4F15-981C-C03C229427B3}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
@@ -88,6 +100,14 @@
 						<Module>
 							<ObjectRef Name="Stop_MK_Static" ID="{FD13D1B2-1FCC-46CB-A815-1B2F4F96EDFE}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
 							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Pot_Creation_Process" ID="{6261D91A-A40F-4102-A571-6A01A95DEF66}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_VillagersHappy" ID="{61236E2A-0DD1-437E-B0F8-8FC16335EAB3}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}"/>
+							<Position X="5" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
