@@ -93,7 +93,8 @@ public class TestimonyState : GameState
             foreach (var potPartLine in PotPartLines)
             {
                 if (potPartLine.HandledSlots != 0
-                    && potPartLine.HandledSlots.HasFlag(playerPart.AllowedSlots))
+                    && potPartLine.HandledSlots.HasFlag(playerPart.AllowedSlots)
+                    && potPartLine.Damage == playerPart.DamageState)
                 {
                     m_TestimonyBuilder.AppendLine();
                     m_TestimonyBuilder.AppendFormat(potPartLine.Text, playerPart.name);
