@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Element: 0
   Cost: 5
-  Model: {fileID: -927199367670048503, guid: 83234ee944495ed44920ca703177de09, type: 3}
+  Model: {fileID: -927199367670048503, guid: bb6ff7eeb64bb48409f51cd92f37cf9a, type: 3}
   DamageState: 0
-  Quality: {fileID: 0}
+  Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
   Slot: 2
+  Icon: {fileID: 21300000, guid: 19e1118dcd5bf0644a39b1266dcded7c, type: 3}
+  Tooltip: 

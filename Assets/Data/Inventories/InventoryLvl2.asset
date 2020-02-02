@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a41e2dcff8ba8447ab98bc3d4dc6548, type: 3}
   m_Name: InventoryLvl2
   m_EditorClassIdentifier: 
-  OwnedParts: []
+  OwnedParts:
+  - {fileID: 11400000, guid: ee24c40688fa0624cb57feed69a66b39, type: 2}
+  - {fileID: 11400000, guid: d323a2953f7fd044b89e6248c12cb698, type: 2}
+  - {fileID: 11400000, guid: 7907be85fbc2c2e47be3fd0f0bed96ba, type: 2}
+  - {fileID: 11400000, guid: 92c8ef632f6c8b248994ddb682af03fd, type: 2}
+  - {fileID: 11400000, guid: 4e49e2645442fe04a83752eeaddd11d0, type: 2}
+  - {fileID: 11400000, guid: e42326949ef7f854db0cb0c616fa1395, type: 2}
+  - {fileID: 11400000, guid: bed4edbf554eb6946a91675ebdb57b1c, type: 2}
+  - {fileID: 11400000, guid: 9dd5f935b28637348878c4b58b5f0af5, type: 2}
+  - {fileID: 11400000, guid: 700367f8bbbc7804ea09c86108f2bf26, type: 2}
+  - {fileID: 11400000, guid: 6b619c90f97ffb144a57eab11601ca52, type: 2}
+  - {fileID: 11400000, guid: 3e924d8fb0fda7843bf2389b0cc34368, type: 2}
+  - {fileID: 11400000, guid: a590e9d07f7a5dc45a949ec34aea676d, type: 2}
   AllowedSlots: 3
