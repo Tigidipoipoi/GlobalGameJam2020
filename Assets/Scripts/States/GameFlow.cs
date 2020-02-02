@@ -161,7 +161,7 @@ public class GameFlow : MonoBehaviour
             History.Add(CurrentState);
 
             //Raise event
-            StateStarted?.Invoke(CurrentState);
+            StateEnded?.Invoke(CurrentState);
         }
 
         CurrentState = next;
@@ -185,7 +185,7 @@ public class GameFlow : MonoBehaviour
             CurrentState.Enter();
 
             //Raise event
-            StateEnded?.Invoke(CurrentState);
+            StateStarted?.Invoke(CurrentState);
         }
     }
 
