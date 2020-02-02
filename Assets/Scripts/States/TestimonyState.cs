@@ -116,7 +116,11 @@ public class TestimonyState : GameState
 
     void LootTestify()
     {
-        List<GameResource> oldResources = Player.Resources;
+        List<int> oldResources = new List<int>();
+        foreach(GameResource resource in Player.Resources)
+        {
+            oldResources.Add(resource.Amount);
+        }
         RandomDrop.GiveLoot(Flow.CurrentLevel);
         FixedDrop.GiveLoot(Flow.CurrentLevel);
 
@@ -124,7 +128,7 @@ public class TestimonyState : GameState
 
         for (int i = 0; i < Player.Resources.Count; i++)
         {
-            elementDrops.Add(Player.Resources[i].Amount - oldResources[i].Amount);
+            elementDrops.Add(Player.Resources[i].Amount - oldResources[i]);
         }
 
         m_TestimonyBuilder.AppendFormat(LootLine.Text, elementDrops[0], elementDrops[1], elementDrops[2], elementDrops[3], elementDrops[4]);

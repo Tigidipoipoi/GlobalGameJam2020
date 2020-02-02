@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_CLICK = 311910498U;
         static const AkUniqueID PLAY_CURRENCY = 3597897279U;
+        static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_END_REF = 3448859267U;
         static const AkUniqueID PLAY_FCERAMIC = 3545098540U;
         static const AkUniqueID PLAY_FINALDESTRUCTION = 2612811842U;

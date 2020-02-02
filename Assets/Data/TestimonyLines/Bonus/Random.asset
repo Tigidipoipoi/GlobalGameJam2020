@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f975982a7f283454f802317c7ae7aca6, type: 3}
   m_Name: Random
   m_EditorClassIdentifier: 
+  Text: This is a random bonus just for the example.
   Condition:
     DeveloperDescription: 
     UseConstant: 1
-    ConstantValue: 1
+    ConstantValue: 0
     Variable: {fileID: 0}
-  Text: This is a random bonus just for the example.

@@ -71,6 +71,10 @@ public class CreationMenu : MonoBehaviour
             gameObject.SetActive(true);
 
             RePopulateGrid(gameFlow.currentInventory.OwnedParts);
+
+            QualityDD.value = 0;
+            ElementDD.value = 0;
+            SlotDD.value = 0;
         }
     }
 
