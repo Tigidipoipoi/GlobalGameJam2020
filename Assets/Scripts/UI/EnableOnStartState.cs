@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class EnableOnStartState : MonoBehaviour
 {
     public GameFlow Flow;
 
-    public GameState State;
+    public List<GameState> States;
 
     public UnityEvent OnStateStartAction;
 
@@ -14,7 +15,7 @@ public class EnableOnStartState : MonoBehaviour
         GameFlow.StateStarted += OnStateStarted;
         GameFlow.StateEnded += OnStateEnded;
 
-        if (Flow.CurrentState != State)
+        if (!States.Contains(Flow.CurrentState))
         {
             gameObject.SetActive(false);
         }
@@ -32,7 +33,7 @@ public class EnableOnStartState : MonoBehaviour
 
     void OnStateStarted(GameState state)
     {
-        if (state == State)
+        if (States.Contains(state))
         {
             gameObject.SetActive(true);
 
@@ -42,7 +43,7 @@ public class EnableOnStartState : MonoBehaviour
 
     void OnStateEnded(GameState state)
     {
-        if (state == State)
+        if (States.Contains(state))
         {
             gameObject.SetActive(false);
         }

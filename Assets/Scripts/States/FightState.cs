@@ -7,6 +7,7 @@ public class FightState : GameState
     public override void Enter()
     {
         AkSoundEngine.PostEvent("Play_MK_Combat_A", Flow.gameObject);
+
         //Reset Hero's life
         Hero.CurrentHealth = Hero.MaxHealth;
 
@@ -58,6 +59,15 @@ public class FightState : GameState
                 remainingLife -= part.Quality.Strength;
                 part.DamageState = Damages.DAMAGED;
             }
+        }
+    }
+
+    public override void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            IsDone = true;
+            AkSoundEngine.PostEvent("Play_click", Flow.gameObject);
         }
     }
 }

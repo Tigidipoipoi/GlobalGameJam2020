@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6717005560424386935}
+  - component: {fileID: 6409701157187860390}
   m_Layer: 0
   m_Name: environnement
   m_TagString: Untagged
@@ -49,6 +50,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6409701157187860390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156063021867716103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218a85b4a5a3e984faa54959fbd26768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Flow: {fileID: 0}
+  States:
+  - {fileID: 11400000, guid: 65ef36d36c75c7a46ab7a688c6ffb8b3, type: 2}
+  - {fileID: 11400000, guid: 336810a1bb190a04bb93c96202efe223, type: 2}
+  - {fileID: 11400000, guid: a79733c3d6d44d149822eddfc00d843a, type: 2}
+  - {fileID: 11400000, guid: ab18c12fc95f3f04a86a14a3fe93b9a6, type: 2}
+  - {fileID: 11400000, guid: d9d174b8d1b8e3f4eb8a13d9ee3c4001, type: 2}
+  - {fileID: 11400000, guid: 98e252afd84f50b46a041ecadea676ac, type: 2}
+  OnStateStartAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1649879551844066929
 PrefabInstance:
   m_ObjectHideFlags: 0
