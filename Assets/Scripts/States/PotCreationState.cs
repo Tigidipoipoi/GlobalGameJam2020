@@ -61,7 +61,8 @@ public class PotCreationState : GameState
     {
         foreach (PotPart selectedPart in Player.SelectedParts)
         {
-            if (selectedPart.Slot == part.Slot)
+            if (selectedPart != null
+                && selectedPart.Slot == part.Slot)
             {
                 return selectedPart;
             }

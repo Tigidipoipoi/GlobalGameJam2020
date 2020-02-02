@@ -8,6 +8,12 @@ public class FightState : GameState
     {
         //Reset Hero's life
         Hero.CurrentHealth = Hero.MaxHealth;
+
+        //Reset parts' damage state
+        foreach (var selectedPart in Player.SelectedParts)
+        {
+            selectedPart.DamageState = Damages.INTACT;
+        }
     }
 
     /// <inheritdoc />

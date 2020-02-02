@@ -18,14 +18,17 @@ public class DraggableBluePrintUI : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     Transform m_BluePrint;
 
-    List<SelectedSlotUI> SelectableSlots;
+    GraphicRaycaster m_Raycaster;
+    EventSystem m_EventSystem;
 
     void Start()
     {
         m_BluePrint = GetComponentInParent<BluePrintUI>().transform;
         m_CreationMenu = GetComponentInParent<CreationMenu>().transform;
 
-        SelectableSlots.AddRange(FindObjectsOfType<SelectedSlotUI>());
+        m_Raycaster = GetComponentInParent<GraphicRaycaster>();
+
+        m_EventSystem = EventSystem.current;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -48,10 +51,24 @@ public class DraggableBluePrintUI : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        //Set up the new Pointer Event
+        var pointerEventData = new PointerEventData(m_EventSystem);
+
+        //Set the Pointer Event Position to that of the mouse position
+        pointerEventData.position = eventData.position;
+
+        //Create a list of Raycast Results
+        List<RaycastResult> results = new List<RaycastResult>();
+
+        //Raycast using the Graphics Raycaster and mouse click position
+        m_Raycaster.Raycast(pointerEventData, results);
+
         //Check for slot position
-        foreach (var slot in SelectableSlots)
+        foreach (var result in results)
         {
-            if (PotPart.Slot.HasFlag(slot.HandledSlot))
+            var selectedSlot = result.gameObject.GetComponent<SelectedSlotUI>();
+            if (selectedSlot != null
+                && PotPart.Slot.HasFlag(selectedSlot.HandledSlot))
             {
                 State.selectPart(PotPart);
 
