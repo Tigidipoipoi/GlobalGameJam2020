@@ -7,7 +7,7 @@ public class PotPart : ScriptableObject
 
     public int Cost;
 
-    public Mesh Model;
+    public GameObject Model;
 
     public Damages DamageState;
 
