@@ -10,13 +10,77 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}"/>
+						<Bus Name="SFX" ID="{C43BA182-D72E-47D6-BD13-B0C6C51979B0}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{C66EBC16-30B6-4747-8625-B73329C83B06}" ShortID="1639166">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFX_Vol_RTPC" ID="{68A690EC-3C37-4B24-85B1-B2C66A124E32}" WorkUnitID="{F1E2EE29-5351-4F78-BF90-BDBCA84DBF6B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1EF861E1-5816-459B-B908-BF0D433B7800}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{E3928A5D-97CC-4118-A681-A12902C26541}" ShortID="142628219" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
 						<Bus Name="Music" ID="{4C90A0ED-694B-4F9F-ADDA-E668C5E5ABA7}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-9</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{9D7DED57-7247-488F-86CC-4A48E5E48CAC}" ShortID="496258874">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Music_Vol_RTPC" ID="{78C93468-1C3C-4000-8B5E-9B29B9526DE9}" WorkUnitID="{F1E2EE29-5351-4F78-BF90-BDBCA84DBF6B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{23064FFA-3C47-4071-9949-13480D204684}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
@@ -29,6 +93,13 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{7B9583A6-45D7-4282-BBCD-CFBCCAADA867}" ShortID="1004323877" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

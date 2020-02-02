@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc202ef61d12ae44086827818f16a393, type: 3}
   m_Name: Iron
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   quality: 5
   material: {fileID: -7363895882047177350, guid: 05a67a82201cf214c935e640ba405753,
     type: 3}
+=======
+  quality: 0
+  material: {fileID: 2100000, guid: 0d30f17d72e978947be21d55433ce2da, type: 2}
+>>>>>>> Stashed changes
   Strength: 6
   Icon: {fileID: 0}
