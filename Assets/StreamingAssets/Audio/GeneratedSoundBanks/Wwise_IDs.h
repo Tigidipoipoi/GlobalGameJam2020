@@ -13,11 +13,31 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CLICK = 311910498U;
+        static const AkUniqueID PLAY_CURRENCY = 3597897279U;
+        static const AkUniqueID PLAY_FCERAMIC = 3545098540U;
+        static const AkUniqueID PLAY_FINALDESTRUCTION = 2612811842U;
+        static const AkUniqueID PLAY_FLASER = 828274961U;
+        static const AkUniqueID PLAY_FLOOSE = 3167144222U;
+        static const AkUniqueID PLAY_FSWORD = 3074229139U;
+        static const AkUniqueID PLAY_FWIN = 2693592746U;
+        static const AkUniqueID PLAY_HEROLOOSE = 1865594480U;
+        static const AkUniqueID PLAY_MFIRE = 262105351U;
         static const AkUniqueID PLAY_MK_COMBAT_A = 1285414837U;
         static const AkUniqueID PLAY_MK_EXTRA = 1379997717U;
         static const AkUniqueID PLAY_MK_STATIC = 2023163491U;
+        static const AkUniqueID PLAY_MONSTERS = 2072794187U;
+        static const AkUniqueID PLAY_MWATER = 3771359620U;
+        static const AkUniqueID PLAY_MWIND = 2257207145U;
         static const AkUniqueID PLAY_PLACEHOLDER = 173327921U;
+        static const AkUniqueID PLAY_POT_CREATION_FINISHED = 2736518758U;
+        static const AkUniqueID PLAY_POT_CREATION_PROCESS = 3318378243U;
         static const AkUniqueID PLAY_TEST = 3187507146U;
+        static const AkUniqueID PLAY_VILLAGE_AMBIENCE = 3256485433U;
+        static const AkUniqueID PLAY_VILLAGERSHAPPY = 4066344583U;
+        static const AkUniqueID PLAY_WALLA_M1 = 3906169736U;
+        static const AkUniqueID PLAY_WALLA_M2 = 3906169739U;
+        static const AkUniqueID PLAY_WALLA_M3 = 3906169738U;
         static const AkUniqueID RESET_MUSIC_BUS_VOL = 3064570407U;
         static const AkUniqueID RESET_SFX_BUS_VOL = 3176211351U;
         static const AkUniqueID SET_MUSIC_BUS_VOL_TO_0 = 1257580087U;

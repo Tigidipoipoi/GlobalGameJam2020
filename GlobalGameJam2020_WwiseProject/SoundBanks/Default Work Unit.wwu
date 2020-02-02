@@ -6,13 +6,33 @@
 				<SoundBank Name="Main_SB" ID="{885425B0-6BA3-4105-B49B-A906CA9CCB7A}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_placeholder" ID="{F81F1252-4FE5-4086-B92D-B4BC9E614935}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FLaser" ID="{5600417E-BD2D-410F-A3F0-7D22C1C5FAF7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Walla_M2" ID="{102F0387-97A2-418C-A310-4EC7AFE8CB35}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FinalDestruction" ID="{40CA1CA0-F67B-4200-B78A-D98D98FC345E}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_MK_Combat_A" ID="{89C71C52-7AF9-427E-9B03-86FD15DB937F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_MK_Extra" ID="{3B6F2BFD-B06E-42FF-A8C0-1CDFB0772CD8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FCeramic" ID="{49B3F27D-EAB3-442F-978C-DDEDC472B59D}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Set_Music_Bus_Vol_to_0" ID="{3A0C9522-1C03-443B-B4CB-78D1A4EF3622}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Reset_Music_Bus_Vol" ID="{2D7584AB-69C2-4546-B557-25CBE0B858E8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Reset_SFX_Bus_Vol" ID="{5CFC588D-8ED7-45AE-8958-8C61A8617238}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FSword" ID="{90BE406E-7408-4623-98F6-E5E3B0BD83BD}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MFire" ID="{584BAE99-5A3A-4688-95E5-C24BC91A1A1E}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Walla_M1" ID="{88F67D90-BF18-4770-8F59-C8ED1765D8DD}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Pot_Creation_Finished" ID="{9397586E-A162-47B3-81D6-E982FBDE62CE}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_MK_Static" ID="{97E5E825-AEBC-47F2-8BE5-7552409560A7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_click" ID="{ED430027-CEA0-4995-B7A8-2C2414EE7A6B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Walla_M3" ID="{7653BDE7-16C0-4A88-9AEC-1BA4726B2FE8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MWater" ID="{799BE595-0A8A-4AAA-ACF0-E7F4FB5CA2F7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Set_SFX_Bus_Vol_to_0" ID="{17792EB8-CFF1-4B8F-9C70-C3290D1FA8E1}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Pot_Creation_Process" ID="{33177C8F-8065-4BCE-8E65-2087BEAD5B0B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Village_Ambience" ID="{7B29F928-840F-4C9E-B754-A29F31B24D56}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_HeroLoose" ID="{E99146ED-8CBD-4CA1-9F46-33CCBF9BDF31}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FWin" ID="{FC27A279-A5EE-4CCA-93D4-8D925E6C6AD2}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Monsters" ID="{FEE98AC9-83C0-4D4D-B628-2781C9A4D96E}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_VillagersHappy" ID="{3EB12C10-B46D-4E2D-B9D2-122114EFFBD7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_FLoose" ID="{861259D0-4FB7-4EC7-8FE0-D21E95FAFBFD}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MWind" ID="{124BAD74-A6B6-4EE4-9497-694581B5BF2F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Currency" ID="{5A2B2627-518D-4F89-A943-99965499B20A}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_test" ID="{463EF44C-52B5-4F97-ACD0-A96BAC01F321}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
