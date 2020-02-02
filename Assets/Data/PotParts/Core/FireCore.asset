@@ -15,8 +15,9 @@ MonoBehaviour:
   Element: 0
   Cost: 0
   Model: {fileID: 3349866411936467987, guid: cad781f6be3f6444eba40c98f77a2f4e, type: 3}
-  DamageState: 1
+  DamageState: 0
   Quality: {fileID: 11400000, guid: d453ff5914106ed4e96620704aa4d0cd, type: 2}
-  Slot: 1
+  AllowedSlots: 1
+  EquippedSlot: 0
   Icon: {fileID: 21300000, guid: 10f08798668247f448c53f6788547908, type: 3}
   Tooltip: 
