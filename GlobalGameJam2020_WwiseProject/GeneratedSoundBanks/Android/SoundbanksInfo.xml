@@ -59,6 +59,7 @@
 				<Event Id="2100881141" Name="Stop_MK_Static" ObjectPath="\Events\Default Work Unit\Stop_MK_Static" MaxAttenuation="0.000000"/>
 				<Event Id="1911080813" Name="Stop_Monsters" ObjectPath="\Events\Default Work Unit\Stop_Monsters" MaxAttenuation="0.000000"/>
 				<Event Id="201525001" Name="Stop_Pot_Creation_Process" ObjectPath="\Events\Default Work Unit\Stop_Pot_Creation_Process" MaxAttenuation="0.000000"/>
+				<Event Id="2423399295" Name="Stop_Village_Ambience" ObjectPath="\Events\Default Work Unit\Stop_Village_Ambience" MaxAttenuation="0.000000"/>
 				<Event Id="1091357693" Name="Stop_VillagersHappy" ObjectPath="\Events\Default Work Unit\Stop_VillagersHappy" MaxAttenuation="0.000000"/>
 				<Event Id="2221466542" Name="Stop_Walla_M1" ObjectPath="\Events\Default Work Unit\Stop_Walla_M1" MaxAttenuation="0.000000"/>
 				<Event Id="2221466541" Name="Stop_Walla_M2" ObjectPath="\Events\Default Work Unit\Stop_Walla_M2" MaxAttenuation="0.000000"/>
@@ -223,7 +224,7 @@
 				</File>
 				<File Id="1034859551" Language="SFX">
 					<ShortName>2nd_batch\Village_Ambience.wav</ShortName>
-					<Path>SFX/2nd_batch/Village_Ambience_56D34C19.wem</Path>
+					<Path>SFX/2nd_batch/Village_Ambience_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

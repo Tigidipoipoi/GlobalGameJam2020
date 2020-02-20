@@ -25,6 +25,8 @@ public class TestimonyState : GameState
         AkSoundEngine.PostEvent("Play_door", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Village_Ambience", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_Walla_M1", Flow.gameObject);
+        AkSoundEngine.PostEvent("Play_MK_Static", Flow.gameObject);
+        AkSoundEngine.PostEvent("Stop_MK_Extra", Flow.gameObject);
 
         //Reset testimony.
         m_TestimonyBuilder.Clear();
@@ -49,6 +51,7 @@ public class TestimonyState : GameState
         AkSoundEngine.PostEvent("Stop_Walla_M1", Flow.gameObject);
         AkSoundEngine.PostEvent("Stop_Walla_M2", Flow.gameObject);
         AkSoundEngine.PostEvent("Stop_Walla_M3", Flow.gameObject);
+        AkSoundEngine.PostEvent("Stop_Village_Ambience", Flow.gameObject);
     }
 
     /// <inheritdoc />

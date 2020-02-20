@@ -831,6 +831,22 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Village_Ambience" ID="{6D7BAB1C-AE8F-4AC5-A945-FA36DD2A183F}">
+					<ChildrenList>
+						<Action Name="" ID="{6AEE2DEA-9663-44CC-9B08-4F721EDF4050}" ShortID="903452613">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Village_Ambience" ID="{AE6E3D17-4C8A-4701-897F-1573863D5F59}" WorkUnitID="{0EF9AF5F-716E-4B9C-B814-D14A7E179768}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

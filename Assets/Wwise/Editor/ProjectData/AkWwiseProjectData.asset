@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f0552b7cf1e9ad4589e31d8bb54637eb
     GuidInternal: 
-    m_lastTime: -8586210422351744867
+    m_lastTime: -8586211048114775808
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8b993c10797ab74ab8dbe46a7f12c08c
     GuidInternal: 
-    m_lastTime: -8586210422352833899
+    m_lastTime: -8586209514514775808
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 206057a43b05ef4f912264a6bca2a9c3
     GuidInternal: 
-    m_lastTime: -8586210422352504780
+    m_lastTime: -8586194334734775808
     List:
     - name: Main_SB
       guid: b0255488a36b0541b49ba906ca9ccb7a
@@ -41,14 +41,230 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Main_SB
         ObjectType: 7
-      Path: Default Work Unit\Main_SB
+      Path: Default Work Unit/Main_SB
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b8c35674f53c944990da03fd347928d5
     GuidInternal: 
-    m_lastTime: -8586210422353588229
+    m_lastTime: -8586194334734775808
     List:
+    - name: Play_click
+      guid: 270043eda0ce9549b7a82c2414ee7a6b
+      id: 311910498
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_click
+        ObjectType: 3
+      Path: Default Work Unit/Play_click
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Currency
+      guid: 27262b5a8d51894fa94399965499b20a
+      id: 3597897279
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Currency
+        ObjectType: 3
+      Path: Default Work Unit/Play_Currency
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_door
+      guid: 4b7112321a7afd47ab49e55b9165e29b
+      id: 2547633870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_door
+        ObjectType: 3
+      Path: Default Work Unit/Play_door
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_end_ref
+      guid: 4e57b57efd278b449a8daca38d437836
+      id: 3448859267
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_end_ref
+        ObjectType: 3
+      Path: Default Work Unit/Play_end_ref
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FCeramic
+      guid: 7df2b349b3ea2f44978cddedc472b59d
+      id: 3545098540
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FCeramic
+        ObjectType: 3
+      Path: Default Work Unit/Play_FCeramic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FinalDestruction
+      guid: a01cca407bf60042b78ad98d98fc345e
+      id: 2612811842
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FinalDestruction
+        ObjectType: 3
+      Path: Default Work Unit/Play_FinalDestruction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FLaser
+      guid: 7e4100562dbd0f41a3f07d22c1c5faf7
+      id: 828274961
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FLaser
+        ObjectType: 3
+      Path: Default Work Unit/Play_FLaser
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FLoose
+      guid: d0591286b74fc74e8fe0d21e95fafbfd
+      id: 3167144222
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FLoose
+        ObjectType: 3
+      Path: Default Work Unit/Play_FLoose
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FSword
+      guid: 6e40be900874234698f6e5e3b0bd83bd
+      id: 3074229139
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FSword
+        ObjectType: 3
+      Path: Default Work Unit/Play_FSword
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FWin
+      guid: 79a227fceea5ca4c93d48d925e6c6ad2
+      id: 2693592746
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FWin
+        ObjectType: 3
+      Path: Default Work Unit/Play_FWin
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_HeroLoose
+      guid: ed4691e9bd8ca14c9f4633ccbf9bdf31
+      id: 1865594480
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_HeroLoose
+        ObjectType: 3
+      Path: Default Work Unit/Play_HeroLoose
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MFire
+      guid: 99ae4b583a5a884695e5c24bc91a1a1e
+      id: 262105351
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MFire
+        ObjectType: 3
+      Path: Default Work Unit/Play_MFire
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MK_Combat_A
+      guid: 521cc789f97a7e429b0386fd15db937f
+      id: 1285414837
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MK_Combat_A
+        ObjectType: 3
+      Path: Default Work Unit/Play_MK_Combat_A
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MK_Extra
+      guid: fd2b6f3b6eb0ff42a8c01cdfb0772cd8
+      id: 1379997717
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MK_Extra
+        ObjectType: 3
+      Path: Default Work Unit/Play_MK_Extra
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MK_Static
+      guid: 25e8e597bcaef2478be57552409560a7
+      id: 2023163491
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MK_Static
+        ObjectType: 3
+      Path: Default Work Unit/Play_MK_Static
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Monsters
+      guid: c98ae9fec0834d4db6282781c9a4d96e
+      id: 2072794187
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Monsters
+        ObjectType: 3
+      Path: Default Work Unit/Play_Monsters
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MWater
+      guid: 95e59b798a0aaa4aacf0e7f4fb5ca2f7
+      id: 3771359620
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MWater
+        ObjectType: 3
+      Path: Default Work Unit/Play_MWater
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MWind
+      guid: 74ad4b12b6a6e44e9497694581b5bf2f
+      id: 2257207145
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MWind
+        ObjectType: 3
+      Path: Default Work Unit/Play_MWind
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_placeholder
       guid: 52121ff8e54f8640b92db4bc9e614935
       id: 173327921
@@ -57,7 +273,31 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Play_placeholder
         ObjectType: 3
-      Path: Default Work Unit\Play_placeholder
+      Path: Default Work Unit/Play_placeholder
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Pot_Creation_Finished
+      guid: 6e58979362a1b34781d6e982fbde62ce
+      id: 2736518758
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Pot_Creation_Finished
+        ObjectType: 3
+      Path: Default Work Unit/Play_Pot_Creation_Finished
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Pot_Creation_Process
+      guid: 8f7c17336580ce4b8e652087bead5b0b
+      id: 3318378243
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Pot_Creation_Process
+        ObjectType: 3
+      Path: Default Work Unit/Play_Pot_Creation_Process
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -69,37 +309,307 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Play_test
         ObjectType: 3
-      Path: Default Work Unit\Play_test
+      Path: Default Work Unit/Play_test
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Village_Ambience
+      guid: 28f9297b0f849e4cb754a29f31b24d56
+      id: 3256485433
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Village_Ambience
+        ObjectType: 3
+      Path: Default Work Unit/Play_Village_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_VillagersHappy
+      guid: 102cb13e6db42d4eb9d2122114effbd7
+      id: 4066344583
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_VillagersHappy
+        ObjectType: 3
+      Path: Default Work Unit/Play_VillagersHappy
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Walla_M1
+      guid: 907df68818bf70478f59c8ed1765d8dd
+      id: 3906169736
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Walla_M1
+        ObjectType: 3
+      Path: Default Work Unit/Play_Walla_M1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Walla_M2
+      guid: 87032f10a2978c41a3104ec7afe8cb35
+      id: 3906169739
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Walla_M2
+        ObjectType: 3
+      Path: Default Work Unit/Play_Walla_M2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Walla_M3
+      guid: e7bd5376c016884a9aec1ba4726b2fe8
+      id: 3906169738
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Walla_M3
+        ObjectType: 3
+      Path: Default Work Unit/Play_Walla_M3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Reset_Music_Bus_Vol
+      guid: ab84752dc2694645b55725cbe0b858e8
+      id: 3064570407
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Reset_Music_Bus_Vol
+        ObjectType: 3
+      Path: Default Work Unit/Reset_Music_Bus_Vol
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Reset_SFX_Bus_Vol
+      guid: 8d58fc5cd78eae4589588c61a8617238
+      id: 3176211351
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Reset_SFX_Bus_Vol
+        ObjectType: 3
+      Path: Default Work Unit/Reset_SFX_Bus_Vol
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_Music_Bus_Vol_to_0
+      guid: 22950c3a031c3b44b4cb78d1a4ef3622
+      id: 1257580087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Music_Bus_Vol_to_0
+        ObjectType: 3
+      Path: Default Work Unit/Set_Music_Bus_Vol_to_0
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_SFX_Bus_Vol_to_0
+      guid: b82e7917f1cf8f4b9c70c3290d1fa8e1
+      id: 510795939
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_SFX_Bus_Vol_to_0
+        ObjectType: 3
+      Path: Default Work Unit/Set_SFX_Bus_Vol_to_0
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_FinalDestruction
+      guid: 0fa087335bec764789c12699efdf1c94
+      id: 3317021012
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_FinalDestruction
+        ObjectType: 3
+      Path: Default Work Unit/Stop_FinalDestruction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_HeroLoose
+      guid: 41528cac4b4b864a9b4ed438f3d40600
+      id: 1442185766
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_HeroLoose
+        ObjectType: 3
+      Path: Default Work Unit/Stop_HeroLoose
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MK_Combat_A
+      guid: fabd91ed9a8d154f981cc03c229427b3
+      id: 3673367607
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_MK_Combat_A
+        ObjectType: 3
+      Path: Default Work Unit/Stop_MK_Combat_A
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MK_Extra
+      guid: 0bd80ff12a36984eb5ca03fe837a35f5
+      id: 3651929831
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_MK_Extra
+        ObjectType: 3
+      Path: Default Work Unit/Stop_MK_Extra
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MK_Static
+      guid: b2d113fdcc1fcb46a8151b2f4f96edfe
+      id: 2100881141
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_MK_Static
+        ObjectType: 3
+      Path: Default Work Unit/Stop_MK_Static
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Monsters
+      guid: 14a2926e6f00f4458ea58399d097f586
+      id: 1911080813
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Monsters
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Monsters
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Pot_Creation_Process
+      guid: 1ad961620fa40241a5716a01a95def66
+      id: 201525001
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Pot_Creation_Process
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Pot_Creation_Process
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Village_Ambience
+      guid: 1cab7b6d8faec54aa945fa36dd2a183f
+      id: 2423399295
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Village_Ambience
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Village_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_VillagersHappy
+      guid: 2a6e2361d10d7e43b0f88fc16335eab3
+      id: 1091357693
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_VillagersHappy
+        ObjectType: 3
+      Path: Default Work Unit/Stop_VillagersHappy
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Walla_M1
+      guid: df9ae63d7f47814490c0fc970dcdc3d9
+      id: 2221466542
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Walla_M1
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Walla_M1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Walla_M2
+      guid: 9cb05b5106d51244b130e712b982af05
+      id: 2221466541
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Walla_M2
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Walla_M2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Walla_M3
+      guid: b0fe45f5c733174c919094911c92c8a2
+      id: 2221466540
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Walla_M3
+        ObjectType: 3
+      Path: Default Work Unit/Stop_Walla_M3
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 29eee2f15153784fbf90bdbca84dbf6b
     GuidInternal: 
-    m_lastTime: -8586210422353488532
-    List: []
+    m_lastTime: -8586209525324775808
+    List:
+    - name: Music_Vol_RTPC
+      guid: 6834c9783c1c00408b5e9b29b9526de9
+      id: 2911073178
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Vol_RTPC
+        ObjectType: 13
+      Path: Default Work Unit/Music_Vol_RTPC
+    - name: SFX_Vol_RTPC
+      guid: ec90a668373c244b85b1b2c66a124e32
+      id: 3005434258
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Vol_RTPC
+        ObjectType: 13
+      Path: Default Work Unit/SFX_Vol_RTPC
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f52ff090a764c644b90f714e41ba755e
     GuidInternal: 
-    m_lastTime: -8586210422351834627
+    m_lastTime: -8586211048114775808
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 1f47809680154340911b9666e30e3f73
     GuidInternal: 
-    m_lastTime: -8586210422351824656
+    m_lastTime: -8586211048114775808
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 34a941bb3f581846aa9d0656faa4b890
     GuidInternal: 
-    m_lastTime: -8586210422351744867
+    m_lastTime: -8586211048114775808
     List: []
   ExpandedItems: []
   autoPopulateEnabled: 1

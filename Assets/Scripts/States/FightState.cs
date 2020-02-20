@@ -6,6 +6,7 @@ public class FightState : GameState
 {
     public override void Enter()
     {
+        AkSoundEngine.PostEvent("Stop_MK_Static", Flow.gameObject);
         AkSoundEngine.PostEvent("Play_MK_Combat_A", Flow.gameObject);
 
         //Reset Hero's life

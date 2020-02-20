@@ -19,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2221466541	Stop_Walla_M2			\Default Work Unit\Stop_Walla_M2	
 	2221466542	Stop_Walla_M1			\Default Work Unit\Stop_Walla_M1	
 	2257207145	Play_MWind			\Default Work Unit\Play_MWind	
+	2423399295	Stop_Village_Ambience			\Default Work Unit\Stop_Village_Ambience	
 	2547633870	Play_door			\Default Work Unit\Play_door	
 	2612811842	Play_FinalDestruction			\Default Work Unit\Play_FinalDestruction	
 	2693592746	Play_FWin			\Default Work Unit\Play_FWin	
@@ -82,5 +83,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	963476631	Complete_final	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\4th_batch\Complete_final_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Complete_final		4620352
 	995289893	Ceramic_damaged_02	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\3rd_batch\Ceramic_damaged_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Ceramic_battle\Ceramic_damage\Ceramic_damaged_02		326492
 	1020546851	Knock_on_door	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\5th_batch\Knock_on_door_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Knock_on_door		181312
-	1034859551	Village_Ambience	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Village_Ambience_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Village_Ambience		23040064
+	1034859551	Village_Ambience	Y:\Documents\GitHub\GGJ\GlobalGameJam2020\GlobalGameJam2020_WwiseProject\.cache\Mac\SFX\2nd_batch\Village_Ambience_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Animatics\Village_Ambience		23040064
 

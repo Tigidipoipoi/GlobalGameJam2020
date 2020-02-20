@@ -51,6 +51,7 @@ namespace AK
         static const AkUniqueID STOP_MK_STATIC = 2100881141U;
         static const AkUniqueID STOP_MONSTERS = 1911080813U;
         static const AkUniqueID STOP_POT_CREATION_PROCESS = 201525001U;
+        static const AkUniqueID STOP_VILLAGE_AMBIENCE = 2423399295U;
         static const AkUniqueID STOP_VILLAGERSHAPPY = 1091357693U;
         static const AkUniqueID STOP_WALLA_M1 = 2221466542U;
         static const AkUniqueID STOP_WALLA_M2 = 2221466541U;

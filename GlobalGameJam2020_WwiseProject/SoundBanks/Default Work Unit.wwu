@@ -33,6 +33,7 @@
 						<ObjectRef Name="Stop_HeroLoose" ID="{AC8C5241-4B4B-4A86-9B4E-D438F3D40600}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Walla_M3" ID="{7653BDE7-16C0-4A88-9AEC-1BA4726B2FE8}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_MWater" ID="{799BE595-0A8A-4AAA-ACF0-E7F4FB5CA2F7}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Village_Ambience" ID="{6D7BAB1C-AE8F-4AC5-A945-FA36DD2A183F}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Set_SFX_Bus_Vol_to_0" ID="{17792EB8-CFF1-4B8F-9C70-C3290D1FA8E1}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pot_Creation_Process" ID="{33177C8F-8065-4BCE-8E65-2087BEAD5B0B}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Walla_M3" ID="{F545FEB0-33C7-4C17-9190-94911C92C8A2}" WorkUnitID="{7456C3B8-3CF5-4994-90DA-03FD347928D5}" Filter="7" Origin="Manual"/>
